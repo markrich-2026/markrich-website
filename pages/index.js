@@ -8,7 +8,7 @@ import trainersIcon from "@/public/icons/trainers-icon.svg";
 import approachIcon from "@/public/icons/approach-icon.svg";
 import interactiveIcon from "@/public/icons/interactive-icon.svg";
 import { Card, FeatureCard } from "@/components/Card";
-import TabsComponent from "@/components/Tabs";
+import { TabsComponent } from "@/components/Tabs";
 
 const trainingAreas = [
   {
@@ -42,6 +42,102 @@ const features = [
     icon: interactiveIcon,
     title: "Interactive Learning",
     text: "Experience interactive and experiential training sessions that foster active participation and knowledge retention.",
+  },
+];
+const titles = [
+  {
+    title: "Finance Solutions",
+    value: "tab1",
+  },
+  {
+    title: "Solutions for financial services domain",
+    value: "tab2",
+  },
+  {
+    title: "Analytics solutions",
+    value: "tab3",
+  },
+  {
+    title: "Leadership development solutions",
+    value: "tab4",
+  },
+];
+
+const tabData = [
+  {
+    tab: "tab1",
+    data: [
+      {
+        title: "Finance for Non-Finance",
+        link: "",
+        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+      },
+      {
+        title: "Finance for Sales Managers & Executives",
+        link: "",
+        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+      },
+      {
+        title: "Personal Finance sessions",
+        link: "",
+        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+      },
+      {
+        title: "Strategic Cost Management",
+        link: "",
+        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+      },
+      {
+        title: "Working Capital Management",
+        link: "",
+        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+      },
+    ],
+  },
+  {
+    tab: "tab2",
+    data: [
+      {
+        title: "Finance for Non-Finance",
+        link: "",
+        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+      },
+      {
+        title: "Finance for Sales Managers & Executives",
+        link: "",
+        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+      },
+      {
+        title: "Personal Finance sessions",
+        link: "",
+        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+      },
+    ],
+  },
+  {
+    tab: "tab3",
+    data: [
+      {
+        title: "Finance for Non-Finance",
+        link: "",
+        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+      },
+    ],
+  },
+  {
+    tab: "tab4",
+    data: [
+      {
+        title: "Finance for Non-Finance",
+        link: "",
+        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+      },
+      {
+        title: "Finance for Sales Managers & Executives",
+        link: "",
+        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+      },
+    ],
   },
 ];
 
@@ -152,18 +248,19 @@ export default function Home() {
         </div>
       </section>
       {/* tabs view training areas */}
-      <section className="flex min-h-[100vh] py-5 ">
+      <section className="flex min-h-[100vh] py-20 ">
         <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[4rem] px-2 items-center">
           <div className="flex flex-col gap-4 items-center">
             <h6 className="text-[#ED3630] font-medium">Training areas</h6>
-            <h2 className="text-5xl font-semibold tracking-tighter text-center">
+            <h2 className="text-5xl font-semibold tracking-tighter text-center leading-11 max-w-[700px]">
               A collection of all our{" "}
               <span className="text-[#F58A07]"> Training Solutions</span>
             </h2>
           </div>
-          <TabsComponent />
+          <TabsComponent titles={titles} tabData={tabData} />
         </div>
       </section>
+      {/* contact us section */}
     </>
   );
 }

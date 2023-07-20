@@ -1,0 +1,156 @@
+import React from "react";
+import process1 from "@/public/icons/process-icon-1.svg";
+import process2 from "@/public/icons/process-icon-2.svg";
+import process3 from "@/public/icons/process-icon-3.svg";
+import process4 from "@/public/icons/process-icon-4.svg";
+import trainingImage from "@/public/images/about-instructor-training.svg";
+import offlineImage from "@/public/images/about-offline-trainings.svg";
+import sessionsImage from "@/public/images/about-sessions.svg";
+import { CTA, CTASecondary } from "@/components/CTA";
+const process = [
+  {
+    title: "Understanding Needs",
+    icon: process1,
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde pariatur delectus molestias cumque iure, tempore eius.",
+  },
+  {
+    title: "Creating Customized Solutions",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde pariatur delectus molestias cumque iure, tempore eius.",
+    icon: process2,
+  },
+  {
+    title: "Delivery",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde pariatur delectus molestias cumque iure, tempore eius.",
+    icon: process3,
+  },
+  {
+    title: "Post-Implementation Feedback",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde pariatur delectus molestias cumque iure, tempore eius.",
+    icon: process4,
+  },
+];
+
+const Delivery = () => {
+  return (
+    <>
+      <section className="min-h-[80vh] flex items-center justify-center">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-6 px-2 items-center">
+          <div className="flex flex-col gap-8 max-w-[600px]">
+            {/* hero content */}
+            <div className="flex flex-col gap-4">
+              <h6 className="text-[#ED3630] font-medium">How We Work</h6>
+              <h1 className="text-6xl font-semibold tracking-tighter">
+                Our Process for <span className="text-[#F58A07]">Success</span>{" "}
+              </h1>
+            </div>
+            <p className="text-slate-500">
+              At Markrich Solutions LLP. we pride ourselves on our streamlined
+              and efficient approach to delivering exceptional results. Our
+              proven process ensures that every project we undertake is executed
+              with precision and professionalism.
+            </p>
+          </div>
+          <div className="flex flex-col gap-8 max-w-[500px]">
+            {process.map((ele, ind) => (
+              <div className="flex items-center gap-6">
+                <div className="bg-[#fee5c852] rounded-full p-4">
+                  <img className="max-w-[30px]" src={ele.icon.src} alt="" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h5 className="text-md font-medium">{ele.title}</h5>
+                  <p className="text-sm text-slate-500">{ele.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="min-h-[80vh] flex items-center justify-center">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-12 px-2 items-center">
+          <div className={`flex flex-col gap-2 w-full max-w-[600px]`}>
+            <div className="mb-3 shadow-md flex overflow-hidden bg-transparent rounded-2xl">
+              <img
+                className="w-full object-cover"
+                src={offlineImage.src}
+                alt=""
+              />
+            </div>
+            <h6 className="text-2xl font-semibold text-[#F58A07]">
+              Offline trainings
+            </h6>
+            <p className="text-slate-500 text-sm">
+              Our training experts visit your location to deliver the training.
+            </p>
+          </div>
+          <div className={`flex flex-col gap-2 w-full max-w-[600px]`}>
+            <div className="mb-3 shadow-md flex overflow-hidden bg-transparent rounded-2xl">
+              <img
+                className="w-full object-cover"
+                src={trainingImage.src}
+                alt=""
+              />
+            </div>
+            <h6 className="text-2xl font-semibold text-[#F58A07]">
+              Virtual Instructor Led Training
+            </h6>
+            <p className="text-slate-500 text-sm">
+              Our experts conduct engaging Live- Virtual training sessions.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="min-h-[80vh] flex items-center justify-center">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-6 px-2 items-center">
+          <div className="flex flex-col gap-8 max-w-[600px]">
+            {/* hero content */}
+            <div className="flex flex-col gap-4">
+              <h6 className="text-[#ED3630] font-medium">What you get</h6>
+              <h3 className="text-4xl font-semibold tracking-tight">
+                At Markrich Solutions, our{" "}
+                <span className="text-[#F58A07]">
+                  training sessions include
+                </span>
+              </h3>
+            </div>
+
+            <ul className=" list-disc pl-4 text-slate-800">
+              <li>Interactive Discussions</li>
+              <li>Case Studies</li>
+              <li>Excel based exercises wherever applicable.</li>
+              <li>Pre & Post -Training Assessments</li>
+              <li>Short Quizzes</li>
+            </ul>
+            <hr />
+            <button className="text-[#ED3630] font-semibold max-w-fit">
+              <a href={""}>
+                <div className="flex items-center gap-1">
+                  Learn More{" "}
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </button>
+          </div>
+          <div>
+            <img src={sessionsImage.src} alt="" />
+          </div>
+        </div>
+      </section>
+      <CTASecondary />
+    </>
+  );
+};
+
+export default Delivery;

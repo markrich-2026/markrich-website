@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import NavBar from "@/components/NavBar";
 import "@/styles/globals.css";
 import { Inter, Poppins } from "next/font/google";
 
@@ -29,6 +30,7 @@ export default function App({ Component, pageProps }) {
             font-weight: inherit;
           }
         `}</style>
+        <NavBar />
         <Component {...pageProps} />
       </Layout>
     </>
