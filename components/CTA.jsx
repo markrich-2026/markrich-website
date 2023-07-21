@@ -78,9 +78,9 @@ export const CTASecondary = ({}) => {
             to assist you and provide the information you need. Reach out to us
             now and let's start a conversation!
           </p>
-          <div className="flex gap-3">
+          <div className="flex gap-4">
             <Button text={"Get in touch"} />
-            <Button text={"Explore Our training services"} />
+            <Button text={"Explore Our training services"} highlight/>
           </div>
         </div>
       </div>

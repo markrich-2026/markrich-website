@@ -12,7 +12,7 @@ export const Card = ({ icon, title, text, align }) => {
 
 export const FeatureCard = ({ icon, title, text }) => {
   return (
-    <div className="flex flex-col gap-4 w-full  bg-[#F3FBFF] p-8 rounded-2xl">
+    <div className="flex flex-col gap-4 w-full bg-[#F3FBFF] p-8 rounded-2xl">
       <img className="max-w-[36px]" src={icon.src} alt="" />
       <h6 className="text-xl font-semibold">{title}</h6>
       <p className="text-slate-500 text-base font-medium">{text}</p>
@@ -25,7 +25,7 @@ export const TabsCard = ({ icon, title, text, link }) => {
     <div className="flex flex-col gap-4 w-full max-w-[331px] px-4 py-6 rounded-2xl shadow-md ">
       <h6 className="text-2xl font-semibold text-[#F58A07]">{title}</h6>
       <p className="text-slate-500 text-base pb-4 font-medium">{text}</p>
-      <button className="rounded-full w-fit p-3 bg-[#ED3630] text-white">
+      <button className="rounded-full w-fit p-3 bg-[#ED3630] text-white shadow-rose-300 shadow-sm">
         <a href="">
           <svg
             width="15"
@@ -44,5 +44,25 @@ export const TabsCard = ({ icon, title, text, link }) => {
         </a>
       </button>
     </div>
+  );
+};
+
+export const CaseStudyCard = ({ image, title, link }) => {
+  return (
+    <>
+      <div className="flex gap-4 flex-col w-full mb-2">
+        <div className="flex rounded-lg overflow-hidden">
+          <img className="w-full object-cover" src={image.src} alt="" />
+        </div>
+        <div className="flex flex-col gap-2">
+          <h6 className="text-sm font-medium">{title}</h6>
+          <button className="w-full max-w-fit">
+            <a className="text-[#F58A07]" href={link}>
+              View
+            </a>
+          </button>
+        </div>
+      </div>
+    </>
   );
 };

@@ -33,9 +33,9 @@ const process = [
 const Delivery = () => {
   return (
     <>
-      <section className="min-h-[80vh] flex items-center justify-center">
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-6 px-2 items-center">
-          <div className="flex flex-col gap-8 max-w-[600px]">
+      <section className="min-h-[90vh] flex items-center justify-center px-12 py-6">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-20 px-2 items-center">
+          <div className="flex flex-col gap-8 max-w-[600px] w-full">
             {/* hero content */}
             <div className="flex flex-col gap-4">
               <h6 className="text-[#ED3630] font-medium">How We Work</h6>
@@ -50,7 +50,7 @@ const Delivery = () => {
               with precision and professionalism.
             </p>
           </div>
-          <div className="flex flex-col gap-8 max-w-[500px]">
+          <div className="flex flex-col gap-8 w-full">
             {process.map((ele, ind) => (
               <div className="flex items-center gap-6">
                 <div className="bg-[#fee5c852] rounded-full p-4">
@@ -65,7 +65,7 @@ const Delivery = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-[80vh] flex items-center justify-center">
+      <section className="min-h-[80vh] flex items-center justify-center px-12 py-6">
         <div className="container mx-auto max-w-[1200px] flex justify-between gap-12 px-2 items-center">
           <div className={`flex flex-col gap-2 w-full max-w-[600px]`}>
             <div className="mb-3 shadow-md flex overflow-hidden bg-transparent rounded-2xl">
@@ -99,7 +99,7 @@ const Delivery = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-[80vh] flex items-center justify-center">
+      <section className="min-h-[80vh] flex items-center justify-center px-12 py-6">
         <div className="container mx-auto max-w-[1200px] flex justify-between gap-6 px-2 items-center">
           <div className="flex flex-col gap-8 max-w-[600px]">
             {/* hero content */}

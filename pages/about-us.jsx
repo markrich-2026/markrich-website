@@ -6,7 +6,7 @@ import trainersIcon from "@/public/icons/trainers-icon.svg";
 import approachIcon from "@/public/icons/approach-icon.svg";
 import interactiveIcon from "@/public/icons/interactive-icon.svg";
 import { FeatureCard } from "@/components/Card";
-import CTA from "@/components/CTA";
+import { CTA } from "@/components/CTA";
 import Section from "@/components/Section";
 
 const chooseUsData = [
@@ -49,8 +49,8 @@ const About = () => {
         <span className="text-[#F58A07]">Markrich</span> Solutions
       </Section>
 
-      <section className="min-h-screen flex items-center">
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 px-2 items-center">
+      <section className="min-h-screen flex items-center px-12 py-6">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center">
           <div className="flex flex-col gap-8 max-w-[600px]">
             {/* about us content */}
             <div className="flex flex-col gap-4">
@@ -97,8 +97,8 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-screen flex items-center">
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 px-2 items-center">
+      <section className="min-h-[80vh] flex items-center px-12 py-6">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center">
           <div>
             {/* Hero image */}
             <Image src={aboutImageTwo} />
@@ -131,7 +131,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-screen flex items-center justify-center">
+      <section className="min-h-screen flex items-center justify-center px-12 py-6">
         <div className="container max-w-7xl flex flex-col items-center justify-center gap-16 mt-24">
           <div className="flex flex-col gap-4 items-center">
             <h6 className="text-[#ED3630] font-medium">Why Choose Us?</h6>
@@ -139,7 +139,7 @@ const About = () => {
               Unparalleled Solutions for Your Needs
             </h3>
           </div>
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,600px))] w-full justify-between gap-12">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,550px))] w-full justify-center gap-6">
             {chooseUsData.map((ele, ind) => (
               <FeatureCard
                 title={ele.title}

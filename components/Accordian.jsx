@@ -22,7 +22,7 @@ const AccordionItem = React.forwardRef(
   ({ children, className, ...props }, forwardedRef) => (
     <Accordion.Item
       className={classNames(
-        "w-full transition  mt-px overflow-hidden first:mt-0 first:rounded-t last:rounded-b focus-within:relative focus-within:z-10",
+        "w-full   transition  mt-4 overflow-hidden first:mt-0 first:rounded-t last:rounded-b focus-within:relative focus-within:z-10",
         className
       )}
       {...props}
@@ -38,7 +38,7 @@ const AccordionTrigger = React.forwardRef(
     <Accordion.Header className="flex">
       <Accordion.Trigger
         className={classNames(
-          " hover:bg-mauve2 transition group flex h-[45px] flex-1 font-semibold cursor-default items-center justify-between bg-white px-5 text-[15px] leading-none  outline-none",
+          " hover:bg-mauve2  transition group flex h-[45px] flex-1 font-semibold cursor-default items-center justify-between bg-white text-[15px] leading-none  outline-none",
           className
         )}
         {...props}
@@ -73,13 +73,13 @@ const AccordionContent = React.forwardRef(
   ({ children, className, ...props }, forwardedRef) => (
     <Accordion.Content
       className={classNames(
-        "data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden text-sm font-light",
+        "data-[state=open]:animate-slideDown border-slate-100 border-b-2 data-[state=closed]:animate-slideUp overflow-hidden text-sm font-light",
         className
       )}
       {...props}
       ref={forwardedRef}
     >
-      <div className="py-[15px] px-5">{children}</div>
+      <div className="py-[15px]">{children}</div>
     </Accordion.Content>
   )
 );

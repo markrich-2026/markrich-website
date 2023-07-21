@@ -70,27 +70,27 @@ const tabData = [
       {
         title: "Finance for Non-Finance",
         link: "",
-        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
         title: "Finance for Sales Managers & Executives",
         link: "",
-        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
         title: "Personal Finance sessions",
         link: "",
-        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
         title: "Strategic Cost Management",
         link: "",
-        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
         title: "Working Capital Management",
         link: "",
-        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
     ],
   },
@@ -100,17 +100,17 @@ const tabData = [
       {
         title: "Finance for Non-Finance",
         link: "",
-        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
         title: "Finance for Sales Managers & Executives",
         link: "",
-        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
         title: "Personal Finance sessions",
         link: "",
-        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
     ],
   },
@@ -120,7 +120,7 @@ const tabData = [
       {
         title: "Finance for Non-Finance",
         link: "",
-        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
     ],
   },
@@ -130,12 +130,12 @@ const tabData = [
       {
         title: "Finance for Non-Finance",
         link: "",
-        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
         title: "Finance for Sales Managers & Executives",
         link: "",
-        text: "We dejoy working with disning clients, people for whom qualuty, service, integrity & aesthetics.",
+        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
     ],
   },
@@ -145,7 +145,7 @@ export default function Home() {
   return (
     <>
       {/* hero section */}
-      <main className={`flex min-h-screen `}>
+      <main className={`flex min-h-[90vh] px-12 py-6`}>
         <div className="container mx-auto max-w-[1200px] flex justify-between gap-5 px-2 items-center">
           <div className="flex flex-col gap-8 max-w-[600px]">
             {/* hero content */}
@@ -195,8 +195,8 @@ export default function Home() {
         </div>
       </main>
       {/* areas of work */}
-      <section className="flex min-h-[100vh] py-5 ">
-        <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[4rem] px-2 items-center">
+      <section className="flex min-h-[80vh] px-12 py-6 pb-24 items-center justify-start">
+        <div className="container mx-auto max-w-[1200px] flex flex-col justify-start gap-[4rem] px-2 items-center">
           <div className="flex flex-col gap-4 items-center">
             <h6 className="text-[#ED3630] font-medium">Training areas</h6>
             <h2 className="text-5xl font-semibold tracking-tighter text-center">
@@ -217,7 +217,7 @@ export default function Home() {
         </div>
       </section>
       {/* features section why choose us */}
-      <section className="flex min-h-screen bg-[url('/images/features-bg.svg')]">
+      <section className="flex min-h-screen bg-[url('/images/features-bg.svg')] bg-cover bg-no-repeat px-12 py-6">
         <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[5rem] px-2 ">
           <div className="flex flex-col gap-8 max-w-[650px]">
             {/* hero content */}
@@ -248,7 +248,7 @@ export default function Home() {
         </div>
       </section>
       {/* tabs view training areas */}
-      <section className="flex min-h-[100vh] py-20 ">
+      <section className="flex min-h-[100vh] py-20 px-12">
         <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[4rem] px-2 items-center">
           <div className="flex flex-col gap-4 items-center">
             <h6 className="text-[#ED3630] font-medium">Training areas</h6>

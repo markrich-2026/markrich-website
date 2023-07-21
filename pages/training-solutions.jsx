@@ -1,4 +1,4 @@
-import CTA from "@/components/CTA";
+import { CTA } from "@/components/CTA";
 import { Card } from "@/components/Card";
 import SectionHero from "@/components/Section";
 import trainSol1 from "@/public/icons/training-sol-1.svg";
@@ -62,7 +62,7 @@ const TrainingSolutions = () => {
         <span className="text-[#F58A07]">Training Solutions </span>
         for Finance, Banking, Analytics, and Leadership Development
       </SectionHero>
-      <section className="flex flex-col items-center justify-center py-16 px-8">
+      <section className="flex flex-col items-center justify-center px-12 py-24">
         <div className="container max-w-7xl flex flex-col gap-20 items-center justify-center">
           <div className="flex flex-col gap-4 items-center justify-center">
             <h2 className="text-4xl tracking-tight font-semibold">
