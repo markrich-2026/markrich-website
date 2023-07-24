@@ -6,7 +6,7 @@ import checkIcon from "@/public/icons/check-icon.svg";
 const ContentDevelopmentSection = () => {
   return (
     <section className="min-h-[40vh] flex items-center justify-center">
-      <div className="container mx-auto max-w-[1200px] flex justify-between gap-12 px-2 items-center">
+      <div className="container mx-auto max-w-[1200px] flex justify-between gap-12 px-2 items-center lg:flex-col">
         <div className="flex">
           <img
             className="w-full object-cover"

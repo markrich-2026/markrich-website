@@ -21,16 +21,16 @@ export const CTA = ({ title, text, link }) => {
         }
       `}</style>
 
-      <div className="flex items-center justify-center py-16">
-        <div className="flex flex-col gap-6 items-center justify-center cta__bg min-h-[332px] max-w-6xl rounded-md container">
+      <div className="flex items-center justify-center py-16 lg:px-2">
+        <div className="flex flex-col gap-6 items-center justify-center cta__bg min-h-[332px] max-w-6xl rounded-md container lg:px-4 lg:py-12">
           <div className="flex flex-col gap-4 items-center justify-center">
-            <h6 className="text-white font-medium">Get in touch</h6>
-            <h3 className="text-4xl font-semibold tracking-tight text-white">
+            <h6 className="text-white font-medium sm:text-sm w-full">Get in touch</h6>
+            <h3 className="text-4xl font-semibold tracking-tight text-white md:text-3xl">
               Unparalleled Solutions for Your Needs
             </h3>
           </div>
 
-          <p className="text-white text-center max-w-[800px] font-medium">
+          <p className="text-white text-center max-w-[800px] font-medium md:text-left">
             Invest in your team's professional development and witness the
             transformation within your organization. Contact us today to discuss
             how our corporate training programs can empower your workforce to
@@ -64,7 +64,7 @@ export const CTASecondary = ({}) => {
       `}</style>
 
       <div className="flex items-center justify-center py-16 ">
-        <div className=" flex bg-[url('/images/cta-secondary-bg.svg')] flex-col gap-6  justify-center bg-center bg-cover bg-no-repeat  min-h-[332px] max-w-6xl rounded-md container px-24">
+        <div className=" flex bg-[url('/images/cta-secondary-bg.svg')] flex-col gap-6  justify-center bg-center bg-cover bg-no-repeat  min-h-[332px] max-w-6xl rounded-md container px-24 lg:px-4 lg:py-5">
           <div className="flex flex-col gap-4">
             <h6 className="text-black font-medium">Get in touch</h6>
             <h3 className="text-4xl font-semibold tracking-tight text-black">
@@ -78,9 +78,9 @@ export const CTASecondary = ({}) => {
             to assist you and provide the information you need. Reach out to us
             now and let's start a conversation!
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 md:flex-col">
             <Button text={"Get in touch"} />
-            <Button text={"Explore Our training services"} highlight/>
+            <Button text={"Explore Our training services"} highlight />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import heroImg from "@/public/images/hero-image.svg";
+import heroImg from "@/public/images/hero-image-small.svg";
 import trainingIcon from "@/public/icons/training-icon.svg";
 import analyticsIcon from "@/public/icons/analytics-icon.svg";
 import behaviouralIcon from "@/public/icons/behavioural-icon.svg";
@@ -145,15 +145,17 @@ export default function Home() {
   return (
     <>
       {/* hero section */}
-      <main className={`flex min-h-[90vh] px-12 py-6`}>
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-5 px-2 items-center">
-          <div className="flex flex-col gap-8 max-w-[600px]">
+      <main
+        className={`flex min-h-[90vh] px-12 py-6 lg:px-2 items-center justify-center`}
+      >
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-12 px-2 items-center lg:flex-col-reverse md:flex-col  lg:items-start lg:justify-center">
+          <div className="flex flex-col gap-8 max-w-[600px] lg:max-w-none">
             {/* hero content */}
             <div className="flex flex-col gap-4">
-              <h6 className="text-[#ED3630] font-medium">
+              <h6 className="text-[#ED3630] font-medium md:text-sm">
                 Finance, Analytics, and Behavioural Training
               </h6>
-              <h1 className="text-6xl font-semibold tracking-tighter">
+              <h1 className="text-6xl font-semibold tracking-tighter md:tracking-tight  md:text-4xl">
                 Welcome to <span className="text-[#F58A07]">Markrich</span>{" "}
                 Solutions
               </h1>
@@ -188,42 +190,47 @@ export default function Home() {
               </a>
             </button>
           </div>
-          <div>
+          <div className="lg:max-h-[600px] sm:max-h-[300px] flex">
             {/* Hero image */}
-            <Image src={heroImg} />
+            <img src={heroImg.src} className="w-full object-fill" />
           </div>
         </div>
       </main>
       {/* areas of work */}
-      <section className="flex min-h-[80vh] px-12 py-6 pb-24 items-center justify-start">
+      <section className="flex min-h-[80vh] px-12 py-6 pb-24 items-center justify-start lg:px-2 lg:min-h-[50vh] md:py-24">
         <div className="container mx-auto max-w-[1200px] flex flex-col justify-start gap-[4rem] px-2 items-center">
           <div className="flex flex-col gap-4 items-center">
-            <h6 className="text-[#ED3630] font-medium">Training areas</h6>
-            <h2 className="text-5xl font-semibold tracking-tighter text-center">
+            <h6 className="text-[#ED3630] font-medium md:text-sm">
+              Training areas
+            </h6>
+            <h2 className="text-5xl font-semibold tracking-tighter text-center md:text-4xl">
               Our Core
               <span className="text-[#F58A07]"> training</span> areas
             </h2>
           </div>
-          <div className="flex gap-10 w-full items-center justify-center">
+          <div className="flex gap-10 w-full items-center justify-center md:flex-col text-center">
             {trainingAreas.map((ele, ind) => (
               <Card
                 key={ind}
                 title={ele.title}
                 icon={ele.icon}
                 text={ele.text}
+                align={"md:items-center"}
               />
             ))}
           </div>
         </div>
       </section>
       {/* features section why choose us */}
-      <section className="flex min-h-screen bg-[url('/images/features-bg.svg')] bg-cover bg-no-repeat px-12 py-6">
+      <section className="flex min-h-screen bg-[url('/images/features-bg.svg')] bg-cover bg-no-repeat px-12 py-6 lg:px-2">
         <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[5rem] px-2 ">
           <div className="flex flex-col gap-8 max-w-[650px]">
             {/* hero content */}
             <div className="flex flex-col gap-4 ">
-              <h6 className="text-[#ED3630] font-medium">Why Choose Us?</h6>
-              <h2 className="text-5xl font-semibold tracking-tight leading-tight">
+              <h6 className="text-[#ED3630] font-medium md:text-sm">
+                Why Choose Us?
+              </h6>
+              <h2 className="text-5xl font-semibold tracking-tight leading-tight md:text-4xl">
                 Unlock your team's potential with our{" "}
                 <span className="text-[#F58A07]"> training expertise </span>
               </h2>
@@ -232,10 +239,10 @@ export default function Home() {
               Equip your employees with essential skills to thrive in today's
               competitive environment. Enhance financial acumen, leverage
               data-driven decision-making, and foster a positive work culture
-              with xyzSolutions.
+              with markrichsolutions.
             </p>
           </div>
-          <div className="flex gap-10 w-full ">
+          <div className="flex gap-10 w-full lg:flex-col">
             {features.map((ele, ind) => (
               <FeatureCard
                 key={ind}
@@ -248,12 +255,12 @@ export default function Home() {
         </div>
       </section>
       {/* tabs view training areas */}
-      <section className="flex min-h-[100vh] py-20 px-12">
-        <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[4rem] px-2 items-center">
+      <section className="flex min-h-[100vh] py-20 px-12 md:px-2">
+        <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[4rem] px-2 items-center ">
           <div className="flex flex-col gap-4 items-center">
             <h6 className="text-[#ED3630] font-medium">Training areas</h6>
-            <h2 className="text-5xl font-semibold tracking-tighter text-center leading-11 max-w-[700px]">
-              A collection of all our{" "}
+            <h2 className="text-5xl font-semibold tracking-tighter text-center leading-11 max-w-[700px] md:text-4xl">
+              A collection of our{" "}
               <span className="text-[#F58A07]"> Training Solutions</span>
             </h2>
           </div>

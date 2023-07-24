@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <NavigationMenu.Root className="z-[1] flex w-full items-center justify-center  [&>div]:min-w-[100%] [&>div]:flex [&>div]:justify-center [&>div]:static ">
+    <NavigationMenu.Root className="z-[1] flex w-full items-center justify-center  [&>div]:min-w-[100%] [&>div]:flex [&>div]:justify-center [&>div]:static md:hidden">
       <NavigationMenu.List className="w-full flex max-w-[1200px] list-none bg-white p-1 py-3 px-5 items-center justify-between ">
         <NavigationMenu.Item>
           <Link

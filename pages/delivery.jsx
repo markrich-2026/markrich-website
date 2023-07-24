@@ -33,13 +33,13 @@ const process = [
 const Delivery = () => {
   return (
     <>
-      <section className="min-h-[90vh] flex items-center justify-center px-12 py-6">
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-20 px-2 items-center">
-          <div className="flex flex-col gap-8 max-w-[600px] w-full">
+      <section className="min-h-[90vh] flex items-center justify-center px-12 py-6 lg:px-2">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-20 px-2 items-center lg:flex-col">
+          <div className="flex flex-col gap-8 max-w-[600px] w-full lg:max-w-none">
             {/* hero content */}
             <div className="flex flex-col gap-4">
-              <h6 className="text-[#ED3630] font-medium">How We Work</h6>
-              <h1 className="text-6xl font-semibold tracking-tighter">
+              <h6 className="text-[#ED3630] font-medium md:text-sm">How We Work</h6>
+              <h1 className="text-6xl font-semibold tracking-tighter md:text-5xl">
                 Our Process for <span className="text-[#F58A07]">Success</span>{" "}
               </h1>
             </div>
@@ -52,7 +52,7 @@ const Delivery = () => {
           </div>
           <div className="flex flex-col gap-8 w-full">
             {process.map((ele, ind) => (
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-6 sm:flex-col sm:items-start">
                 <div className="bg-[#fee5c852] rounded-full p-4">
                   <img className="max-w-[30px]" src={ele.icon.src} alt="" />
                 </div>
@@ -65,9 +65,11 @@ const Delivery = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-[80vh] flex items-center justify-center px-12 py-6">
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-12 px-2 items-center">
-          <div className={`flex flex-col gap-2 w-full max-w-[600px]`}>
+      <section className="min-h-[80vh] flex items-center justify-center px-12 py-6 lg:px-2 lg:py-24">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-12 px-2 items-center lg:flex-col">
+          <div
+            className={`flex flex-col gap-2 w-full max-w-[600px] lg:max-w-none`}
+          >
             <div className="mb-3 shadow-md flex overflow-hidden bg-transparent rounded-2xl">
               <img
                 className="w-full object-cover"
@@ -82,7 +84,9 @@ const Delivery = () => {
               Our training experts visit your location to deliver the training.
             </p>
           </div>
-          <div className={`flex flex-col gap-2 w-full max-w-[600px]`}>
+          <div
+            className={`flex flex-col gap-2 w-full max-w-[600px] lg:max-w-none`}
+          >
             <div className="mb-3 shadow-md flex overflow-hidden bg-transparent rounded-2xl">
               <img
                 className="w-full object-cover"
@@ -99,13 +103,13 @@ const Delivery = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-[80vh] flex items-center justify-center px-12 py-6">
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-6 px-2 items-center">
+      <section className="min-h-[80vh] flex items-center justify-center px-12 py-6 lg:px-2">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-6 px-2 items-center lg:flex-col-reverse">
           <div className="flex flex-col gap-8 max-w-[600px]">
             {/* hero content */}
             <div className="flex flex-col gap-4">
-              <h6 className="text-[#ED3630] font-medium">What you get</h6>
-              <h3 className="text-4xl font-semibold tracking-tight">
+              <h6 className="text-[#ED3630] font-medium md:text-sm">What you get</h6>
+              <h3 className="text-4xl font-semibold tracking-tight lg:text-3xl">
                 At Markrich Solutions, our{" "}
                 <span className="text-[#F58A07]">
                   training sessions include
@@ -113,7 +117,7 @@ const Delivery = () => {
               </h3>
             </div>
 
-            <ul className=" list-disc pl-4 text-slate-800">
+            <ul className=" list-disc pl-4 text-slate-800 md:leading-8">
               <li>Interactive Discussions</li>
               <li>Case Studies</li>
               <li>Excel based exercises wherever applicable.</li>

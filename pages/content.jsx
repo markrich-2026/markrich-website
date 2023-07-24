@@ -103,7 +103,7 @@ const Content = () => {
         <span className="text-[#F58A07]">Knowledge</span> and{" "}
         <span className="text-[#F58A07]">Innovation</span>
       </SectionHero>
-      <section className="min-h-[80vh] flex items-center justify-center px-12 py-6">
+      <section className="min-h-[80vh] flex items-center justify-center px-12 py-6 md:px-2">
         <div className="container mx-auto max-w-[1200px] flex justify-between px-2 items-center">
           <TabsComponentSecondary titles={titles} tabData={tabData} />
         </div>

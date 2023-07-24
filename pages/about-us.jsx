@@ -49,13 +49,15 @@ const About = () => {
         <span className="text-[#F58A07]">Markrich</span> Solutions
       </Section>
 
-      <section className="min-h-screen flex items-center px-12 py-6">
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center">
-          <div className="flex flex-col gap-8 max-w-[600px]">
+      <section className="min-h-screen flex items-center px-12 py-6 lg:px-2 sm:py-24">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center lg:flex-col-reverse sm:gap-5">
+          <div className="flex flex-col gap-8 max-w-[600px] md:max-w-none">
             {/* about us content */}
             <div className="flex flex-col gap-4">
-              <h6 className="text-[#ED3630] font-medium">Who we are</h6>
-              <h2 className="text-5xl font-semibold tracking-tighter">
+              <h6 className="text-[#ED3630] font-medium md:text-sm">
+                Who we are
+              </h6>
+              <h2 className="text-5xl font-semibold tracking-tighter md:text-4xl">
                 Welcome to <span className="text-[#F58A07]">Markrich</span>{" "}
                 Solutions
               </h2>
@@ -97,8 +99,8 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-[80vh] flex items-center px-12 py-6">
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center">
+      <section className="min-h-[80vh] flex items-center px-12 py-6 lg:px-2 sm:py-14 sm:min-h-fit">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center md:flex-col">
           <div>
             {/* Hero image */}
             <Image src={aboutImageTwo} />
@@ -131,11 +133,13 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-screen flex items-center justify-center px-12 py-6">
+      <section className="min-h-screen flex items-center justify-center px-12 py-6 lg:px-2 sm:py-14">
         <div className="container max-w-7xl flex flex-col items-center justify-center gap-16 mt-24">
           <div className="flex flex-col gap-4 items-center">
-            <h6 className="text-[#ED3630] font-medium">Why Choose Us?</h6>
-            <h3 className="text-4xl font-semibold tracking-tighter">
+            <h6 className="text-[#ED3630] font-medium w-full">
+              Why Choose Us?
+            </h6>
+            <h3 className="text-4xl font-semibold tracking-tighter sm:text-3xl">
               Unparalleled Solutions for Your Needs
             </h3>
           </div>

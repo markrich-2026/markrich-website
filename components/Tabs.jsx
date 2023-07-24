@@ -41,13 +41,13 @@ const caseStudyData = [
 export const TabsComponent = ({ titles, tabData }) => (
   <Tabs.Root className="flex flex-col w-full  " defaultValue="tab1">
     <Tabs.List
-      className="flex gap-3 justify-between w-full max-w-fit mx-auto"
+      className="flex gap-3 justify-between w-full max-w-fit mx-auto  md:overflow-scroll md:max-w-none tabs__ py-1"
       aria-label=""
     >
       {titles.map((titles, value) => (
         <Tabs.Trigger
           key={value * 3}
-          className="w-full py-3 px-5 text-sm max-w-fit flex items-center justify-center  select-none hover:bg-[#FFF2E2] data-[state=active]:bg-[#FFF2E2]   data-[state=active]:text-[#CF4D16]  data-[state=active]:shadow-current   data-[state=active]:focus:bg-[#FFF2E2] outline-none cursor-pointer transition duration-500 rounded-lg"
+          className="w-full py-3 px-5 text-sm max-w-fit min-w-fit flex items-center justify-center  select-none hover:bg-[#FFF2E2] data-[state=active]:bg-[#FFF2E2]   data-[state=active]:text-[#CF4D16]  data-[state=active]:shadow-current   data-[state=active]:focus:bg-[#FFF2E2] outline-none cursor-pointer transition duration-500 rounded-lg"
           value={titles.value}
         >
           {titles.title}
@@ -78,13 +78,13 @@ export const TabsComponent = ({ titles, tabData }) => (
 export const TabsComponentSecondary = ({ titles, tabData }) => (
   <Tabs.Root className="flex flex-col w-full " defaultValue="tab1">
     <Tabs.List
-      className="flex w-full gap-3 max-w-3xl self-center"
+      className="flex w-full gap-3 max-w-3xl self-center mx-auto   md:overflow-scroll md:max-w-none tabs__ py-1"
       aria-label=""
     >
       {titles.map((titles, value) => (
         <Tabs.Trigger
           key={value * 3}
-          className="w-full py-3 text-sm flex items-center justify-center  select-none hover:bg-[#FFF2E2] data-[state=active]:bg-[#FFF2E2]   data-[state=active]:text-[#CF4D16]  data-[state=active]:shadow-current   data-[state=active]:focus:bg-[#FFF2E2] outline-none cursor-pointer transition duration-500 rounded-lg"
+          className="w-full max-w-fit min-w-fit py-3 px-2 text-sm flex items-center justify-center  select-none hover:bg-[#FFF2E2] data-[state=active]:bg-[#FFF2E2]   data-[state=active]:text-[#CF4D16]  data-[state=active]:shadow-current   data-[state=active]:focus:bg-[#FFF2E2] outline-none cursor-pointer transition duration-500 rounded-lg"
           value={titles.value}
         >
           {titles.title}
