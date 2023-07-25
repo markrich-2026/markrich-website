@@ -33,7 +33,6 @@ const Footer = () => {
               <li>Finance Solutions</li>
               <li>Solutions for financial services domain</li>
               <li>Analytics solutions</li>
-              <li>Analytics solutions</li>
             </ul>
           </div>
           <div className="flex flex-col gap-3 w-full max-w-[250px] md:max-w-none">
@@ -64,7 +63,9 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <p className="text-center text-sm text-slate-500 mx-auto">© Copyright 2023, All Rights Reserved by markrichsolutions</p>
+        <p className="text-center text-sm text-slate-500 mx-auto">
+          © Copyright 2023, All Rights Reserved by markrichsolutions
+        </p>
       </div>
     </footer>
   );

@@ -18,14 +18,13 @@ const ContentDevelopmentSection = () => {
           {/* hero content */}
           <div className="flex flex-col gap-4">
             <h6 className="text-[#ED3630] font-medium">Benefits</h6>
-            <h3 className="text-3xl font-semibold tracking-tight">
-              Captivate Your Audience with our{" "}
-              <span className="text-[#F58A07]">content development</span>{" "}
-              services
+            <h3 className="text-2xl font-semibold tracking-tight">
+              Need content for your LMS? Talk to us. We’ll curate content and
+              share the same to be uploaded to your LMS.
             </h3>
           </div>
 
-          <ul className=" pl-1 text-slate-500 text-sm flex flex-col gap-3">
+          {/* <ul className=" pl-1 text-slate-500 text-sm flex flex-col gap-3">
             <li className="flex gap-3">
               <span className="mt-1 text-[#F58A07]">
                 <img src={checkIcon.src} alt="" />
@@ -58,7 +57,7 @@ const ContentDevelopmentSection = () => {
               </span>
               Short Quizzes
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </section>

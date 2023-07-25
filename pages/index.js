@@ -14,17 +14,17 @@ const trainingAreas = [
   {
     icon: trainingIcon,
     title: "Finance Training",
-    text: "Lorem ipsum amet consectetur adipiscing do eiusmod tempor incididunt ut labore.",
+    text: "Empower your workforce: Finance training from business acumen to bond mathematics, tailored solutions to enhance Financial Acumen and meet your needs.",
   },
   {
     icon: analyticsIcon,
     title: "Analytics Training",
-    text: "Lorem ipsum amet consectetur adipiscing do eiusmod tempor incididunt ut labore.",
+    text: "Tailor-made Finance training covering business acumen, cost optimization, stochastic calculus, and more. Fulfill your workforce's needs with our solutions.",
   },
   {
     icon: behaviouralIcon,
     title: "Behavioural Training",
-    text: "Lorem ipsum amet consectetur adipiscing do eiusmod tempor incididunt ut labore.",
+    text: "Enhance organizational development through behavioral/cultural change: Negotiation, Leadership, First-Time Managers, Communication, Accountability, Presentation, and more training programs available.",
   },
 ];
 const features = [
@@ -50,16 +50,12 @@ const titles = [
     value: "tab1",
   },
   {
-    title: "Solutions for financial services domain",
+    title: "Analytics solutions",
     value: "tab2",
   },
   {
-    title: "Analytics solutions",
-    value: "tab3",
-  },
-  {
     title: "Leadership development solutions",
-    value: "tab4",
+    value: "tab3",
   },
 ];
 
@@ -70,27 +66,58 @@ const tabData = [
       {
         title: "Finance for Non-Finance",
         link: "",
-        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
-        title: "Finance for Sales Managers & Executives",
+        title: "Cost optimization and management",
         link: "",
-        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
-        title: "Personal Finance sessions",
+        title: "Working capital management",
         link: "",
-        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
-        title: "Strategic Cost Management",
+        title: "Personal finance",
         link: "",
-        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
-        title: "Working Capital Management",
+        title: "Investment banking",
         link: "",
-        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
+      },
+      {
+        title: "Treasury management",
+        link: "",
+      },
+      {
+        title: "Ind As, US GAAP, IFRS",
+        link: "",
+      },
+      {
+        title: "Taxation",
+        link: "",
+      },
+      {
+        title: "Corporate finance",
+        link: "",
+      },
+      {
+        title: "Risk management, compliance",
+        link: "",
+      },
+      {
+        title: "Bond mathematics, stochastic calculus",
+        link: "",
+      },
+      {
+        title: "Trade life cycle",
+        link: "",
+      },
+      {
+        title: "SOX, COSCO framework",
+        link: "",
+      },
+      {
+        title: "Financial Markets/ Asset Classes",
+        link: "",
       },
     ],
   },
@@ -98,19 +125,32 @@ const tabData = [
     tab: "tab2",
     data: [
       {
-        title: "Finance for Non-Finance",
+        title: "Business analytics",
         link: "",
-        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
-        title: "Finance for Sales Managers & Executives",
+        title: "Data visualization",
         link: "",
-        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
-        title: "Personal Finance sessions",
+        title: "Power BI, Tableau",
         link: "",
-        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
+      },
+      {
+        title: "Analytics for HR professionals",
+        link: "",
+      },
+      {
+        title: "Customer analytics",
+        link: "",
+      },
+      {
+        title: "Machine learning",
+        link: "",
+      },
+      {
+        title: "Advanced MS Excel training",
+        link: "",
       },
     ],
   },
@@ -118,24 +158,36 @@ const tabData = [
     tab: "tab3",
     data: [
       {
-        title: "Finance for Non-Finance",
+        title: "First time manager training",
         link: "",
-        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
-      },
-    ],
-  },
-  {
-    tab: "tab4",
-    data: [
-      {
-        title: "Finance for Non-Finance",
-        link: "",
-        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
       },
       {
-        title: "Finance for Sales Managers & Executives",
+        title: "Handling difficult conversations",
         link: "",
-        text: "We enjoy working with discerning clients: individuals who value quality, service, integrity, and aesthetics.",
+      },
+      {
+        title: "Accountability",
+        link: "",
+      },
+      {
+        title: "Communication skills",
+        link: "",
+      },
+      {
+        title: "Team building workshops",
+        link: "",
+      },
+      {
+        title: "Campus to corporate",
+        link: "",
+      },
+      {
+        title: "Business communications",
+        link: "",
+      },
+      {
+        title: "Team off-site activities",
+        link: "",
       },
     ],
   },
@@ -148,14 +200,14 @@ export default function Home() {
       <main
         className={`flex min-h-[90vh] px-12 py-6 lg:px-2 items-center justify-center`}
       >
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-12 px-2 items-center lg:flex-col-reverse md:flex-col  lg:items-start lg:justify-center">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-12 px-2 items-center lg:flex-col-reverse md:flex-col  lg:items-center lg:justify-center">
           <div className="flex flex-col gap-8 max-w-[600px] lg:max-w-none">
             {/* hero content */}
             <div className="flex flex-col gap-4">
               <h6 className="text-[#ED3630] font-medium md:text-sm">
                 Finance, Analytics, and Behavioural Training
               </h6>
-              <h1 className="text-6xl font-semibold tracking-tighter md:tracking-tight  md:text-4xl">
+              <h1 className="text-6xl font-semibold tracking-tighter md:tracking-normal md:leading-[1.1]  md:text-5xl">
                 Welcome to <span className="text-[#F58A07]">Markrich</span>{" "}
                 Solutions
               </h1>
@@ -208,7 +260,7 @@ export default function Home() {
               <span className="text-[#F58A07]"> training</span> areas
             </h2>
           </div>
-          <div className="flex gap-10 w-full items-center justify-center md:flex-col text-center">
+          <div className="flex gap-10 w-full items-center justify-center md:flex-col md:text-center">
             {trainingAreas.map((ele, ind) => (
               <Card
                 key={ind}
@@ -235,12 +287,12 @@ export default function Home() {
                 <span className="text-[#F58A07]"> training expertise </span>
               </h2>
             </div>
-            <p className="text-[#18181B]">
+            {/* <p className="text-[#18181B]">
               Equip your employees with essential skills to thrive in today's
               competitive environment. Enhance financial acumen, leverage
               data-driven decision-making, and foster a positive work culture
               with markrichsolutions.
-            </p>
+            </p> */}
           </div>
           <div className="flex gap-10 w-full lg:flex-col">
             {features.map((ele, ind) => (

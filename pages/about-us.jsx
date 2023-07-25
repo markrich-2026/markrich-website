@@ -114,9 +114,8 @@ const About = () => {
               </h3>
             </div>
             <p className="text-[#18181B]">
-              Lorem ipsum amet consectetur adipiscing do eiusmod tempor
-              incididunt ut labore. Lorem ipsum amet consectetur adipiscing do
-              eiusmod tempor incididunt ut labore.
+              To ensure customer satisfaction in all our client engagements and
+              to gain our clients’ trust through our work.
             </p>
             <hr />
             <div className="flex flex-col gap-4">
@@ -126,9 +125,7 @@ const About = () => {
               </h3>
             </div>
             <p className="text-[#18181B]">
-              Lorem ipsum amet consectetur adipiscing do eiusmod tempor
-              incididunt ut labore. Lorem ipsum amet consectetur adipiscing do
-              eiusmod tempor incididunt ut labore.
+              To be the partner of choice for all corporate training needs
             </p>
           </div>
         </div>

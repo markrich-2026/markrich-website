@@ -11,21 +11,21 @@ const process = [
   {
     title: "Understanding Needs",
     icon: process1,
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde pariatur delectus molestias cumque iure, tempore eius.",
+    text: "We do not believe in providing run-off the mill solutions. Our experts invest time in understanding the need and the actual outcome that is expected from our solutions. We do this through stake holder calls, meetings, focus-group discussions, etc. ",
   },
   {
     title: "Creating Customized Solutions",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde pariatur delectus molestias cumque iure, tempore eius.",
+    text: "We create solutions that contextualize concepts and examples to your organization’s requirements. Case studies, roleplays, quizzes, etc. are created to ensure maximum learning. As and when applicable, industry insights and happenings are included as well.",
     icon: process2,
   },
   {
     title: "Delivery",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde pariatur delectus molestias cumque iure, tempore eius.",
+    text: "We create solutions that contextualize concepts and examples to your organization’s requirements. Case studies, roleplays, quizzes, etc. are created to ensure maximum learning. As and when applicable, industry insights and happenings are included as well.",
     icon: process3,
   },
   {
     title: "Post-Implementation Feedback",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde pariatur delectus molestias cumque iure, tempore eius.",
+    text: "We take feedback seriously, because we strive to learn and improve continuously.",
     icon: process4,
   },
 ];
@@ -38,7 +38,9 @@ const Delivery = () => {
           <div className="flex flex-col gap-8 max-w-[600px] w-full lg:max-w-none">
             {/* hero content */}
             <div className="flex flex-col gap-4">
-              <h6 className="text-[#ED3630] font-medium md:text-sm">How We Work</h6>
+              <h6 className="text-[#ED3630] font-medium md:text-sm">
+                How We Work
+              </h6>
               <h1 className="text-6xl font-semibold tracking-tighter md:text-5xl">
                 Our Process for <span className="text-[#F58A07]">Success</span>{" "}
               </h1>
@@ -108,7 +110,9 @@ const Delivery = () => {
           <div className="flex flex-col gap-8 max-w-[600px]">
             {/* hero content */}
             <div className="flex flex-col gap-4">
-              <h6 className="text-[#ED3630] font-medium md:text-sm">What you get</h6>
+              <h6 className="text-[#ED3630] font-medium md:text-sm">
+                What you get
+              </h6>
               <h3 className="text-4xl font-semibold tracking-tight lg:text-3xl">
                 At Markrich Solutions, our{" "}
                 <span className="text-[#F58A07]">

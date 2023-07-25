@@ -41,7 +41,7 @@ const caseStudyData = [
 export const TabsComponent = ({ titles, tabData }) => (
   <Tabs.Root className="flex flex-col w-full  " defaultValue="tab1">
     <Tabs.List
-      className="flex gap-3 justify-between w-full max-w-fit mx-auto  md:overflow-scroll md:max-w-none tabs__ py-1"
+      className="flex gap-3 justify-between w-full max-w-fit mx-auto  lg:overflow-scroll lg:max-w-none tabs__ py-1"
       aria-label=""
     >
       {titles.map((titles, value) => (
@@ -78,13 +78,13 @@ export const TabsComponent = ({ titles, tabData }) => (
 export const TabsComponentSecondary = ({ titles, tabData }) => (
   <Tabs.Root className="flex flex-col w-full " defaultValue="tab1">
     <Tabs.List
-      className="flex w-full gap-3 max-w-3xl self-center mx-auto   md:overflow-scroll md:max-w-none tabs__ py-1"
+      className="flex w-full gap-3 max-w-3xl self-center mx-auto   lg:overflow-scroll lg:max-w-none tabs__ py-1 justify-center"
       aria-label=""
     >
       {titles.map((titles, value) => (
         <Tabs.Trigger
           key={value * 3}
-          className="w-full max-w-fit min-w-fit py-3 px-2 text-sm flex items-center justify-center  select-none hover:bg-[#FFF2E2] data-[state=active]:bg-[#FFF2E2]   data-[state=active]:text-[#CF4D16]  data-[state=active]:shadow-current   data-[state=active]:focus:bg-[#FFF2E2] outline-none cursor-pointer transition duration-500 rounded-lg"
+          className="w-full max-w-fit min-w-fit py-3 px-4 text-sm flex items-center justify-center  select-none hover:bg-[#FFF2E2] data-[state=active]:bg-[#FFF2E2]   data-[state=active]:text-[#CF4D16]  data-[state=active]:shadow-current   data-[state=active]:focus:bg-[#FFF2E2] outline-none cursor-pointer transition duration-500 rounded-lg"
           value={titles.value}
         >
           {titles.title}
@@ -97,21 +97,39 @@ export const TabsComponentSecondary = ({ titles, tabData }) => (
         className="grow bg-white rounded-b-md outline-none  pt-20 py-5"
         value={ele.tab}
       >
-        <div className="">
+        <div className="mx-auto">
           {ele?.title === "question-bank" && (
-            <div className="">
-              <AccordionComponent data={ele.data} />
+            <div className="max-w-3xl mx-auto">
+              {/* <AccordionComponent data={ele.data} /> */}
+              <div className="flex flex-col gap-4 justify-center items-center text-center">
+                <h6 className="text-[#ED3630] font-medium">Question bank</h6>
+                <h3 className="text-2xl font-semibold tracking-tight">
+                  Create interesting question banks with us , to stimulate your
+                  employees’ knowledge. Use question banks to reinforce
+                  conceptual and process learnings . Have weekly quizzes at
+                  work, make it engaging.
+                </h3>
+              </div>
             </div>
           )}
           {ele?.title === "case-study" && (
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-9 justify-items-center">
-              {caseStudyData.map((caseStudy, index) => (
-                <CaseStudyCard
-                  image={caseStudy.image}
-                  title={caseStudy.title}
-                  link={caseStudy.link}
-                />
-              ))}
+            // <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-9 justify-items-center">
+            //   {caseStudyData.map((caseStudy, index) => (
+            //     <CaseStudyCard
+            //       image={caseStudy.image}
+            //       title={caseStudy.title}
+            //       link={caseStudy.link}
+            //     />
+            //   ))}
+            // </div>
+            <div className="max-w-3xl mx-auto">
+              <div className="flex flex-col gap-4 justify-center items-center text-center">
+                <h6 className="text-[#ED3630] font-medium">Case study</h6>
+                <h3 className="text-2xl font-semibold tracking-tight">
+                  We’re happy to provide case studies, that can be used to
+                  enhance the learning experience for your teams.
+                </h3>
+              </div>
             </div>
           )}
           {ele?.title === "content-development" && (
