@@ -62,20 +62,20 @@ const TrainingSolutions = () => {
         <span className="text-[#F58A07]">Training Solutions </span>
         for Finance, Banking, Analytics, and Leadership Development
       </SectionHero>
-      <section className="flex flex-col items-center justify-center px-12 py-24">
+      <section className="flex flex-col items-center justify-center px-12 py-24 lg:px-4">
         <div className="container max-w-7xl flex flex-col gap-20 items-center justify-center">
           <div className="flex flex-col gap-4 items-center justify-center">
-            <h2 className="text-4xl tracking-tight font-semibold">
+            <h2 className="text-4xl tracking-tight font-semibold text-center md:text-left md:text-3xl">
               Our Diverse{" "}
               <span className="text-[#F58A07]">Training Solutions</span>
             </h2>
-            <p className="max-w-2xl text-center">
+            <p className="max-w-2xl text-center md:text-left">
               Enhance your skills and knowledge in finance, banking, analytics,
               and leadership development with our comprehensive training
               solutions.
             </p>
           </div>
-          <div className="  w-full  grid grid-cols-2 grid-rows-3 justify-items-center justify-center gap-20 ">
+          <div className="  w-full  justify-items-center justify-center gap-20 grid grid-cols-[repeat(auto-fill,minmax(300px,500px))]">
             {trainingSolution.map((ele, ind) => (
               <Card title={ele.title} text={ele.text} icon={ele.icon} />
             ))}

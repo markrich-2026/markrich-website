@@ -8,7 +8,7 @@ const SectionHero = ({ background, metaTitle, subText, children, height }) => {
         background ? "bg-[url('/images/section-background.png')]" : ""
       } min-h-[${
         height ? height : "80vh"
-      }] bg-no-repeat px-12 py-6 bg-[length:200%_100%] bg-center flex items-start justify-center lg:px-2 md:min-h-[70vh]`}
+      }] bg-no-repeat px-12 py-6 bg-[length:200%_100%] bg-center flex items-start justify-center lg:px-2 lg:min-h-[70vh]`}
     >
       <div className="w-full max-w-7xl flex flex-col items-center justify-start gap-6 mt-16 h-full">
         <div className="flex flex-col gap-4 items-center justify-center">

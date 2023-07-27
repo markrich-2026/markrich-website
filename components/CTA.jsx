@@ -23,8 +23,10 @@ export const CTA = ({ title, text, link }) => {
 
       <div className="flex items-center justify-center py-16 lg:px-2">
         <div className="flex flex-col gap-6 items-center justify-center cta__bg min-h-[332px] max-w-6xl rounded-md container lg:px-4 lg:py-12">
-          <div className="flex flex-col gap-4 items-center justify-center">
-            <h6 className="text-white font-medium sm:text-sm w-full">Get in touch</h6>
+          <div className="flex flex-col gap-4 items-center justify-center text-center sm:text-left">
+            <h6 className="text-white font-medium sm:text-sm w-full">
+              Get in touch
+            </h6>
             <h3 className="text-4xl font-semibold tracking-tight text-white md:text-3xl">
               Unparalleled Solutions for Your Needs
             </h3>
@@ -63,8 +65,8 @@ export const CTASecondary = ({}) => {
         }
       `}</style>
 
-      <div className="flex items-center justify-center py-16 ">
-        <div className=" flex bg-[url('/images/cta-secondary-bg.svg')] flex-col gap-6  justify-center bg-center bg-cover bg-no-repeat  min-h-[332px] max-w-6xl rounded-md container px-24 lg:px-4 lg:py-5">
+      <div className="flex items-center justify-center py-20 md:py-12">
+        <div className=" flex bg-[url('/images/cta-secondary-bg.svg')] flex-col gap-6  justify-center bg-center bg-cover bg-no-repeat  min-h-[332px] max-w-6xl rounded-md container px-24 lg:px-4 lg:py-20">
           <div className="flex flex-col gap-4">
             <h6 className="text-black font-medium">Get in touch</h6>
             <h3 className="text-4xl font-semibold tracking-tight text-black">

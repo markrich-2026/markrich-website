@@ -57,16 +57,17 @@ export const TabsComponent = ({ titles, tabData }) => (
     {tabData.map((ele, ind) => (
       <Tabs.Content
         key={ind * 2}
-        className="grow bg-white rounded-b-md outline-none  pt-20 py-5"
+        className="grow bg-white rounded-b-md outline-none pt-20 py-5 items-center justify-center"
         value={ele.tab}
       >
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(370px,370px))] gap-3">
+        <div className="gap-3 grid grid-cols-[repeat(auto-fill,minmax(300px,550px))] lg:grid-cols-[repeat(auto-fill,minmax(300px,100%))] w-full justify-center items-center">
           {ele.data.map((card, index) => (
             <TabsCard
               key={index * 5}
               title={card.title}
               text={card.text}
               link={card?.link}
+              value={index + 1}
             />
           ))}
         </div>
@@ -78,7 +79,7 @@ export const TabsComponent = ({ titles, tabData }) => (
 export const TabsComponentSecondary = ({ titles, tabData }) => (
   <Tabs.Root className="flex flex-col w-full " defaultValue="tab1">
     <Tabs.List
-      className="flex w-full gap-3 max-w-3xl self-center mx-auto   lg:overflow-scroll lg:max-w-none tabs__ py-1 justify-center"
+      className="flex w-full gap-3 max-w-3xl self-center mx-auto   lg:overflow-scroll lg:max-w-none tabs__ py-1 justify-center lg:justify-start"
       aria-label=""
     >
       {titles.map((titles, value) => (
@@ -104,9 +105,8 @@ export const TabsComponentSecondary = ({ titles, tabData }) => (
               <div className="flex flex-col gap-4 justify-center items-center text-center">
                 <h6 className="text-[#ED3630] font-medium">Question bank</h6>
                 <h3 className="text-2xl font-semibold tracking-tight">
-                  Create interesting question banks with us , to stimulate your
-                  employees’ knowledge. Use question banks to reinforce
-                  conceptual and process learnings . Have weekly quizzes at
+                  Create interesting question banks with us, to stimulate your
+                  employees' knowledge. Have weekly quizzes at
                   work, make it engaging.
                 </h3>
               </div>
@@ -126,7 +126,7 @@ export const TabsComponentSecondary = ({ titles, tabData }) => (
               <div className="flex flex-col gap-4 justify-center items-center text-center">
                 <h6 className="text-[#ED3630] font-medium">Case study</h6>
                 <h3 className="text-2xl font-semibold tracking-tight">
-                  We’re happy to provide case studies, that can be used to
+                  We're happy to provide case studies, that can be used to
                   enhance the learning experience for your teams.
                 </h3>
               </div>

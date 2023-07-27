@@ -49,9 +49,9 @@ const About = () => {
         <span className="text-[#F58A07]">Markrich</span> Solutions
       </Section>
 
-      <section className="min-h-screen flex items-center px-12 py-6 lg:px-2 sm:py-24">
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center lg:flex-col-reverse sm:gap-5">
-          <div className="flex flex-col gap-8 max-w-[600px] md:max-w-none">
+      <section className="min-h-screen flex items-center px-12 py-6 lg:px-4 sm:py-24">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center lg:flex-col-reverse lg:gap-5">
+          <div className="flex flex-col gap-8 max-w-[600px] lg:max-w-none">
             {/* about us content */}
             <div className="flex flex-col gap-4">
               <h6 className="text-[#ED3630] font-medium md:text-sm">
@@ -93,23 +93,23 @@ const About = () => {
               </a>
             </button>
           </div>
-          <div>
+          <div className="lg:w-full flex">
             {/* Hero image */}
-            <Image src={aboutImage} />
+            <img src={aboutImage.src} className="w-full" />
           </div>
         </div>
       </section>
-      <section className="min-h-[80vh] flex items-center px-12 py-6 lg:px-2 sm:py-14 sm:min-h-fit">
-        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center md:flex-col">
-          <div>
+      <section className="min-h-[80vh] flex items-center px-12 py-6 lg:px-4 sm:py-14 sm:min-h-fit">
+        <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center lg:flex-col">
+          <div className="flex w-full">
             {/* Hero image */}
-            <Image src={aboutImageTwo} />
+            <img src={aboutImageTwo.src} className="w-full" />
           </div>
-          <div className="flex flex-col gap-8 max-w-[600px]">
+          <div className="flex flex-col gap-8 max-w-[600px] lg:max-w-none">
             {/* about us content */}
             <div className="flex flex-col gap-4">
               {/* <h6 className="text-[#ED3630] font-medium">Who we are</h6> */}
-              <h3 className="text-4xl font-semibold tracking-tighter">
+              <h3 className="text-4xl font-semibold tracking-tight er">
                 Our Mission
               </h3>
             </div>
@@ -130,9 +130,9 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-screen flex items-center justify-center px-12 py-6 lg:px-2 sm:py-14">
+      <section className="min-h-screen flex items-center justify-center px-12 py-6 lg:px-4 sm:py-14">
         <div className="container max-w-7xl flex flex-col items-center justify-center gap-16 mt-24">
-          <div className="flex flex-col gap-4 items-center">
+          <div className="flex flex-col gap-4 items-center text-center sm:text-left">
             <h6 className="text-[#ED3630] font-medium w-full">
               Why Choose Us?
             </h6>
@@ -140,7 +140,7 @@ const About = () => {
               Unparalleled Solutions for Your Needs
             </h3>
           </div>
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,550px))] w-full justify-center gap-6">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,550px))] lg:grid-cols-[repeat(auto-fill,minmax(300px,100%))] w-full justify-center gap-6">
             {chooseUsData.map((ele, ind) => (
               <FeatureCard
                 title={ele.title}

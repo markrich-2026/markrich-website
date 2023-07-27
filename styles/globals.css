@@ -32,3 +32,10 @@ body {
   background-color: #fff2e2;
   border: 1px solid white;
 }
+
+@media (max-width: 800px) {
+  .tabs__::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+  }
+}
