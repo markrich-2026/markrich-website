@@ -33,68 +33,81 @@ const ContactUs = () => {
     number: "",
     message: "",
   });
-  const [mailSent, setmailSent] = useState(false);
-  const [error, setError] = useState(null);
-
-  const [isToken, setToken] = useState("");
-  const [tokenerror, setTokenerror] = useState(false);
-  const [isDisabled, setDisabled] = useState(true);
-
+  const [mailSent, setmailSent] = useState();
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
   // const [isChecked, setChecked] = useState(false);
   const handleChange = (event) => {
     setInput({ ...useInput, [event.target.name]: event.target.value });
   };
-  const API_PATH = "/contact.php";
-  const handleCaptchaChange = (token) => {
-    console.log(token);
-    console.log(isToken);
-    if (!token) {
-      setTokenerror("You must verify the captcha");
-      return;
-    }
-    console.log(token.length);
-    if (token.length > 0) {
-      setToken(token);
-      console.log(isToken);
-      // const googleVerifyURL = `https://www.google.com/recaptcha/api/siteverify?secret=${"6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe"}&token=${token}`;
-      // const response = await axios.post(googleVerifyURL)
-      // const {sucess} = response.data
-      // if(sucess) {
-      //   return res.json({sucess: true})
-      // }
-      setDisabled(false);
-    }
-    setTokenerror("");
-  };
+
+  // const handleCaptchaChange = (token) => {
+  //   console.log(token);
+  //   console.log(isToken);
+  //   if (!token) {
+  //     setTokenerror("You must verify the captcha");
+  //     return;
+  //   }
+  //   console.log(token.length);
+  //   if (token.length > 0) {
+  //     setToken(token);
+  //     console.log(isToken);
+  //     // const googleVerifyURL = `https://www.google.com/recaptcha/api/siteverify?secret=${"6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe"}&token=${token}`;
+  //     // const response = await axios.post(googleVerifyURL)
+  //     // const {sucess} = response.data
+  //     // if(sucess) {
+  //     //   return res.json({sucess: true})
+  //     // }
+  //     setDisabled(false);
+  //   }
+  //   setTokenerror("");
+  // };
   const handleFormSubmit = (event) => {
     event.preventDefault();
     console.log(useInput);
-    isDisabled
-      ? setTokenerror(true)
-      : axios({
-          method: "post",
-          url: `${API_PATH}`,
-          headers: { "content-type": "application/json" },
-          data: useInput,
-        })
-          .then((result) => {
-            if (result.data.code === 200) {
-              setmailSent(result.data.code);
+    axios({
+      method: "post",
+      url: `${process.env.API_PATH}`,
+      headers: { "content-type": "application/json" },
+      data: useInput,
+    })
+      .then((result) => {
+        console.log(result, "THIS IS WHAT YOU GET AFTER PHP ENDPOINT HIT");
+        if (result.status === 200) {
+          console.log("SENTTT MAILLL");
+          if (result.data.sent) {
+            setmailSent(true);
+            setSuccess(result.data.message);
+            setError(false);
+            setTimeout(() => {
+              setSuccess(false);
               setError(false);
-              setInput({
-                fname: "",
-                email: "",
-                compName: "",
-                number: "",
-              });
-            } else {
-              setError(true);
-            }
-            // setInput({
-            //   mailSent: result.data.sent,
-            // });
-          })
-          .catch((error) => setError(error.message));
+            }, 5000);
+          } else {
+            setmailSent(false);
+            setError(result.data.message);
+            setSuccess(false);
+            setTimeout(() => {
+              setSuccess(false);
+              setError(false);
+            }, 5000);
+          }
+          setInput({
+            fname: "",
+            lname: "",
+            email: "",
+            message: "",
+            number: "",
+          });
+        } else {
+          console.log("FAILED SENDING");
+          setError(true);
+        }
+        // setInput({
+        //   mailSent: result.data.sent,
+        // });
+      })
+      .catch((error) => setError(error.message));
   };
 
   return (
@@ -229,7 +242,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   value={useInput.number}
-                  type="text"
+                  type="tel"
                   id="number"
                   name="number"
                   className="rounded-lg border border-gray-300 bg-white px-4 py-2 shadow-xs w-full text-slate-300"
@@ -260,6 +273,18 @@ const ContactUs = () => {
                 <Button text={"Submit"} highlight type={"submit"} />
               </div>
             </form>
+            {success && (
+              <div
+                className={`w-full px-2 py-3 bg-lime-100 text-lime-600 rounded-md text-sm`}
+              >
+                <p>{success}</p>
+              </div>
+            )}
+            {error && (
+              <div className="w-full px-2 py-3 bg-red-100 text-red-600 rounded-md text-sm">
+                <p>{error}</p>
+              </div>
+            )}
           </div>
           <div className="flex w-full md:hidden">
             <img className="w-full object-fit" src={contactImage.src} alt="" />
