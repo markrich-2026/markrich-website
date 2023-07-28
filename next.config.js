@@ -6,7 +6,7 @@ const nextConfig = {
     unoptimized: true,
   },
   env: {
-    API_PATH: "https://syspreesolutions.com/markrich/index.php",
+    API_PATH: "http://markrich-api.syspreesolutions.com/index.php",
   },
 };
 

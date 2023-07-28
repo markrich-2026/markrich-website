@@ -10,8 +10,7 @@ const contactInfo = [
   {
     icon: phoneIcon,
     title: "Phone",
-    content:
-      "Lorem ipsum dolor sit amit eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
+    content: "+91-9702551632",
   },
   {
     icon: mailIcon,
@@ -20,8 +19,9 @@ const contactInfo = [
   },
   {
     icon: locationIcon,
-    title: "Call us",
-    content: "+91-9702551632",
+    title: "Reach us at",
+    content:
+      "Lorem ipsum dolor sit amit eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
   },
 ];
 

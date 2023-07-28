@@ -38,7 +38,7 @@ export const CTA = ({ title, text, link }) => {
             how our corporate training programs can empower your workforce to
             reach new heights of success.
           </p>
-          <Button text={"Get in touch"} />
+          <Button text={"Get in touch"} link={"/contact-us"} />
         </div>
       </div>
     </>
@@ -81,8 +81,12 @@ export const CTASecondary = ({}) => {
             now and let's start a conversation!
           </p>
           <div className="flex gap-4 md:flex-col">
-            <Button text={"Get in touch"} />
-            <Button text={"Explore Our training services"} highlight />
+            <Button text={"Get in touch"} link={"/contact-us"} />
+            <Button
+              text={"Explore Our training services"}
+              highlight
+              link={"/training-solutions"}
+            />
           </div>
         </div>
       </div>

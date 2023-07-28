@@ -7,6 +7,7 @@ import trainingImage from "@/public/images/about-instructor-training.svg";
 import offlineImage from "@/public/images/about-offline-trainings.svg";
 import sessionsImage from "@/public/images/about-sessions.svg";
 import { CTA, CTASecondary } from "@/components/CTA";
+import Link from "next/link";
 const process = [
   {
     title: "Understanding Needs",
@@ -130,7 +131,7 @@ const Delivery = () => {
             </ul>
             <hr />
             <button className="text-[#ED3630] font-semibold max-w-fit">
-              <a href={""}>
+              <Link href={"/contact-us"}>
                 <div className="flex items-center gap-1">
                   Learn More{" "}
                   <svg
@@ -148,7 +149,7 @@ const Delivery = () => {
                     ></path>
                   </svg>
                 </div>
-              </a>
+              </Link>
             </button>
           </div>
           <div>
