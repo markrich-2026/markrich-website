@@ -198,7 +198,7 @@ export default function Home() {
     <>
       {/* hero section */}
       <main
-        className={`flex min-h-[90vh] px-12 py-6 lg:px-2 items-center justify-center`}
+        className={`flex min-h-[90vh] px-12 py-6 lg:px-2 items-center justify-center bg-[url('/images/section-background-2.svg')]`}
       >
         <div className="container mx-auto max-w-[1200px] flex justify-between gap-12 px-2 items-center lg:flex-col-reverse md:flex-col  lg:items-center lg:justify-center">
           <div className="flex flex-col gap-8 max-w-[600px] lg:max-w-none">

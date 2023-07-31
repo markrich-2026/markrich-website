@@ -45,13 +45,16 @@ const Footer = () => {
                   alt=""
                 />
               </li>
-              <li>
+              <a
+                href="https://www.linkedin.com/company/markrich-solutions-llp"
+                target="_blank"
+              >
                 <img
                   src={linkedinIcon.src}
                   className="w-full object-fit max-w-[40px]"
                   alt=""
                 />
-              </li>
+              </a>
               <li>
                 <img
                   src={twIcon.src}

@@ -60,7 +60,7 @@ export const TabsComponent = ({ titles, tabData }) => (
         className="grow bg-white rounded-b-md outline-none pt-20 py-5 items-center justify-center"
         value={ele.tab}
       >
-        <div className="gap-3 grid grid-cols-[repeat(auto-fill,minmax(300px,550px))] lg:grid-cols-[repeat(auto-fill,minmax(300px,100%))] w-full justify-center items-center">
+        <div className="gap-3 grid grid-cols-[repeat(auto-fill,minmax(300px,550px))] lg:grid-cols-[repeat(auto-fill,minmax(300px,100%))] w-full justify-center items-center ">
           {ele.data.map((card, index) => (
             <TabsCard
               key={index * 5}
@@ -106,8 +106,8 @@ export const TabsComponentSecondary = ({ titles, tabData }) => (
                 <h6 className="text-[#ED3630] font-medium">Question bank</h6>
                 <h3 className="text-2xl font-semibold tracking-tight">
                   Create interesting question banks with us, to stimulate your
-                  employees' knowledge. Have weekly quizzes at
-                  work, make it engaging.
+                  employees' knowledge. Have weekly quizzes at work, make it
+                  engaging.
                 </h3>
               </div>
             </div>
