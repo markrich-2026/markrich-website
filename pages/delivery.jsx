@@ -1,4 +1,5 @@
 import React from "react";
+import { NextSeo } from "next-seo";
 import process1 from "@/public/icons/process-icon-1.svg";
 import process2 from "@/public/icons/process-icon-2.svg";
 import process3 from "@/public/icons/process-icon-3.svg";
@@ -34,6 +35,33 @@ const process = [
 const Delivery = () => {
   return (
     <>
+      <NextSeo
+        title="Markrich Solutions | Delivery"
+        description="Discover the streamlined and efficient approach of Markrich Solutions LLP. Our proven process guarantees precision and professionalism in delivering exceptional results for every project we undertake."
+        canonical="https://markrich.vercel.app/delivery"
+        openGraph={{
+          url: "https://markrich.vercel.app/",
+          title:
+            "Empower Your Team with Markrich Solutions - Enhance Financial Acumen, Data-Driven Decision-Making, and Positive Work Culture",
+          description:
+            "Equip your employees with essential skills to thrive in today's competitive environment. Enhance financial acumen, leverage data-driven decision-making, and foster a positive work culture with Markrich Solutions.",
+          images: [
+            {
+              url: "https://cdn.discordapp.com/attachments/451417960196603906/1136557885766258688/og-thumb.jpg",
+              width: 1200,
+              height: 600,
+              alt: "Markrich company header",
+              type: "image/jpg",
+            },
+          ],
+          siteName: "Markrichsolutions",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "@markrichsolutions",
+          cardType: "summary_large_image",
+        }}
+      />
       <section className="min-h-[90vh] flex items-center justify-center px-12 py-6 lg:px-2">
         <div className="container mx-auto max-w-[1200px] flex justify-between gap-20 px-2 items-center lg:flex-col">
           <div className="flex flex-col gap-8 max-w-[600px] w-full lg:max-w-none">
