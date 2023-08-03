@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import { NextSeo } from "next-seo";
 import heroImg from "@/public/images/hero-image-small.svg";
 import trainingIcon from "@/public/icons/training-icon.svg";
 import analyticsIcon from "@/public/icons/analytics-icon.svg";
@@ -197,6 +197,33 @@ export default function Home() {
   return (
     <>
       {/* hero section */}
+      <NextSeo
+        title="Empower Your Team with Markrich Solutions - Enhance Financial Acumen, Data-Driven Decision-Making, and Positive Work Culture"
+        description="Equip your employees with essential skills to thrive in today's competitive environment. Enhance financial acumen, leverage data-driven decision-making, and foster a positive work culture with Markrich Solutions."
+        canonical="https://markrich.vercel.app/"
+        openGraph={{
+          url: "https://markrich.vercel.app/",
+          title:
+            "Empower Your Team with Markrich Solutions - Enhance Financial Acumen, Data-Driven Decision-Making, and Positive Work Culture",
+          description:
+            "Equip your employees with essential skills to thrive in today's competitive environment. Enhance financial acumen, leverage data-driven decision-making, and foster a positive work culture with Markrich Solutions.",
+          images: [
+            {
+              url: "https://cdn.discordapp.com/attachments/451417960196603906/1136557885766258688/og-thumb.jpg",
+              width: 1200,
+              height: 600,
+              alt: "Markrich company header",
+              type: "image/jpg",
+            },
+          ],
+          siteName: "Markrichsolutions",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "@markrichsolutions",
+          cardType: "summary_large_image",
+        }}
+      />
       <main
         className={`flex min-h-[90vh] px-12 py-6 lg:px-2 items-center justify-center bg-[url('/images/section-background-2.svg')]`}
       >
