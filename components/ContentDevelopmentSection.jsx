@@ -1,5 +1,5 @@
 import React from "react";
-import contentDevImage from "@/public/images/content-development-image.svg";
+import contentDevImage from "@/public/images/content-development-image.webp";
 import checkIcon from "@/public/icons/check-icon.svg";
 
 // temporary content component

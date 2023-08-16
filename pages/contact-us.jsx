@@ -5,7 +5,7 @@ import locationIcon from "@/public/icons/location-icon.svg";
 import mailIcon from "@/public/icons/mail-icon.svg";
 import phoneIcon from "@/public/icons/phone-icon.svg";
 import Button from "@/components/Button";
-import contactImage from "@/public/images/contact-image.svg";
+import contactImage from "@/public/images/contact-image.webp";
 import axios from "axios";
 const contactInfo = [
   {
@@ -283,7 +283,7 @@ const ContactUs = () => {
                 ></textarea>
               </div>
               <ReCAPTCHA
-                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                sitekey="6LfBF5knAAAAADFYohGAocEtFlrUZQQ8-l8QbQzN"
                 onChange={onChange}
                 ref={captchaRef}
               />

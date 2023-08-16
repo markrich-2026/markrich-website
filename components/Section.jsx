@@ -5,7 +5,7 @@ const SectionHero = ({ background, metaTitle, subText, children, height }) => {
   return (
     <section
       className={`${
-        background ? "bg-[url('/images/section-background.png')]" : ""
+        background ? "bg-[url('/images/section-background.webp')]" : ""
       } min-h-[${
         height ? height : "80vh"
       }] bg-no-repeat px-12 py-6 bg-[length:200%_100%] bg-center flex items-start justify-center lg:px-2 lg:min-h-[70vh]`}

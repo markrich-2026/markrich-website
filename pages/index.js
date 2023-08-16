@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { NextSeo } from "next-seo";
-import heroImg from "@/public/images/hero-image-small.svg";
+import heroImg from "@/public/images/hero-image-small.webp";
 import trainingIcon from "@/public/icons/training-icon.svg";
 import analyticsIcon from "@/public/icons/analytics-icon.svg";
 import behaviouralIcon from "@/public/icons/behavioural-icon.svg";
@@ -9,6 +9,7 @@ import approachIcon from "@/public/icons/approach-icon.svg";
 import interactiveIcon from "@/public/icons/interactive-icon.svg";
 import { Card, FeatureCard } from "@/components/Card";
 import { TabsComponent } from "@/components/Tabs";
+import Link from "next/link";
 
 const trainingAreas = [
   {
@@ -200,9 +201,9 @@ export default function Home() {
       <NextSeo
         title="Empower Your Team with Markrich Solutions - Enhance Financial Acumen, Data-Driven Decision-Making, and Positive Work Culture"
         description="Equip your employees with essential skills to thrive in today's competitive environment. Enhance financial acumen, leverage data-driven decision-making, and foster a positive work culture with Markrich Solutions."
-        canonical="https://markrich.vercel.app/"
+        canonical="https://markrich.in"
         openGraph={{
-          url: "https://markrich.vercel.app/",
+          url: "https://markrich.in",
           title:
             "Empower Your Team with Markrich Solutions - Enhance Financial Acumen, Data-Driven Decision-Making, and Positive Work Culture",
           description:
@@ -248,7 +249,7 @@ export default function Home() {
             <hr />
 
             <button className="text-[#ED3630] font-semibold max-w-fit">
-              <a href={""}>
+              <Link href={"/about-us"}>
                 <div className="flex items-center gap-1">
                   Learn More{" "}
                   <svg
@@ -266,7 +267,7 @@ export default function Home() {
                     ></path>
                   </svg>
                 </div>
-              </a>
+              </Link>
             </button>
           </div>
           <div className="lg:max-h-[600px] sm:max-h-[300px] flex">

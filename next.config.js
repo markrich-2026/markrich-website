@@ -6,10 +6,11 @@ const nextConfig = {
     unoptimized: true,
   },
   env: {
-    API_PATH: "https://markrich-api.syspreesolutions.com/index.php",
+    API_PATH: "https://markrich.in/mail/index.php",
     API_TEST_PATH: "http://localhost/php_form_api/index.php",
-    SITE_URL: "http://localhost:3000/",
+    SITE_URL: "https://markrich.in",
   },
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;

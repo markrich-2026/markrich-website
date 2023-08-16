@@ -66,7 +66,7 @@ export const CTASecondary = ({}) => {
       `}</style>
 
       <div className="flex items-center justify-center py-20 md:py-12">
-        <div className=" flex bg-[url('/images/cta-secondary-bg.svg')] flex-col gap-6  justify-center bg-center bg-cover bg-no-repeat  min-h-[332px] max-w-6xl rounded-md container px-24 lg:px-4 lg:py-20">
+        <div className=" flex bg-[url('/images/cta-secondary-bg.webp')] flex-col gap-6  justify-center bg-center bg-cover bg-no-repeat  min-h-[332px] max-w-6xl rounded-md container px-24 lg:px-4 lg:py-20">
           <div className="flex flex-col gap-4">
             <h6 className="text-black font-medium">Get in touch</h6>
             <h3 className="text-4xl font-semibold tracking-tight text-black">

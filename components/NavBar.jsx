@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "@/public/images/logo.svg";
+import logo from "@/public/images/logo.webp";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
 

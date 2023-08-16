@@ -2,7 +2,7 @@ import React from "react";
 import * as Tabs from "@radix-ui/react-tabs";
 import { CaseStudyCard, TabsCard } from "./Card";
 import AccordionComponent from "./Accordian";
-import thumbnailPlaceholder from "@/public/images/case-study-thumbnail.svg";
+import thumbnailPlaceholder from "@/public/images/case-study-thumbnail.webp";
 import ContentDevelopmentSection from "./ContentDevelopmentSection";
 
 const caseStudyData = [

@@ -4,9 +4,9 @@ import process1 from "@/public/icons/process-icon-1.svg";
 import process2 from "@/public/icons/process-icon-2.svg";
 import process3 from "@/public/icons/process-icon-3.svg";
 import process4 from "@/public/icons/process-icon-4.svg";
-import trainingImage from "@/public/images/about-instructor-training.svg";
-import offlineImage from "@/public/images/about-offline-trainings.svg";
-import sessionsImage from "@/public/images/about-sessions.svg";
+import trainingImage from "@/public/images/about-instructor-training.webp";
+import offlineImage from "@/public/images/about-offline-trainings.webp";
+import sessionsImage from "@/public/images/about-sessions.webp";
 import { CTA, CTASecondary } from "@/components/CTA";
 import Link from "next/link";
 const process = [
@@ -38,9 +38,9 @@ const Delivery = () => {
       <NextSeo
         title="Markrich Solutions | Delivery"
         description="Discover the streamlined and efficient approach of Markrich Solutions LLP. Our proven process guarantees precision and professionalism in delivering exceptional results for every project we undertake."
-        canonical="https://markrich.vercel.app/delivery"
+        canonical="https://markrich.in/delivery"
         openGraph={{
-          url: "https://markrich.vercel.app/",
+          url: "https://markrich.in/delivery",
           title:
             "Empower Your Team with Markrich Solutions - Enhance Financial Acumen, Data-Driven Decision-Making, and Positive Work Culture",
           description:
