@@ -272,7 +272,7 @@ export default function Home() {
           </div>
           <div className="lg:max-h-[600px] sm:max-h-[300px] flex">
             {/* Hero image */}
-            <img src={heroImg.src} className="w-full object-fill" />
+            <img src={heroImg.src} className="w-full object-contain" />
           </div>
         </div>
       </main>

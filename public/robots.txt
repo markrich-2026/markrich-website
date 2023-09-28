@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://markrich.vercel.app/
+Host: https://markrich.in/
 
 # Sitemaps
-Sitemap: https://markrich.vercel.app/sitemap.xml
+Sitemap: https://markrich.in/sitemap.xml

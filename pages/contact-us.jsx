@@ -5,8 +5,9 @@ import locationIcon from "@/public/icons/location-icon.svg";
 import mailIcon from "@/public/icons/mail-icon.svg";
 import phoneIcon from "@/public/icons/phone-icon.svg";
 import Button from "@/components/Button";
-import contactImage from "@/public/images/contact-image.webp";
+import contactImage from "@/public/images/contact-image.svg";
 import axios from "axios";
+import Image from "next/image";
 const contactInfo = [
   {
     icon: phoneIcon,
@@ -21,8 +22,7 @@ const contactInfo = [
   {
     icon: locationIcon,
     title: "Reach us at",
-    content:
-      "Lorem ipsum dolor sit amit eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
+    content: "Mumbai",
   },
 ];
 
@@ -326,7 +326,7 @@ const ContactUs = () => {
             )}
           </div>
           <div className="flex w-full md:hidden">
-            <img className="w-full object-fit" src={contactImage.src} alt="" />
+            <Image className="w-full object-fit" src={contactImage} alt="" />
           </div>
         </div>
       </section>

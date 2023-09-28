@@ -19,23 +19,23 @@ const NavBar = () => {
     },
     {
       page: "About us",
-      url: "about-us",
+      url: "/about-us",
     },
     {
       page: "Training Solutions",
-      url: "training-solutions",
+      url: "/training-solutions",
     },
     {
       page: "Delivery",
-      url: "delivery",
+      url: "/delivery",
     },
     {
       page: "Content",
-      url: "content",
+      url: "/content",
     },
     {
       page: "Contact",
-      url: "contact-us",
+      url: "/contact-us",
     },
   ];
 
