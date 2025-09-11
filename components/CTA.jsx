@@ -33,7 +33,7 @@ export const CTA = ({ title, text, link }) => {
           </div>
 
           <p className="text-white text-center max-w-[800px] font-medium md:text-left">
-            Invest in your team's professional development and witness the
+            Invest in your team&apos; professional development and witness the
             transformation within your organization. Contact us today to discuss
             how our corporate training programs can empower your workforce to
             reach new heights of success.
@@ -78,7 +78,7 @@ export const CTASecondary = ({}) => {
             Have questions, inquiries, or looking for more information? Contact
             us directly to get in touch with our knowledgeable team. We are here
             to assist you and provide the information you need. Reach out to us
-            now and let's start a conversation!
+            now and let&apos;s start a conversation!
           </p>
           <div className="flex gap-4 md:flex-col">
             <Button text={"Get in touch"} link={"/contact-us"} />

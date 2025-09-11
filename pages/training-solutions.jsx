@@ -77,7 +77,7 @@ const TrainingSolutions = () => {
           </div>
           <div className="  w-full  justify-items-center justify-center gap-20 grid grid-cols-[repeat(auto-fill,minmax(300px,500px))]">
             {trainingSolution.map((ele, ind) => (
-              <Card title={ele.title} text={ele.text} icon={ele.icon} />
+              <Card key={ind} title={ele.title} text={ele.text} icon={ele.icon} />
             ))}
           </div>
         </div>

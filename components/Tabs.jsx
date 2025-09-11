@@ -106,7 +106,7 @@ export const TabsComponentSecondary = ({ titles, tabData }) => (
                 <h6 className="text-[#ED3630] font-medium">Question bank</h6>
                 <h3 className="text-2xl font-semibold tracking-tight">
                   Create interesting question banks with us, to stimulate your
-                  employees' knowledge. Have weekly quizzes at work, make it
+                  employees&apos; knowledge. Have weekly quizzes at work, make it
                   engaging.
                 </h3>
               </div>
@@ -126,7 +126,7 @@ export const TabsComponentSecondary = ({ titles, tabData }) => (
               <div className="flex flex-col gap-4 justify-center items-center text-center">
                 <h6 className="text-[#ED3630] font-medium">Case study</h6>
                 <h3 className="text-2xl font-semibold tracking-tight">
-                  We're happy to provide case studies, that can be used to
+                  We&apos;re happy to provide case studies, that can be used to
                   enhance the learning experience for your teams.
                 </h3>
               </div>
