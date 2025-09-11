@@ -241,7 +241,7 @@ export default function Home() {
               </h1>
             </div>
             <p className="text-[#18181B]">
-              Equip your employees with essential skills to thrive in today's
+              Equip your employees with essential skills to thrive in today&apos;s
               competitive environment. Enhance financial acumen, leverage
               data-driven decision-making, and foster a positive work culture
               with Markrich Solutions.
@@ -311,7 +311,7 @@ export default function Home() {
                 Why Choose Us?
               </h6>
               <h2 className="text-5xl font-semibold tracking-tight leading-tight md:text-4xl">
-                Unlock your team's potential with our{" "}
+                Unlock your team&apos;s potential with our{" "}
                 <span className="text-[#F58A07]"> training expertise </span>
               </h2>
             </div>
