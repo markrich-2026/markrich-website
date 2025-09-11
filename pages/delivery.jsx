@@ -83,7 +83,7 @@ const Delivery = () => {
           </div>
           <div className="flex flex-col gap-8 w-full">
             {process.map((ele, ind) => (
-              <div className="flex items-center gap-6 sm:flex-col sm:items-start">
+              <div key={ind} className="flex items-center gap-6 sm:flex-col sm:items-start">
                 <div className="bg-[#fee5c852] rounded-full p-4">
                   <img className="max-w-[30px]" src={ele.icon.src} alt="" />
                 </div>

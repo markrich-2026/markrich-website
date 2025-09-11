@@ -143,6 +143,7 @@ const About = () => {
           <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,550px))] lg:grid-cols-[repeat(auto-fill,minmax(300px,100%))] w-full justify-center gap-6">
             {chooseUsData.map((ele, ind) => (
               <FeatureCard
+                key={ind}
                 title={ele.title}
                 text={ele.content}
                 icon={ele.icon}
