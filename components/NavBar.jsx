@@ -34,6 +34,10 @@ const NavBar = () => {
       url: "/content",
     },
     {
+      page: "Verify Certificate",
+      url: "/verify-certificate",
+    },
+    {
       page: "Contact",
       url: "/contact-us",
     },
