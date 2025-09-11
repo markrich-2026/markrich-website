@@ -72,13 +72,18 @@ const TrainingSolutions = () => {
             <p className="max-w-2xl text-center md:text-left">
               Enhance your skills and knowledge in finance, banking, analytics,
               and leadership development with our comprehensive training
-              solutions.
+              solutions. 
             </p>
           </div>
           <div className="  w-full  justify-items-center justify-center gap-20 grid grid-cols-[repeat(auto-fill,minmax(300px,500px))]">
-            {trainingSolution.map((ele, ind) => (
-              <Card title={ele.title} text={ele.text} icon={ele.icon} />
-            ))}
+            {trainingSolution.map((ele) => (
+                    <Card
+                      key={ele.id}         
+                      title={ele.title}
+                      text={ele.text}
+                      icon={ele.icon}
+                    />
+                  ))}
           </div>
         </div>
       </section>
