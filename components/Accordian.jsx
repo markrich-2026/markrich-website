@@ -10,7 +10,7 @@ const AccordionComponent = ({ data }) => (
     collapsible
   >
     {data.map((ele, ind) => (
-      <AccordionItem value={ind + 1}>
+      <AccordionItem key={ind} value={String(ind + 1)}>
         <AccordionTrigger>{ele.question}</AccordionTrigger>
         <AccordionContent>{ele.answer}</AccordionContent>
       </AccordionItem>
@@ -18,11 +18,14 @@ const AccordionComponent = ({ data }) => (
   </Accordion.Root>
 );
 
-const AccordionItem = React.forwardRef(
-  ({ children, className, ...props }, forwardedRef) => (
+const AccordionItem = React.forwardRef(function AccordionItem(
+  { children, className, ...props },
+  forwardedRef
+) {
+  return (
     <Accordion.Item
       className={classNames(
-        "w-full   transition  mt-4 overflow-hidden first:mt-0 first:rounded-t last:rounded-b focus-within:relative focus-within:z-10",
+        "w-full transition mt-4 overflow-hidden first:mt-0 first:rounded-t last:rounded-b focus-within:relative focus-within:z-10",
         className
       )}
       {...props}
@@ -30,15 +33,18 @@ const AccordionItem = React.forwardRef(
     >
       {children}
     </Accordion.Item>
-  )
-);
+  );
+});
 
-const AccordionTrigger = React.forwardRef(
-  ({ children, className, ...props }, forwardedRef) => (
+const AccordionTrigger = React.forwardRef(function AccordionTrigger(
+  { children, className, ...props },
+  forwardedRef
+) {
+  return (
     <Accordion.Header className="flex">
       <Accordion.Trigger
         className={classNames(
-          " hover:bg-mauve2  transition group flex h-[45px] flex-1 font-semibold cursor-default items-center justify-between bg-white text-[15px] leading-none  outline-none",
+          "hover:bg-mauve2 transition group flex h-[45px] flex-1 font-semibold cursor-default items-center justify-between bg-white text-[15px] leading-none outline-none",
           className
         )}
         {...props}
@@ -61,16 +67,19 @@ const AccordionTrigger = React.forwardRef(
               fill="currentColor"
               fillRule="evenodd"
               clipRule="evenodd"
-            ></path>
+            />
           </svg>
         </div>
       </Accordion.Trigger>
     </Accordion.Header>
-  )
-);
+  );
+});
 
-const AccordionContent = React.forwardRef(
-  ({ children, className, ...props }, forwardedRef) => (
+const AccordionContent = React.forwardRef(function AccordionContent(
+  { children, className, ...props },
+  forwardedRef
+) {
+  return (
     <Accordion.Content
       className={classNames(
         "data-[state=open]:animate-slideDown border-slate-100 border-b-2 data-[state=closed]:animate-slideUp overflow-hidden text-sm font-light",
@@ -81,7 +90,7 @@ const AccordionContent = React.forwardRef(
     >
       <div className="py-[15px]">{children}</div>
     </Accordion.Content>
-  )
-);
+  );
+});
 
 export default AccordionComponent;
