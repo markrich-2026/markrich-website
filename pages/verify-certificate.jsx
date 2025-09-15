@@ -40,7 +40,7 @@ export default function VerifyCertificate() {
       <div className="bg-white shadow-lg rounded-2xl p-6 sm:p-8 w-full max-w-xl border-t-4 border-[#F58A07]">
         {/* Header */}
         <h2 className="text-center text-[#F58A07] font-bold text-lg sm:text-xl mb-4">
-          Markrich Solutions LLP
+          Markrich Solutions
         </h2>
         <h1 className="text-xl sm:text-2xl font-semibold text-center mb-6">
           Certificate Verification Portal
