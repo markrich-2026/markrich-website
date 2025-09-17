@@ -23,9 +23,14 @@ export default async function handler(req, res) {
     });
 
     const file = files.excel[0]; // formidable v3 returns array
-    const workbook = XLSX.readFile(file.filepath);
+
+    // ✅ Important: force Excel dates to become proper JS Dates/strings
+    const workbook = XLSX.readFile(file.filepath, { cellDates: true });
     const sheetName = workbook.SheetNames[0];
-    const rows = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
+    const rows = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], {
+      raw: false,          // ensures conversion instead of raw serial numbers
+      dateNF: "yyyy-mm-dd" // forces consistent output format
+    });
 
     const mappedRows = rows.map((row) => {
       const unique_id =
@@ -42,9 +47,14 @@ export default async function handler(req, res) {
         row["Training"] || row["course_name"] || row["Course"];
       const completion_date_raw =
         row["Date of Completion"] || row["completion_date"];
-      const completion_date = completion_date_raw
-        ? new Date(completion_date_raw)
-        : null;
+
+      // If it's already a Date object, convert to yyyy-mm-dd
+      let completion_date = null;
+      if (completion_date_raw instanceof Date) {
+        completion_date = completion_date_raw.toISOString().slice(0, 10);
+      } else if (typeof completion_date_raw === "string") {
+        completion_date = completion_date_raw.trim();
+      }
 
       return { unique_id, full_name, course_name, completion_date };
     });
@@ -62,7 +72,7 @@ export default async function handler(req, res) {
       try {
         await pool.query(
           `INSERT INTO certificates (unique_id, full_name, course_name, completion_date)
-           VALUES ($1, $2, $3, $4)
+           VALUES ($1, $2, $3, $4::date)
            ON CONFLICT (unique_id) DO UPDATE 
            SET full_name = EXCLUDED.full_name,
                course_name = EXCLUDED.course_name,
