@@ -134,7 +134,7 @@ const About = () => {
 
               {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/in/markmenezes1"
                 className="text-sm text-[#0A66C2] font-medium flex items-center gap-2"
                 target="_blank"
                 rel="noopener noreferrer"
