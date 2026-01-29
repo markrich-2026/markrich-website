@@ -3,6 +3,7 @@ import { useState } from "react";
 import Section from "@/components/Section";
 import { CTASecondary } from "@/components/CTA";
 import CertifiedProfessionalsCarousel from "@/components/ImageSlider";
+import TestimonialsSlider from "@/components/TestimonialsSlider";
 
 const GalleryPage = () => {
   const faqs = [
@@ -156,6 +157,8 @@ const GalleryPage = () => {
           </div>
         </div>
       </section>
+
+      <TestimonialsSlider/>
 
       <CertifiedProfessionalsCarousel />
 
