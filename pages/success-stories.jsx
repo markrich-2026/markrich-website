@@ -166,8 +166,8 @@ const GalleryPage = () => {
 
       <section className="py-20 px-6">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-semibold text-[#F58A07] mb-10 text-center">
-            Frequently Asked Questions
+          <h2 className="text-4xl md:text-5xl font-semibold text-black mb-10 text-center">
+            Frequently Asked <span className="text-[#F58A07] ">Questions</span> 
           </h2>
 
           <div className="flex flex-col gap-4">
