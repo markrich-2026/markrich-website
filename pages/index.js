@@ -10,6 +10,7 @@ import interactiveIcon from "@/public/icons/interactive-icon.svg";
 import { Card, FeatureCard } from "@/components/Card";
 import { TabsComponent } from "@/components/Tabs";
 import Link from "next/link";
+import LogoCarousel from "@/components/LogoCarousel";
 
 const trainingAreas = [
   {
@@ -233,7 +234,7 @@ export default function Home() {
             {/* hero content */}
             <div className="flex flex-col gap-4">
               <h6 className="text-[#ED3630] font-medium md:text-sm">
-                Finance, Analytics, and Behavioural Training
+                Finance , AI, Analytics and Business Excellence Training
               </h6>
               <h1 className="text-6xl font-semibold tracking-tighter md:tracking-tight md:leading-[1.1]  md:text-[2.3rem]">
                 Welcome to <span className="text-[#F58A07]">Markrich</span>{" "}
@@ -241,10 +242,10 @@ export default function Home() {
               </h1>
             </div>
             <p className="text-[#18181B]">
-              Equip your employees with essential skills to thrive in today&apos;s
-              competitive environment. Enhance financial acumen, leverage
-              data-driven decision-making, and foster a positive work culture
-              with Markrich Solutions.
+              Equip your employees with essential skills to thrive in
+              today&apos;s competitive environment. Enhance financial acumen,
+              leverage data-driven decision-making, and foster a positive work
+              culture with Markrich Solutions.
             </p>
             <hr />
 
@@ -276,13 +277,65 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+
+      <section className="w-full px-12 py-20 bg-[#FAFAFA] lg:px-2">
+        <div className="container mx-auto max-w-[1200px]">
+          <div className="grid grid-cols-3 gap-8 md:grid-cols-1">
+            {/* Metric 1 */}
+            <div className="flex flex-col items-center text-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+              <img
+                src="/icons/feedback.png"
+                alt="Participant Feedback"
+                className="h-14 w-14 mb-4"
+              />
+              <h3 className="text-4xl font-semibold text-[#F58A07]">4.8 / 5</h3>
+              <p className="mt-2 text-lg font-medium">
+                Average Participant Feedback
+              </p>
+              <p className="mt-1 text-sm text-gray-500">
+                Consistently high ratings across training programs
+              </p>
+            </div>
+
+            {/* Metric 2 */}
+            <div className="flex flex-col items-center text-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+              <img
+                src="/icons/learners.png"
+                alt="Learners Upskilled"
+                className="h-14 w-14 mb-4"
+              />
+              <h3 className="text-4xl font-semibold text-[#F58A07]">3000+</h3>
+              <p className="mt-2 text-lg font-medium">Learners Upskilled</p>
+              <p className="mt-1 text-sm text-gray-500">
+                Professionals trained through hands-on programs
+              </p>
+            </div>
+
+            {/* Metric 3 */}
+            <div className="flex flex-col items-center text-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+              <img
+                src="/icons/industry.png"
+                alt="Multi Industry Presence"
+                className="h-14 w-14 mb-4"
+              />
+              <h3 className="text-4xl font-semibold text-[#F58A07]">Multi-Industry</h3>
+              <p className="mt-2 text-lg font-medium">Training Experience</p>
+              <p className="mt-2 text-sm text-gray-500">
+                Manufacturing, BFSI, Media, IT, Printing & Chemicals
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* areas of work */}
       <section className="flex min-h-[80vh] px-12 py-6 pb-24 items-center justify-start lg:px-2 lg:min-h-[50vh] md:py-24">
         <div className="container mx-auto max-w-[1200px] flex flex-col justify-start gap-[4rem] px-2 items-center">
           <div className="flex flex-col gap-4 items-center">
-            <h6 className="text-[#ED3630] font-medium md:text-sm">
+            {/* <h6 className="text-[#ED3630] font-medium md:text-sm">
               Training areas
-            </h6>
+            </h6> */}
             <h2 className="text-5xl font-semibold tracking-tighter text-center md:text-4xl">
               Our Core
               <span className="text-[#F58A07]"> training</span> areas
@@ -301,6 +354,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
       {/* features section why choose us */}
       <section className="flex min-h-screen bg-[url('/images/features-bg.svg')] bg-cover bg-no-repeat px-12 py-6 lg:px-2">
         <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[5rem] px-2 ">
@@ -334,6 +388,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <LogoCarousel/>
+
       {/* tabs view training areas */}
       <section className="flex min-h-[100vh] py-20 px-12 lg:px-2">
         <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[4rem] px-2 items-center ">

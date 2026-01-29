@@ -29,9 +29,13 @@ const NavBar = () => {
       page: "Delivery",
       url: "/delivery",
     },
+    // {
+    //   page: "Content",
+    //   url: "/content",
+    // },
     {
-      page: "Content",
-      url: "/content",
+      page: "Success Stories",
+      url: "/success-stories",
     },
     {
       page: "Verify Certificate",

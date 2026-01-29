@@ -56,11 +56,10 @@ const TrainingSolutions = () => {
         subText={
           "Discover a diverse range of training solutions designed to enhance your knowledge and skills in the realms of finance, banking, analytics, and leadership development. Our comprehensive programs cater to individuals and organizations seeking to gain a competitive edge in today's dynamic business landscape."
         }
-        metaTitle={"Training Solutions"}
       >
         Comprehensive{" "}
         <span className="text-[#F58A07]">Training Solutions </span>
-        for Finance, Banking, Analytics, and Leadership Development
+        for Finance, AI, Analytics, and Business Excellence
       </SectionHero>
       <section className="flex flex-col items-center justify-center px-12 py-24 lg:px-4">
         <div className="container max-w-7xl flex flex-col gap-20 items-center justify-center">

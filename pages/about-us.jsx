@@ -8,6 +8,8 @@ import interactiveIcon from "@/public/icons/interactive-icon.svg";
 import { FeatureCard } from "@/components/Card";
 import { CTA } from "@/components/CTA";
 import Section from "@/components/Section";
+import { FaLinkedin } from "react-icons/fa";
+import { useState } from "react";
 
 const chooseUsData = [
   {
@@ -37,6 +39,8 @@ const chooseUsData = [
 ];
 
 const About = () => {
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <>
       <Section
@@ -99,6 +103,166 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <section className="flex items-center px-12 py-15 lg:px-4 sm:py-24 bg-white">
+        <div className="container mx-auto max-w-[1200px] flex gap-16 items-center lg:flex-col lg:gap-10">
+          {/* Founder Card */}
+          <div className="w-[520px] lg:w-full  bg-gradient-to-br from-[#FFF7ED] to-[#F1F9FF] rounded-3xl p-8 shadow-sm">
+            <div className="flex flex-col items-start gap-6">
+              {/* Image */}
+              <div className="relative">
+                <img
+                  src="/images/mark.png"
+                  alt="Founder"
+                  className="h-28 w-28 rounded-full border-4 border-[#F58A07] object-cover"
+                />
+              </div>
+
+              {/* Info */}
+              <div className="flex flex-col gap-1">
+                <h3 className="text-xl font-semibold text-[#18181B]">
+                  Mark Menezes
+                </h3>
+                <p className="text-sm text-[#18181B]">
+                  Founder, Markrich Solutions LLP
+                </p>
+                <p className="text-sm text-gray-600">
+                  Entrepreneur | Technology Driven | Training Visionary
+                </p>
+                <p className="text-sm text-gray-500">Thane, Maharashtra</p>
+              </div>
+
+              {/* LinkedIn */}
+              <a
+                href="#"
+                className="text-sm text-[#0A66C2] font-medium flex items-center gap-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="text-lg" />
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          {/* Story Content */}
+          <div className="flex flex-col gap-6 max-w-[650px]">
+            <h6 className="text-[#ED3630] font-medium md:text-sm">Our Story</h6>
+
+            <h2 className="text-5xl font-semibold tracking-tighter md:text-4xl">
+              The Vision of Our <span className="text-[#F58A07]">Founder</span>
+            </h2>
+
+            <p className="text-[#18181B] leading-relaxed">
+              Mark Menezes is the Founder of Markrich Solutions LLP, enabling
+              organizations to become future-ready through Finance, Generative
+              AI, Analytics, and Business Excellence training. With over a
+              decade of experience in understanding stakeholder needs and
+              crafting the right learning interventions, Mark brings a
+              consultative, solution-first approach that helps teams turn
+              concepts into on-the-job capability.
+            </p>
+
+            <p className="text-[#18181B] leading-relaxed">
+              Before founding Markrich, Mark led corporate training solution
+              sales and consultative engagements at organizations such as Dun &
+              Bradstreet India and VitalSmarts (Crucial Learning), working
+              closely with HR, L&D, OD, and business leaders to diagnose skill
+              gaps and deploy customized programs that drive measurable
+              outcomes. His work spans diverse sectors including BFSI,
+              Manufacturing, FMCG, Chemicals, IT, and Services.
+            </p>
+
+            <button
+              onClick={() => setShowMore(!showMore)}
+              className="text-[#F58A07] font-medium w-fit hover:underline"
+            >
+              {showMore ? "" : "Read more"}
+            </button>
+
+            {showMore && (
+              <p className="text-[#18181B] leading-relaxed">
+                At Markrich, Mark champions learning experiences that are
+                immersive, engaging, and action-oriented—from Finance for
+                Non-Finance, Financial Markets, Risk and Treasury topics, to
+                GenAI for Leaders, Prompt Engineering, and GenAI for Business
+                Functions, as well as Power BI, Data Visualization, Business
+                Analytics, and capability building under Business Excellence.
+                Grounded in values of honesty, integrity, and commitment, he is
+                known for partnering deeply with clients to ensure learning
+                sticks and creates real business impact.
+              </p>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <section className="min-h-screen flex items-center px-12 py-20 lg:px-4 sm:py-24">
+        <div className="container mx-auto max-w-[1200px] flex gap-16 items-center lg:flex-col lg:gap-10">
+          {/* Text Content */}
+          <div className="flex flex-col gap-6 max-w-[650px] order-1 lg:order-2">
+            <h6 className="text-[#ED3630] font-medium md:text-sm">
+              Leadership
+            </h6>
+
+            <h2 className="text-5xl font-semibold tracking-tighter md:text-4xl">
+              Operational<span className="text-[#F58A07]"> Leadership</span>
+            </h2>
+
+            <p className="text-[#18181B] leading-relaxed">
+              Richard Menezes is a Partner at Markrich Solutions LLP and brings
+              40+ years of manufacturing experience, built through decades of
+              leading end-to-end plant and installation operations across large,
+              complex environments.
+            </p>
+
+            <p className="text-[#18181B] leading-relaxed">
+              At Markrich Solutions, Richard anchors the firm’s operations and
+              finance, ensuring smooth execution across programs—right from
+              vendor coordination and logistics to internal controls and
+              financial discipline. He also serves as a strategic mentor to the
+              team, offering practical guidance, process thinking, and a
+              long-term perspective that strengthens how Markrich delivers
+              consistent quality across every client engagement.
+            </p>
+          </div>
+
+          {/* Partner Card */}
+          <div className="w-[520px] lg:w-full bg-gradient-to-br from-[#FFF7ED] to-[#F1F9FF] rounded-3xl p-8 shadow-sm order-2 lg:order-1">
+            <div className="flex flex-col gap-6">
+              <img
+                src="/images/richard.png"
+                alt="Richard Menezes"
+                className="h-30 w-28 rounded-full border-4 border-[#F58A07] object-cover"
+              />
+
+              <div className="flex flex-col gap-1">
+                <h3 className="text-xl font-semibold text-[#18181B]">
+                  Richard Menezes
+                </h3>
+                <p className="text-sm text-[#18181B]">
+                  Partner, Markrich Solutions LLP
+                </p>
+                <p className="text-sm text-gray-600">
+                  Entrepreneur | Technology Driven | Training Visionary
+                </p>
+                <p className="text-sm text-gray-500">Thane, Maharashtra</p>
+              </div>
+               {/* LinkedIn */}
+                <a
+                  href="#"
+                  className="text-sm text-[#0A66C2] font-medium flex items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="text-lg" />
+                  LinkedIn
+                </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="min-h-[80vh] flex items-center px-12 py-6 lg:px-4 sm:py-14 sm:min-h-fit">
         <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center lg:flex-col">
           <div className="flex w-full">
@@ -130,7 +294,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-screen flex items-center justify-center px-12 py-6 lg:px-4 sm:py-14">
+      {/* <section className="min-h-screen flex items-center justify-center px-12 py-6 lg:px-4 sm:py-14">
         <div className="container max-w-7xl flex flex-col items-center justify-center gap-16 mt-24">
           <div className="flex flex-col gap-4 items-center text-center sm:text-left">
             <h6 className="text-[#ED3630] font-medium w-full">
@@ -151,7 +315,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <CTA />
     </>
   );
