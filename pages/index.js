@@ -284,11 +284,11 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-8 md:grid-cols-1">
             {/* Metric 1 */}
             <div className="flex flex-col items-center text-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
-              <img
-                src="/icons/feedback.png"
+              {/* <img
+                src="/logos/feedback.jpg"
                 alt="Participant Feedback"
-                className="h-14 w-14 mb-4"
-              />
+                className="h-18 w-18 mb-4"
+              /> */}
               <h3 className="text-4xl font-semibold text-[#F58A07]">4.8 / 5</h3>
               <p className="mt-2 text-lg font-medium">
                 Average Participant Feedback
@@ -300,11 +300,11 @@ export default function Home() {
 
             {/* Metric 2 */}
             <div className="flex flex-col items-center text-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
-              <img
+              {/* <img
                 src="/icons/learners.png"
                 alt="Learners Upskilled"
                 className="h-14 w-14 mb-4"
-              />
+              /> */}
               <h3 className="text-4xl font-semibold text-[#F58A07]">3000+</h3>
               <p className="mt-2 text-lg font-medium">Learners Upskilled</p>
               <p className="mt-1 text-sm text-gray-500">
@@ -314,11 +314,11 @@ export default function Home() {
 
             {/* Metric 3 */}
             <div className="flex flex-col items-center text-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
-              <img
-                src="/icons/industry.png"
+              {/* <img
+                src="/logos/industry.jpg"
                 alt="Multi Industry Presence"
-                className="h-14 w-14 mb-4"
-              />
+                className="h-18 w-18 mb-4"
+              /> */}
               <h3 className="text-4xl font-semibold text-[#F58A07]">Multi-Industry</h3>
               <p className="mt-2 text-lg font-medium">Training Experience</p>
               <p className="mt-2 text-sm text-gray-500">
