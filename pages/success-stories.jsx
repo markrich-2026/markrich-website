@@ -54,10 +54,13 @@ const GalleryPage = () => {
           {/* Section Heading */}
           <div className="text-left flex flex-col gap-3">
             <h6 className="text-[#ED3630] font-medium text-sm">
-              Life at Markrich
+              Glimpse of Our Trainings
             </h6>
             <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter text-[#18181B]">
-              Our <span className="text-[#F58A07]">Team</span>
+              Training at Markrich Solutions -{" "}
+              <span className="text-[#F58A07]">
+                Learning that Builds Leaders
+              </span>
             </h2>
             <p>
               Meet the passionate professionals driving excellence and shaping
@@ -76,6 +79,10 @@ const GalleryPage = () => {
               "/team/team6.jpg",
               "/team/team7.jpg",
               "/team/team8.jpg",
+              "/training/training1.png",
+              "/training/training2.png",
+              "/training/training3.jpg",
+              "/training/training4.jpg",
             ].map((img, index) => (
               <div
                 key={index}
@@ -92,73 +99,7 @@ const GalleryPage = () => {
         </div>
       </section>
 
-      <section className="py-24 px-12 lg:px-6">
-        <div className="container mx-auto max-w-[1200px] flex flex-col gap-12">
-          {/* Section Heading */}
-          <div className="flex flex-col gap-4 max-w-[700px]">
-            <h6 className="text-[#ED3630] font-medium text-sm">
-              Training at Markrich
-            </h6>
-            <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter text-[#18181B]">
-              Learning That Builds{" "}
-              <span className="text-[#F58A07]">Leaders</span>
-            </h2>
-            <p className="text-[#18181B]">
-              Real moments from our professional training sessions and
-              workshops.
-            </p>
-          </div>
-
-          {/* Image Grid */}
-          <div className="grid grid-cols-2 gap-6">
-            {/* Image 1 */}
-            <div className="bg-white p-2 rounded-[28px]">
-              <div className="overflow-hidden rounded-[20px]">
-                <img
-                  src="/training/training1.png"
-                  alt="Training session"
-                  className="w-full h-70 object-cover transition-transform duration-700 hover:scale-105"
-                />
-              </div>
-            </div>
-
-            {/* Image 2 */}
-            <div className="bg-white p-2 rounded-[28px]">
-              <div className="overflow-hidden rounded-[20px]">
-                <img
-                  src="/training/training2.png"
-                  alt="Workshop discussion"
-                  className="w-full h-70 object-cover transition-transform duration-700 hover:scale-105"
-                />
-              </div>
-            </div>
-
-            {/* Image 3 */}
-            <div className="bg-white p-2 rounded-[28px]">
-              <div className="overflow-hidden rounded-[20px]">
-                <img
-                  src="/training/training3.jpg"
-                  alt="Team activity"
-                  className="w-full h-70 object-cover transition-transform duration-700 hover:scale-105"
-                />
-              </div>
-            </div>
-
-            {/* Image 4 */}
-            <div className="bg-white p-2 rounded-[28px]">
-              <div className="overflow-hidden rounded-[20px]">
-                <img
-                  src="/training/training4.jpg"
-                  alt="Hands-on learning"
-                  className="w-full h-70 object-cover transition-transform duration-700 hover:scale-105"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <TestimonialsSlider/>
+      <TestimonialsSlider />
 
       <CertifiedProfessionalsCarousel />
 
@@ -167,7 +108,7 @@ const GalleryPage = () => {
       <section className="py-20 px-6">
         <div className="max-w-[900px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-semibold text-black mb-10 text-center">
-            Frequently Asked <span className="text-[#F58A07] ">Questions</span> 
+            Frequently Asked <span className="text-[#F58A07] ">Questions</span>
           </h2>
 
           <div className="flex flex-col gap-4">

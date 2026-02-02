@@ -114,7 +114,7 @@ const About = () => {
                 <img
                   src="/images/mark.png"
                   alt="Founder"
-                  className="h-28 w-28 rounded-full border-4 border-[#F58A07] object-cover"
+                  className="h-60 w-60 rounded-full border-4 border-[#F58A07] object-cover"
                 />
               </div>
 
@@ -233,7 +233,7 @@ const About = () => {
               <img
                 src="/images/richard.png"
                 alt="Richard Menezes"
-                className="h-30 w-28 rounded-full border-4 border-[#F58A07] object-cover"
+                className="h-60 w-60 rounded-full border-4 border-[#F58A07] object-cover"
               />
 
               <div className="flex flex-col gap-1">
@@ -250,7 +250,7 @@ const About = () => {
               </div>
                {/* LinkedIn */}
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/richard-menezes-429b5760/"
                   className="text-sm text-[#0A66C2] font-medium flex items-center gap-2"
                   target="_blank"
                   rel="noopener noreferrer"

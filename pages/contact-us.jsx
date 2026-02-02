@@ -241,7 +241,7 @@ const ContactUs = () => {
                   id="email"
                   name="email"
                   className="rounded-lg border border-gray-300 bg-white px-4 py-2 shadow-xs w-full"
-                  placeholder="test@gmail.com"
+                  placeholder="Enter your email address"
                   required
                   onChange={handleChange}
                 />
@@ -260,7 +260,7 @@ const ContactUs = () => {
                   id="number"
                   name="number"
                   className="rounded-lg border border-gray-300 bg-white px-4 py-2 shadow-xs w-full text-slate-300"
-                  placeholder="Put your demo number"
+                  placeholder="Enter your phone number"
                   required
                   onChange={handleChange}
                 />

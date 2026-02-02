@@ -392,7 +392,7 @@ export default function Home() {
       <LogoCarousel/>
 
       {/* tabs view training areas */}
-      <section className="flex min-h-[100vh] py-20 px-12 lg:px-2">
+      {/* <section className="flex min-h-[100vh] py-20 px-12 lg:px-2">
         <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[4rem] px-2 items-center ">
           <div className="flex flex-col gap-4 items-center">
             <h6 className="text-[#ED3630] font-medium">Training areas</h6>
@@ -403,7 +403,7 @@ export default function Home() {
           </div>
           <TabsComponent titles={titles} tabData={tabData} />
         </div>
-      </section>
+      </section> */}
       {/* contact us section */}
     </>
   );

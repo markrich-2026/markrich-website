@@ -41,7 +41,7 @@ const ImageSlider = () => {
 
           <p className="text-[#18181B]">
             Learners who successfully completed our programs and received
-            industry-recognized certifications.
+            certifications.
           </p>
         </div>
 
