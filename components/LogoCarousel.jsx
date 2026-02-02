@@ -45,7 +45,7 @@ const LogoCarousel = () => {
           <div
             key={index}
             style={{
-              margin: "0 40px",
+              margin: "20px 60px",
               display: "flex",
               alignItems: "center",
             }}
@@ -54,7 +54,7 @@ const LogoCarousel = () => {
               src={logo}
               alt="Industry Logo"
               style={{
-                height: "60px",
+                height: "50px",
                 width: "auto",
                 objectFit: "contain",
                 transition: "all 0.3s ease",
