@@ -23,17 +23,17 @@ const trainingAreas = [
   {
     icon: analyticsIcon,
     title: "Analytics",
-    text: "Empower data-driven decisions: Analytics training from Excel fundamentals to advanced data visualization and predictive analytics, tailored solutions to enhance analytical thinking.",
+    text: "Empower data-driven decisions: Analytics training from Excel fundamentals to advanced data analytics, tailored solutions to enhance analytical thinking.",
   },
   {
     icon: aiIcon,
     title: "AI",
-    text: "Empower intelligent innovation: AI training from Generative AI fundamentals to advanced machine learning and automation, tailored solutions to enhance productivity and accelerate decision-making.",
+    text: "Empower intelligent innovation: AI training from Generative AI fundamentals to advanced machine learning & automation, tailored solutions to enhance  decision-making.",
   },
   {
     icon: businessIcon,
     title: "Business Excellence",
-    text: "Empower sustainable growth: Business Excellence training from project management and risk frameworks to leadership development and executive coaching, tailored solutions to strengthen strategic thinking, enhance leadership effectiveness.",
+    text: "Empower sustainable growth: Business Excellence training from project management and risk frameworks to strengthen and enhance leadership effectiveness.",
   },
 ];
 const features = [
