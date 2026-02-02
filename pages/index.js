@@ -7,6 +7,8 @@ import behaviouralIcon from "@/public/icons/behavioural-icon.svg";
 import trainersIcon from "@/public/icons/trainers-icon.svg";
 import approachIcon from "@/public/icons/approach-icon.svg";
 import interactiveIcon from "@/public/icons/interactive-icon.svg";
+import aiIcon from "@/public/icons/ai.png";
+import businessIcon from "@/public/icons/business.png";
 import { Card, FeatureCard } from "@/components/Card";
 import { TabsComponent } from "@/components/Tabs";
 import Link from "next/link";
@@ -15,18 +17,23 @@ import LogoCarousel from "@/components/LogoCarousel";
 const trainingAreas = [
   {
     icon: trainingIcon,
-    title: "Finance Training",
+    title: "Finance",
     text: "Empower your workforce: Finance training from business acumen to bond mathematics, tailored solutions to enhance Financial Acumen and meet your needs.",
   },
   {
     icon: analyticsIcon,
-    title: "Analytics Training",
-    text: "Tailor-made Finance training covering business acumen, cost optimization, stochastic calculus, and more. Fulfill your workforce's needs with our solutions.",
+    title: "Analytics",
+    text: "Empower data-driven decisions: Analytics training from Excel fundamentals to advanced data visualization and predictive analytics, tailored solutions to enhance analytical thinking.",
   },
   {
-    icon: behaviouralIcon,
-    title: "Behavioural Training",
-    text: "Enhance organizational development through behavioral/cultural change: Negotiation, Leadership, First-Time Managers, Communication, Accountability, Presentation, and more training programs available.",
+    icon: aiIcon,
+    title: "AI",
+    text: "Empower intelligent innovation: AI training from Generative AI fundamentals to advanced machine learning and automation, tailored solutions to enhance productivity and accelerate decision-making.",
+  },
+  {
+    icon: businessIcon,
+    title: "Business Excellence",
+    text: "Empower sustainable growth: Business Excellence training from project management and risk frameworks to leadership development and executive coaching, tailored solutions to strengthen strategic thinking, enhance leadership effectiveness.",
   },
 ];
 const features = [
