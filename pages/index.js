@@ -278,13 +278,17 @@ export default function Home() {
               </Link>
             </button>
           </div>
-          <div className="lg:max-h-[600px] sm:max-h-[300px] flex">
-            {/* Hero image */}
-            <img src={heroImg.src} className="w-full object-contain" />
+          <div className="w-full aspect-video">
+            <iframe
+              src="https://player.vimeo.com/video/1197327689?autoplay=1&loop=1"
+              className="w-full h-full"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       </main>
-
 
       <section className="w-full px-12 py-20 bg-[#FAFAFA] lg:px-2">
         <div className="container mx-auto max-w-[1200px]">
@@ -326,7 +330,9 @@ export default function Home() {
                 alt="Multi Industry Presence"
                 className="h-18 w-18 mb-4"
               /> */}
-              <h3 className="text-4xl font-semibold text-[#F58A07]">Multi-Industry</h3>
+              <h3 className="text-4xl font-semibold text-[#F58A07]">
+                Multi-Industry
+              </h3>
               <p className="mt-2 text-lg font-medium">Training Experience</p>
               <p className="mt-2 text-sm text-gray-500">
                 Manufacturing, BFSI, Media, IT, Printing & Chemicals
@@ -361,7 +367,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* features section why choose us */}
       <section className="flex min-h-screen bg-[url('/images/features-bg.svg')] bg-cover bg-no-repeat px-12 py-6 lg:px-2">
         <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[5rem] px-2 ">
@@ -396,7 +402,7 @@ export default function Home() {
         </div>
       </section>
 
-      <LogoCarousel/>
+      <LogoCarousel />
 
       {/* tabs view training areas */}
       {/* <section className="flex min-h-[100vh] py-20 px-12 lg:px-2">
