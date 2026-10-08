@@ -1,6 +1,5 @@
 import SectionHero from "@/components/Section";
-import ReCAPTCHA from "react-google-recaptcha";
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import locationIcon from "@/public/icons/location-icon.svg";
 import mailIcon from "@/public/icons/mail-icon.svg";
 import phoneIcon from "@/public/icons/phone-icon.svg";
@@ -33,13 +32,19 @@ const ContactUs = () => {
     email: "",
     number: "",
     message: "",
-    token: "",
+    website: "",
   });
+  const [q, setQ] = useState({ a: 0, b: 0 });
+  const [answer, setAnswer] = useState("");
+  const newQuestion = () => {
+    setQ({ a: 1 + Math.floor(Math.random() * 9), b: 1 + Math.floor(Math.random() * 9) });
+    setAnswer("");
+  };
+  useEffect(newQuestion, []);
   const [mailSent, setmailSent] = useState();
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
-  const captchaRef = useRef(null);
 
   // const [isChecked, setChecked] = useState(false);
   const handleChange = (event) => {
@@ -69,16 +74,14 @@ const ContactUs = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     setLoading(true);
-    const token = captchaRef.current.getValue();
-    captchaRef.current.reset();
-    useInput.token = token;
-    console.log(useInput);
+    const payload = { ...useInput, a: q.a, b: q.b, answer };
+    newQuestion();
 
     axios({
       method: "post",
       url: `${process.env.API_PATH}`,
       headers: { "content-type": "application/json" },
-      data: useInput,
+      data: payload,
     })
       .then((result) => {
         console.log(result, "THIS IS WHAT YOU GET AFTER PHP ENDPOINT HIT");
@@ -287,10 +290,33 @@ const ContactUs = () => {
                   onChange={handleChange}
                 ></textarea>
               </div>
-              <ReCAPTCHA
-                sitekey="6LfBF5knAAAAADFYohGAocEtFlrUZQQ8-l8QbQzN"
-                onChange={onChange}
-                ref={captchaRef}
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="captcha"
+                  className="text-gray-700 text-sm font-medium"
+                >
+                  Security check: what is {q.a} + {q.b}?
+                </label>
+                <input
+                  type="number"
+                  id="captcha"
+                  name="captcha"
+                  value={answer}
+                  className="rounded-lg border border-gray-300 bg-white px-4 py-2 shadow-xs w-full"
+                  placeholder="Your answer"
+                  required
+                  onChange={(e) => setAnswer(e.target.value)}
+                />
+              </div>
+              <input
+                type="text"
+                name="website"
+                value={useInput.website}
+                onChange={handleChange}
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                style={{ position: "absolute", left: "-9999px" }}
               />
               <div>
                 <Button text={"Submit"} highlight type={"submit"} />

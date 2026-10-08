@@ -8,24 +8,19 @@ export default async function handler(req, res) {
     return res.status(405).json({ sent: false, message: "Method not allowed" });
   }
 
-  const { fname, lname, email, number, message, token } = req.body || {};
+  const { fname, lname, email, number, message, a, b, answer, website } = req.body || {};
+  if (website) {
+    // honeypot filled: pretend success
+    return res.status(200).json({ sent: true, message: "Thank you! Your message has been sent." });
+  }
   if (!fname || !lname || !email || !number || !message) {
     return res.status(400).json({ sent: false, message: "Please fill in all fields." });
   }
-  if (!token) {
-    return res.status(400).json({ sent: false, message: "Please verify the captcha." });
+  if (!Number.isInteger(+a) || !Number.isInteger(+b) || +a + +b !== +answer) {
+    return res.status(400).json({ sent: false, message: "Wrong answer to the security question. Please try again." });
   }
 
   try {
-    const verify = await fetch("https://www.google.com/recaptcha/api/siteverify", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({ secret: process.env.RECAPTCHA_SECRET_KEY || "", response: token }),
-    }).then((r) => r.json());
-    if (!verify.success) {
-      return res.status(400).json({ sent: false, message: "Captcha verification failed. Please try again." });
-    }
-
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
       from: process.env.CONTACT_FROM || "Markrich Website <onboarding@resend.dev>",
