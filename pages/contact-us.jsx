@@ -6,6 +6,7 @@ import phoneIcon from "@/public/icons/phone-icon.svg";
 import Button from "@/components/Button";
 import contactImage from "@/public/images/contact-image.svg";
 import axios from "axios";
+import { useRouter } from "next/router";
 import Image from "next/image";
 const contactInfo = [
   {
@@ -26,6 +27,7 @@ const contactInfo = [
 ];
 
 const ContactUs = () => {
+  const router = useRouter();
   let [useInput, setInput] = useState({
     fname: "",
     lname: "",
@@ -88,6 +90,7 @@ const ContactUs = () => {
         if (result.status === 200) {
           console.log("SENTTT MAILLL");
           if (result.data.sent) {
+            router.push("/thank-you/");
             setmailSent(true);
             setSuccess(result.data.message);
             setError(false);
