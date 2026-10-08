@@ -119,7 +119,12 @@ const ContactUs = () => {
         //   mailSent: result.data.sent,
         // });
       })
-      .catch((error) => setError(error.message));
+      .catch((error) => {
+        setLoading(false);
+        setError(
+          error.response?.data?.message || "Something went wrong. Please try again."
+        );
+      });
   };
   function onChange(value) {
     // console.log("Captcha value:", value);
