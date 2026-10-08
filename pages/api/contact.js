@@ -22,17 +22,31 @@ export default async function handler(req, res) {
 
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
-    const { error } = await resend.emails.send({
+    const mail = {
       from: process.env.CONTACT_FROM || "Markrich Website <onboarding@resend.dev>",
-      to: (process.env.CONTACT_TO || "outreach.markrich@gmail.com").split(","),
       reply_to: email,
       subject: `New website enquiry from ${fname} ${lname}`,
       html: `<p><b>Name:</b> ${esc(fname)} ${esc(lname)}</p>
 <p><b>Email:</b> ${esc(email)}</p>
 <p><b>Phone:</b> ${esc(number)}</p>
 <p><b>Message:</b><br>${esc(message).replace(/\n/g, "<br>")}</p>`,
+    };
+    const { error } = await resend.emails.send({
+      ...mail,
+      to: (process.env.CONTACT_TO || "outreach.markrich@gmail.com").split(","),
     });
     if (error) throw new Error(error.message);
+
+    // Extra copy; works once markrich.in is verified in Resend. Never blocks the form.
+    try {
+      const copy = await resend.emails.send({
+        ...mail,
+        to: (process.env.CONTACT_COPY_TO || "mark@markrich.in").split(","),
+      });
+      if (copy.error) console.warn("copy email not sent:", copy.error.message);
+    } catch (e) {
+      console.warn("copy email failed:", e.message);
+    }
 
     return res.status(200).json({ sent: true, message: "Thank you! Your message has been sent." });
   } catch (e) {
