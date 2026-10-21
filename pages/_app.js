@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Layout from "@/components/Layout";
 import NavBar from "@/components/NavBar";
 import FloatingDownloadButton from "@/components/FloatingDownloadButton";
+import FloatingContactButtons from "@/components/FloatingContactButtons";
 import "@/styles/globals.css";
 import { Inter, Poppins } from "next/font/google";
 
@@ -35,6 +36,7 @@ export default function App({ Component, pageProps }) {
         `}</style>
         <NavBar />
         <Component {...pageProps} />
+           <FloatingContactButtons />
            <FloatingDownloadButton />
         <Footer />
       </Layout>

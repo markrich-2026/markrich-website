@@ -53,9 +53,9 @@ const GalleryPage = () => {
         <div className="container mx-auto max-w-[1200px] flex flex-col gap-12">
           {/* Section Heading */}
           <div className="text-left flex flex-col gap-3">
-            <h6 className="text-[#ED3630] font-medium text-sm">
+            <h4 className="text-[#ED3630] font-medium text-sm">
               Glimpse of Our Trainings
-            </h6>
+            </h4>
             <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter text-[#18181B]">
               Training at Markrich Solutions -{" "}
               <span className="text-[#F58A07]">
@@ -71,26 +71,62 @@ const GalleryPage = () => {
           {/* Gallery Grid */}
           <div className="grid grid-cols-4 gap-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
             {[
-              "/team/team1.jpg",
-              "/team/team2.jpg",
-              "/team/team3.jpg",
-              "/team/team4.jpg",
-              "/team/team5.jpg",
-              "/team/team6.jpg",
-              "/team/team7.jpg",
-              "/team/team8.jpg",
-              "/training/training1.png",
-              "/training/training2.png",
-              "/training/training3.jpg",
-              "/training/training4.jpg",
+              {
+                src: "/team/team1.jpg",
+                alt: "Markrich Solutions conducting an in-person data analytics training session",
+              },
+              {
+                src: "/team/team2.jpg",
+                alt: "Participants attending an AI training session at Markrich Solutions",
+              },
+              {
+                src: "/team/team3.jpg",
+                alt: "Trainer engaging with participants during an offline Finance training session",
+              },
+              {
+                src: "/team/team4.jpg",
+                alt: "Professionals participating in a Markrich Solutions AI for HR training session",
+              },
+              {
+                src: "/team/team5.jpg",
+                alt: "AI Trainer delivering practical AI training to participants",
+              },
+              {
+                src: "/team/team6.jpg",
+                alt: "Participants learning during an in-person Data Analytics training programme",
+              },
+              {
+                src: "/team/team7.jpg",
+                alt: "Markrich Solutions trainer guiding participants during training",
+              },
+              {
+                src: "/team/team8.jpg",
+                alt: "Professionals attending an interactive Finance training session",
+              },
+              {
+                src: "/training/training1.png",
+                alt: "Participants attending an online training session on AI for HR Professionals with Markrich Solutions",
+              },
+              {
+                src: "/training/training2.png",
+                alt: "Markrich Solutions conducting a virtual instructor-led AI training session by best AI Trainer",
+              },
+              {
+                src: "/training/training3.jpg",
+                alt: "Markrich Solutions conducting a professional AI learning session",
+              },
+              {
+                src: "/training/training4.jpg",
+                alt: "Participants engaging in a hands-on AI training session",
+              },
             ].map((img, index) => (
               <div
                 key={index}
                 className="overflow-hidden rounded-[24px] bg-white shadow-sm transition-all duration-500 hover:shadow-lg"
               >
                 <img
-                  src={img}
-                  alt={`Life at Markrich ${index + 1}`}
+                  src={img.src}
+                  alt={img.alt}
                   className="w-full h-56 object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
@@ -103,13 +139,13 @@ const GalleryPage = () => {
 
       <CertifiedProfessionalsCarousel />
 
-      <CTASecondary />
+      <CTASecondary eyebrowTag="h4" />
 
       <section className="py-20 px-6">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-semibold text-black mb-10 text-center">
+          <h3 className="text-4xl md:text-5xl font-semibold text-black mb-10 text-center">
             Frequently Asked <span className="text-[#F58A07] ">Questions</span>
-          </h2>
+          </h3>
 
           <div className="flex flex-col gap-4">
             {faqs.map((faq, index) => (

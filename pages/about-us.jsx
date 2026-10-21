@@ -46,6 +46,7 @@ const About = () => {
       <Section
         background
         metaTitle={"About us"}
+        metaTag="h4"
         subText={
           "At Markrich Solutions , we understand the ever-evolving landscape of the business world and the need for continuous learning and development. Our goal is to equip your employees with the essential skills and knowledge to thrive in today's competitive environment."
         }
@@ -58,9 +59,9 @@ const About = () => {
           <div className="flex flex-col gap-8 max-w-[600px] lg:max-w-none">
             {/* about us content */}
             <div className="flex flex-col gap-4">
-              <h6 className="text-[#ED3630] font-medium md:text-sm">
+              <h4 className="text-[#ED3630] font-medium md:text-sm">
                 Who we are
-              </h6>
+              </h4>
               <h2 className="text-5xl font-semibold tracking-tighter md:text-4xl">
                 Welcome to <span className="text-[#F58A07]">Markrich</span>{" "}
                 Solutions
@@ -99,7 +100,11 @@ const About = () => {
           </div>
           <div className="lg:w-full flex">
             {/* Hero image */}
-            <img src={aboutImage.src} className="w-full" />
+            <img
+              src={aboutImage.src}
+              alt="Markrich Solutions team delivering AI and business training solutions"
+              className="w-full"
+            />
           </div>
         </div>
       </section>
@@ -113,7 +118,7 @@ const About = () => {
               <div className="relative">
                 <img
                   src="/images/mark.png"
-                  alt="Founder"
+                  alt="Founder of Markrich Solutions sharing the company vision"
                   className="h-60 w-60 rounded-full border-4 border-[#F58A07] object-cover"
                 />
               </div>
@@ -147,11 +152,11 @@ const About = () => {
 
           {/* Story Content */}
           <div className="flex flex-col gap-6 max-w-[650px]">
-            <h6 className="text-[#ED3630] font-medium md:text-sm">Our Story</h6>
+            <h4 className="text-[#ED3630] font-medium md:text-sm">Our Story</h4>
 
-            <h2 className="text-5xl font-semibold tracking-tighter md:text-4xl">
+            <h3 className="text-5xl font-semibold tracking-tighter md:text-4xl">
               The Vision of Our <span className="text-[#F58A07]">Founder</span>
-            </h2>
+            </h3>
 
             <p className="text-[#18181B] leading-relaxed">
               Mark Menezes is the Founder of Markrich Solutions LLP, enabling
@@ -201,13 +206,13 @@ const About = () => {
         <div className="container mx-auto max-w-[1200px] flex gap-16 items-center lg:flex-col lg:gap-10">
           {/* Text Content */}
           <div className="flex flex-col gap-6 max-w-[650px] order-1 lg:order-2">
-            <h6 className="text-[#ED3630] font-medium md:text-sm">
+            <h4 className="text-[#ED3630] font-medium md:text-sm">
               Leadership
-            </h6>
+            </h4>
 
-            <h2 className="text-5xl font-semibold tracking-tighter md:text-4xl">
+            <h3 className="text-5xl font-semibold tracking-tighter md:text-4xl">
               Operational<span className="text-[#F58A07]"> Leadership</span>
-            </h2>
+            </h3>
 
             <p className="text-[#18181B] leading-relaxed">
               Richard Menezes is a Partner at Markrich Solutions LLP and brings
@@ -232,7 +237,7 @@ const About = () => {
             <div className="flex flex-col gap-6">
               <img
                 src="/images/richard.png"
-                alt="Richard Menezes"
+                alt="Markrich Solutions Operations Leader managing business operations"
                 className="h-60 w-60 rounded-full border-4 border-[#F58A07] object-cover"
               />
 
@@ -267,15 +272,19 @@ const About = () => {
         <div className="container mx-auto max-w-[1200px] flex justify-between gap-16 items-center lg:flex-col">
           <div className="flex w-full">
             {/* Hero image */}
-            <img src={aboutImageTwo.src} className="w-full" />
+            <img
+              src={aboutImageTwo.src}
+              alt="Markrich Solutions team working towards its mission and vision"
+              className="w-full"
+            />
           </div>
           <div className="flex flex-col gap-8 max-w-[600px] lg:max-w-none">
             {/* about us content */}
             <div className="flex flex-col gap-4">
               {/* <h6 className="text-[#ED3630] font-medium">Who we are</h6> */}
-              <h3 className="text-4xl font-semibold tracking-tight er">
+              <h5 className="text-4xl font-semibold tracking-tight er">
                 Our Mission
-              </h3>
+              </h5>
             </div>
             <p className="text-[#18181B]">
               To ensure customer satisfaction in all our client engagements and
@@ -284,9 +293,9 @@ const About = () => {
             <hr />
             <div className="flex flex-col gap-4">
               {/* <h6 className="text-[#ED3630] font-medium">Who we are</h6> */}
-              <h3 className="text-4xl font-semibold tracking-tighter">
+              <h5 className="text-4xl font-semibold tracking-tighter">
                 Our Vision
-              </h3>
+              </h5>
             </div>
             <p className="text-[#18181B]">
               To be the partner of choice for all corporate training needs

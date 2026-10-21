@@ -13,6 +13,8 @@ import { Card, FeatureCard } from "@/components/Card";
 import { TabsComponent } from "@/components/Tabs";
 import Link from "next/link";
 import LogoCarousel from "@/components/LogoCarousel";
+import VideoTestimonials from "@/components/VideoTestimonials";
+import GoogleReviews from "@/components/GoogleReviews";
 
 const trainingAreas = [
   {
@@ -403,6 +405,9 @@ export default function Home() {
       </section>
 
       <LogoCarousel />
+
+
+      <GoogleReviews />
 
       {/* tabs view training areas */}
       {/* <section className="flex min-h-[100vh] py-20 px-12 lg:px-2">

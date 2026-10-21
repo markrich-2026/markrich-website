@@ -91,13 +91,13 @@ const ImageSlider = () => {
         
         {/* Upper Text */}
         <div className="flex flex-col gap-4 max-w-[700px]">
-          <h6 className="text-[#ED3630] font-medium text-sm">
+          <h4 className="text-[#ED3630] font-medium text-sm">
             Our Achievers
-          </h6>
+          </h4>
 
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter text-[#18181B]">
+          <h3 className="text-4xl md:text-5xl font-semibold tracking-tighter text-[#18181B]">
             Certified <span className="text-[#F58A07]">Professionals</span>
-          </h2>
+          </h3>
 
           <p className="text-[#18181B]">
             Learners who successfully completed our programs and received

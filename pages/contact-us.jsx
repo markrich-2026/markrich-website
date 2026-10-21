@@ -360,7 +360,11 @@ const ContactUs = () => {
             )}
           </div>
           <div className="flex w-full md:hidden">
-            <Image className="w-full object-fit" src={contactImage} alt="" />
+            <Image
+              className="w-full object-fit"
+              src={contactImage}
+              alt="Markrich Solutions team ready to assist with training enquiries"
+            />
           </div>
         </div>
       </section>

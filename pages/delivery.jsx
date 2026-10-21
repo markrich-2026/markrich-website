@@ -105,12 +105,12 @@ const Delivery = () => {
               <img
                 className="w-full object-cover"
                 src={offlineImage.src}
-                alt=""
+                alt="Markrich Solutions conducting in-person training sessions"
               />
             </div>
-            <h6 className="text-2xl font-semibold text-[#F58A07]">
+            <h3 className="text-2xl font-semibold text-[#F58A07]">
               Offline trainings
-            </h6>
+            </h3>
             <p className="text-slate-500 text-sm">
               Our training experts visit your location to deliver the training.
             </p>
@@ -122,12 +122,12 @@ const Delivery = () => {
               <img
                 className="w-full object-cover"
                 src={trainingImage.src}
-                alt=""
+                alt="Markrich Solutions conducting virtual instructor-led training"
               />
             </div>
-            <h6 className="text-2xl font-semibold text-[#F58A07]">
+            <h3 className="text-2xl font-semibold text-[#F58A07]">
               Virtual Instructor Led Training
-            </h6>
+            </h3>
             <p className="text-slate-500 text-sm">
               Our experts conduct engaging Live- Virtual training sessions.
             </p>
@@ -142,12 +142,12 @@ const Delivery = () => {
               <h6 className="text-[#ED3630] font-medium md:text-sm">
                 What you get
               </h6>
-              <h3 className="text-4xl font-semibold tracking-tight lg:text-3xl">
+              <h2 className="text-4xl font-semibold tracking-tight lg:text-3xl">
                 At Markrich Solutions, our{" "}
                 <span className="text-[#F58A07]">
                   training sessions include
                 </span>
-              </h3>
+              </h2>
             </div>
 
             <ul className=" list-disc pl-4 text-slate-800 md:leading-8">
@@ -160,7 +160,7 @@ const Delivery = () => {
             <hr />
             <button className="text-[#ED3630] font-semibold max-w-fit">
               <Link href={"/contact-us"}>
-                <div className="flex items-center gap-1">
+                <h3 className="flex items-center gap-1 [font-family:inherit]">
                   Learn More{" "}
                   <svg
                     width="15"
@@ -176,16 +176,19 @@ const Delivery = () => {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                </div>
+                </h3>
               </Link>
             </button>
           </div>
           <div>
-            <img src={sessionsImage.src} alt="" />
+            <img
+              src={sessionsImage.src}
+              alt="Markrich Solutions training session covering practical learning and skills"
+            />
           </div>
         </div>
       </section>
-      <CTASecondary />
+      <CTASecondary headingTag="h2" />
     </>
   );
 };

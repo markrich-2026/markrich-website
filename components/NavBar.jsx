@@ -2,6 +2,30 @@ import React, { useState } from "react";
 import logo from "@/public/images/logo.webp";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { PHONE_DISPLAY, PHONE_LINK, EMAIL, EMAIL_LINK } from "@/lib/contact";
+
+// Call / Email buttons shown in the header; labels collapse to icons on smaller screens
+const HeaderContactButtons = () => (
+  <div className="flex items-center gap-2">
+    <a
+      href={PHONE_LINK}
+      aria-label={`Call ${PHONE_DISPLAY}`}
+      className="flex items-center gap-2 rounded-full bg-[#F58A07] text-white px-4 py-2 text-sm font-medium hover:bg-[#ED3630] transition xl:px-3"
+    >
+      <FaPhoneAlt size={14} />
+      <span className="xl:hidden">Call</span>
+    </a>
+    <a
+      href={EMAIL_LINK}
+      aria-label={`Email ${EMAIL}`}
+      className="flex items-center gap-2 rounded-full border border-[#F58A07] text-[#F58A07] px-4 py-2 text-sm font-medium hover:bg-[#F58A07] hover:text-white transition xl:px-3"
+    >
+      <FaEnvelope size={14} />
+      <span className="xl:hidden">Email</span>
+    </a>
+  </div>
+);
 
 const NavBar = () => {
   const [isClicked, setClicked] = useState(false);
@@ -59,11 +83,11 @@ const NavBar = () => {
               <img src={logo.src} className="max-w-[100px]" alt="" />
             </Link>
           </NavigationMenu.Item>
-          <div className="flex gap-5 lg:hidden">
+          <div className="flex items-center gap-1 lg:hidden">
             {navLinks.map((navitem, index) => (
               <NavigationMenu.Item key={index + 1}>
                 <Link
-                  className="text-violet11 hover:text-[#F58A07] transition duration-500 focus:text-[#F58A07] block select-none rounded-[4px] px-3 text-[15px] font-medium leading-none no-underline outline-none"
+                  className="text-violet11 hover:text-[#F58A07] transition duration-500 focus:text-[#F58A07] block select-none whitespace-nowrap rounded-[4px] px-3 xl:px-2 text-[15px] font-medium leading-none no-underline outline-none"
                   href={navitem.url}
                 >
                   {navitem.page}
@@ -71,7 +95,11 @@ const NavBar = () => {
               </NavigationMenu.Item>
             ))}
           </div>
-          <div className="rounded-full  hidden lg:block ">
+          <div className="lg:hidden">
+            <HeaderContactButtons />
+          </div>
+          <div className="hidden lg:flex items-center gap-3">
+            <HeaderContactButtons />
             <button
               className="focus:text-[#F58A07] p-2 rounded-full bg-slate-50 text-slate-500 focus:bg-[#f58a072b]"
               onClick={showNav}
