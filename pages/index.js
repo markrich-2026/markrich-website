@@ -13,7 +13,6 @@ import { Card, FeatureCard } from "@/components/Card";
 import { TabsComponent } from "@/components/Tabs";
 import Link from "next/link";
 import LogoCarousel from "@/components/LogoCarousel";
-import VideoTestimonials from "@/components/VideoTestimonials";
 import GoogleReviews from "@/components/GoogleReviews";
 
 const trainingAreas = [
