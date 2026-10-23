@@ -5,7 +5,7 @@ import SectionHero from "@/components/Section";
 import Button from "@/components/Button";
 import GoogleReviews from "@/components/GoogleReviews";
 
-const PAGE_URL = "https://www.markrich.in/ai-training-company-in-india/";
+const PAGE_URL = "https://www.markrich.in/ai-training-company-india/";
 const META_TITLE = "Top AI Training Company in India | Markrich Solutions";
 const META_DESCRIPTION =
   "Choose Markrich Solutions, the top AI training company in India, for AI tools, use cases, workplace applications, and practical learning, join us today.";

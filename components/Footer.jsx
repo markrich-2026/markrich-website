@@ -45,7 +45,7 @@ const Footer = () => {
               <Link href={"/content"}>
                 <li>Content Services</li>
               </Link>
-              <Link href={"/ai-training-company-in-india"}>
+              <Link href={"/ai-training-company-india"}>
                 <li>AI Training Company in India</li>
               </Link>
             </ul>
