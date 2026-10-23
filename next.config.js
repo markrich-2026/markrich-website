@@ -11,6 +11,15 @@ const nextConfig = {
     SITE_URL: "https://markrich.in",
   },
   trailingSlash: true,
+  async redirects() {
+    return [
+      {
+        source: "/ai-training-company-in-india",
+        destination: "/ai-training-company-india/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
