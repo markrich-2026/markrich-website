@@ -2,6 +2,7 @@ import React from "react";
 import logo from "@/public/images/logo.webp";
 import fbIcon from "@/public/icons/social-fb.svg";
 import linkedinIcon from "@/public/icons/social-linkedin.svg";
+import instagramIcon from "@/public/icons/social-instagram.svg";
 import twIcon from "@/public/icons/social-tw.svg";
 import Link from "next/link";
 const Footer = () => {
@@ -56,9 +57,35 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/company/markrich-solutions-llp"
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Markrich Solutions on LinkedIn"
               >
                 <img
                   src={linkedinIcon.src}
+                  className="w-full object-fit max-w-[40px]"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/markrich.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Markrich Solutions on Instagram"
+              >
+                <img
+                  src={instagramIcon.src}
+                  className="w-full object-fit max-w-[40px]"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/people/Markrich-Solutions-LLP/61557010641903/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Markrich Solutions on Facebook"
+              >
+                <img
+                  src={fbIcon.src}
                   className="w-full object-fit max-w-[40px]"
                   alt=""
                 />

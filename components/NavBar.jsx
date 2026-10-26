@@ -27,6 +27,32 @@ const HeaderContactButtons = () => (
   </div>
 );
 
+// Pages listed under the "Training Solutions" dropdown — add new training pages here
+const trainingPages = [
+  {
+    page: "AI Training Company in India",
+    url: "/ai-training-company-india",
+  },
+];
+
+const ChevronDown = () => (
+  <svg
+    width="12"
+    height="12"
+    viewBox="0 0 15 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="transition-transform duration-300 group-hover:rotate-180"
+  >
+    <path
+      d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+      fill="currentColor"
+      fillRule="evenodd"
+      clipRule="evenodd"
+    ></path>
+  </svg>
+);
+
 const NavBar = () => {
   const [isClicked, setClicked] = useState(false);
 
@@ -48,6 +74,7 @@ const NavBar = () => {
     {
       page: "Training Solutions",
       url: "/training-solutions",
+      children: trainingPages,
     },
     {
       page: "Delivery",
@@ -73,7 +100,7 @@ const NavBar = () => {
 
   return (
     <>
-      <NavigationMenu.Root className="z-[1] flex w-full items-center justify-center  [&>div]:min-w-[100%] [&>div]:flex [&>div]:justify-center [&>div]:static ">
+      <NavigationMenu.Root className="relative z-40 flex w-full items-center justify-center  [&>div]:min-w-[100%] [&>div]:flex [&>div]:justify-center [&>div]:static ">
         <NavigationMenu.List className="w-full flex max-w-[1200px] list-none bg-white p-1 py-3 px-5 items-center justify-between">
           <NavigationMenu.Item>
             <Link
@@ -85,13 +112,34 @@ const NavBar = () => {
           </NavigationMenu.Item>
           <div className="flex items-center gap-1 lg:hidden">
             {navLinks.map((navitem, index) => (
-              <NavigationMenu.Item key={index + 1}>
+              <NavigationMenu.Item
+                key={index + 1}
+                className={navitem.children ? "relative group" : ""}
+              >
                 <Link
-                  className="text-violet11 hover:text-[#F58A07] transition duration-500 focus:text-[#F58A07] block select-none whitespace-nowrap rounded-[4px] px-3 xl:px-2 text-[15px] font-medium leading-none no-underline outline-none"
+                  className="text-violet11 hover:text-[#F58A07] transition duration-500 focus:text-[#F58A07] flex items-center gap-1 select-none whitespace-nowrap rounded-[4px] px-3 xl:px-2 text-[15px] font-medium leading-none no-underline outline-none group-hover:text-[#F58A07]"
                   href={navitem.url}
                 >
                   {navitem.page}
+                  {navitem.children && <ChevronDown />}
                 </Link>
+                {navitem.children && (
+                  // pt-4 bridges the gap so the menu stays open while the mouse moves down
+                  <div className="absolute left-0 top-full pt-4 hidden group-hover:block group-focus-within:block">
+                    <ul className="min-w-[260px] list-none rounded-xl border border-[#E5E7EB] bg-white p-2 shadow-lg">
+                      {navitem.children.map((child) => (
+                        <li key={child.url}>
+                          <Link
+                            href={child.url}
+                            className="block whitespace-nowrap rounded-lg px-4 py-3 text-[15px] font-medium text-[#18181B] hover:bg-[#FFF7ED] hover:text-[#F58A07] focus:bg-[#FFF7ED] focus:text-[#F58A07] outline-none transition"
+                          >
+                            {child.page}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </NavigationMenu.Item>
             ))}
           </div>
@@ -137,6 +185,20 @@ const NavBar = () => {
                 >
                   {navitem.page}
                 </Link>
+                {navitem.children && (
+                  <ul className="mt-4 ml-3 flex flex-col gap-4 border-l-2 border-[#F58A07] pl-4 list-none">
+                    {navitem.children.map((child) => (
+                      <li key={child.url}>
+                        <Link
+                          href={child.url}
+                          className="block text-base font-medium text-slate-600 hover:text-[#F58A07] transition"
+                        >
+                          {child.page}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </NavigationMenu.Item>
             ))}
           </div>
