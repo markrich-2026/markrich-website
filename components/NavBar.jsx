@@ -30,7 +30,7 @@ const HeaderContactButtons = () => (
 // Pages listed under the "Training Solutions" dropdown — add new training pages here
 const trainingPages = [
   {
-    page: "AI Training Company in India",
+    page: "AI Training",
     url: "/ai-training-company-india",
   },
 ];
