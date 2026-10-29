@@ -1,9 +1,4 @@
-# *
 User-agent: *
-Allow: /
-
-# Host
-Host: https://markrich.in/
-
-# Sitemaps
-Sitemap: https://markrich.in/sitemap.xml
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://www.markrich.in/sitemap.xml

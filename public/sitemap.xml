@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://markrich.in/sitemap-0.xml</loc></sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://www.markrich.in/</loc><lastmod>2026-10-29T10:23:47.725Z</lastmod><priority>1</priority></url>
+<url><loc>https://www.markrich.in/about-us/</loc><lastmod>2026-10-29T10:23:47.726Z</lastmod><priority>0.8</priority></url>
+<url><loc>https://www.markrich.in/ai-training-company-india/</loc><lastmod>2026-10-29T10:23:47.726Z</lastmod><priority>0.8</priority></url>
+<url><loc>https://www.markrich.in/contact-us/</loc><lastmod>2026-10-29T10:23:47.726Z</lastmod><priority>0.8</priority></url>
+<url><loc>https://www.markrich.in/content/</loc><lastmod>2026-10-29T10:23:47.726Z</lastmod><priority>0.8</priority></url>
+<url><loc>https://www.markrich.in/delivery/</loc><lastmod>2026-10-29T10:23:47.726Z</lastmod><priority>0.8</priority></url>
+<url><loc>https://www.markrich.in/privacy-policy/</loc><lastmod>2026-10-29T10:23:47.726Z</lastmod><priority>0.8</priority></url>
+<url><loc>https://www.markrich.in/success-stories/</loc><lastmod>2026-10-29T10:23:47.726Z</lastmod><priority>0.8</priority></url>
+<url><loc>https://www.markrich.in/training-solutions/</loc><lastmod>2026-10-29T10:23:47.726Z</lastmod><priority>0.8</priority></url>
+<url><loc>https://www.markrich.in/verify-certificate/</loc><lastmod>2026-10-29T10:23:47.726Z</lastmod><priority>0.8</priority></url>
+<url><loc>https://www.markrich.in/pdf/company-profile-markrich-solutions.pdf</loc><lastmod>2026-10-29T10:23:47.726Z</lastmod><priority>0.8</priority></url>
+</urlset>
