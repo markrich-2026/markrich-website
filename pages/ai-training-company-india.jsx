@@ -4,6 +4,7 @@ import Link from "next/link";
 import SectionHero from "@/components/Section";
 import Button from "@/components/Button";
 import GoogleReviews from "@/components/GoogleReviews";
+import { LabelList, SectionHeading } from "@/components/TrainingPage";
 
 const PAGE_URL = "https://www.markrich.in/ai-training-company-india/";
 const META_TITLE = "Top AI Training Company in India | Markrich Solutions";
@@ -29,7 +30,7 @@ const trainingAreas = [
       "As AI adoption continues to grow in the finance sector, AI training in Finance programmes is helping professionals understand its applications in financial analysis, reporting and decision-making. The right programme depends on participants’ existing knowledge, job responsibilities and learning objectives.",
   },
   {
-    title: "AI Training",
+    title: "AI Training Programmes Led by the Best AI Trainer in India",
     intro:
       "AI training helps professionals understand artificial intelligence and explore how AI-enabled tools and workflows may support relevant workplace activities. Partnering with a leading AI training company in India ensures corporate teams focus on practical applications, appropriate use and assessing AI-generated outputs rather than simply learning terminology.",
     listLabel: "Markrich’s portfolio includes:",
@@ -218,31 +219,6 @@ const faqs = [
   },
 ];
 
-// Bulleted "Label: description" list used throughout the page
-const LabelList = ({ items }) => (
-  <ul className="flex flex-col gap-3">
-    {items.map(([label, text], index) => (
-      <li key={index} className="flex gap-3 text-[#18181B]">
-        <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#F58A07]" />
-        <p>
-          <span className="font-semibold">{label}:</span> {text}
-        </p>
-      </li>
-    ))}
-  </ul>
-);
-
-const SectionHeading = ({ children, eyebrow, center }) => (
-  <div className={`flex flex-col gap-3 ${center ? "items-center text-center" : ""}`}>
-    {eyebrow && (
-      <p className="text-[#ED3630] font-medium md:text-sm">{eyebrow}</p>
-    )}
-    <h2 className="text-4xl font-semibold tracking-tighter md:text-3xl">
-      {children}
-    </h2>
-  </div>
-);
-
 const AiTrainingCompanyInIndia = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -271,7 +247,7 @@ const AiTrainingCompanyInIndia = () => {
         metaTitle="AI Training Company in India"
         subText="Markrich Solutions provides corporate training solutions designed to help organisations strengthen financial understanding, develop data-driven decision-making skills, build AI capabilities and improve leadership effectiveness. Our training portfolio covers Finance, AI, Analytics and Business Excellence, enabling organisations to explore learning programmes relevant to their teams and business requirements."
       >
-        Corporate Training Solutions in{" "}
+        AI Training Company in India: Corporate Training Solutions in{" "}
         <span className="text-[#F58A07]">Finance, AI, Analytics</span> and
         Business Excellence
       </SectionHero>

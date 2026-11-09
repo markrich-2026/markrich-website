@@ -33,6 +33,10 @@ const trainingPages = [
     page: "AI Training",
     url: "/ai-training-company-india",
   },
+  {
+    page: "Data Analytics Training",
+    url: "/data-analytics-training",
+  },
 ];
 
 const ChevronDown = () => (
