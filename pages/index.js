@@ -25,11 +25,13 @@ const trainingAreas = [
     icon: analyticsIcon,
     title: "Analytics",
     text: "Empower data-driven decisions: Analytics training from Excel fundamentals to advanced data analytics, tailored solutions to enhance analytical thinking.",
+    link: "/data-analytics-training",
   },
   {
     icon: aiIcon,
     title: "AI",
     text: "Empower intelligent innovation: AI training from Generative AI fundamentals to advanced machine learning & automation, tailored solutions to enhance  decision-making.",
+    link: "/ai-training-company-india",
   },
   {
     icon: businessIcon,
@@ -362,6 +364,7 @@ export default function Home() {
                 title={ele.title}
                 icon={ele.icon}
                 text={ele.text}
+                link={ele.link}
                 align={"md:items-center"}
               />
             ))}
