@@ -1,8 +1,9 @@
 import { FaStar, FaGoogle } from "react-icons/fa";
+import { GMB_LINK } from "@/lib/contact";
 
 // Reviews copied from the Markrich Solutions LLP Google Business Profile.
 // Update averageRating / totalReviews and add new reviews as they come in.
-const profileUrl = "https://share.google/WNzXK5RIgNVg0EVra";
+const profileUrl = GMB_LINK;
 const averageRating = 5.0;
 const totalReviews = 5;
 const reviews = [

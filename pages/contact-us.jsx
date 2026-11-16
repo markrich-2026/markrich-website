@@ -8,21 +8,32 @@ import contactImage from "@/public/images/contact-image.svg";
 import axios from "axios";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import { FaGoogle } from "react-icons/fa";
+import {
+  PHONE_DISPLAY,
+  PHONE_LINK,
+  EMAIL,
+  EMAIL_LINK,
+  GMB_LINK,
+} from "@/lib/contact";
 const contactInfo = [
   {
     icon: phoneIcon,
     title: "Phone",
-    content: "+91-9702551632",
+    content: PHONE_DISPLAY,
+    href: PHONE_LINK,
   },
   {
     icon: mailIcon,
     title: "Mail us",
-    content: "mark@markrich.in",
+    content: EMAIL,
+    href: EMAIL_LINK,
   },
   {
     icon: locationIcon,
     title: "Reach us at",
     content: "Mumbai",
+    gmb: true,
   },
 ];
 
@@ -173,7 +184,27 @@ const ContactUs = () => {
                 </div>
                 <div className="flex flex-col gap-2">
                   <h5 className="text-md font-medium">{ele.title}</h5>
-                  <p className="text-sm text-slate-500">{ele.content}</p>
+                  {ele.href ? (
+                    <a
+                      href={ele.href}
+                      className="text-sm text-slate-500 hover:text-[#F58A07] transition"
+                    >
+                      {ele.content}
+                    </a>
+                  ) : (
+                    <p className="text-sm text-slate-500">{ele.content}</p>
+                  )}
+                  {ele.gmb && (
+                    <a
+                      href={GMB_LINK}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-semibold text-[#ED3630] flex items-center gap-2 w-fit hover:text-[#F58A07] transition"
+                    >
+                      <FaGoogle aria-hidden="true" />
+                      View us on Google
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
