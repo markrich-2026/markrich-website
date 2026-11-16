@@ -37,11 +37,12 @@ export default async function handler(req, res) {
     });
     if (error) throw new Error(error.message);
 
-    // Extra copy; works once markrich.in is verified in Resend. Never blocks the form.
+    // Extra copy (with CC); works once markrich.in is verified in Resend. Never blocks the form.
     try {
       const copy = await resend.emails.send({
         ...mail,
         to: (process.env.CONTACT_COPY_TO || "mark@markrich.in").split(","),
+        cc: (process.env.CONTACT_CC || "markrichsolution@gmail.com").split(","),
       });
       if (copy.error) console.warn("copy email not sent:", copy.error.message);
     } catch (e) {
