@@ -52,6 +52,12 @@ const Footer = () => {
               <Link href={"/data-analytics-training"}>
                 <li>Data Analytics Training</li>
               </Link>
+              <Link href={"/corporate-ai-training-india"}>
+                <li>Corporate AI Training India</li>
+              </Link>
+              <Link href={"/ai-training-in-finance"}>
+                <li>AI Training in Finance</li>
+              </Link>
             </ul>
           </div>
           <div className="flex flex-col gap-3 w-full max-w-[250px] md:max-w-none">

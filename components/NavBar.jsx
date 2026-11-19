@@ -37,6 +37,14 @@ const trainingPages = [
     page: "Data Analytics Training",
     url: "/data-analytics-training",
   },
+  {
+    page: "Corporate AI Training",
+    url: "/corporate-ai-training-india",
+  },
+  {
+    page: "AI Training in Finance",
+    url: "/ai-training-in-finance",
+  },
 ];
 
 const ChevronDown = () => (
