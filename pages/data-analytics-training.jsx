@@ -1,3 +1,5 @@
+import JsonLd from "@/components/JsonLd";
+import { dataAnalyticsSchema } from "@/lib/schema";
 import React from "react";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
@@ -89,6 +91,7 @@ const steps = [
 const DataAnalyticsTraining = () => {
   return (
     <>
+      <JsonLd data={dataAnalyticsSchema} />
       <NextSeo
         title={META_TITLE}
         description={META_DESCRIPTION}

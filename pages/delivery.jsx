@@ -1,3 +1,5 @@
+import JsonLd from "@/components/JsonLd";
+import { deliverySchema } from "@/lib/schema";
 import React from "react";
 import { NextSeo } from "next-seo";
 import process1 from "@/public/icons/process-icon-1.svg";
@@ -35,6 +37,7 @@ const process = [
 const Delivery = () => {
   return (
     <>
+      <JsonLd data={deliverySchema} />
       <NextSeo
         title="Markrich Solutions | Delivery"
         description="Discover the streamlined and efficient approach of Markrich Solutions LLP. Our proven process guarantees precision and professionalism in delivering exceptional results for every project we undertake."

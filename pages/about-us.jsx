@@ -1,3 +1,5 @@
+import JsonLd from "@/components/JsonLd";
+import { aboutSchema } from "@/lib/schema";
 import React from "react";
 import aboutImage from "@/public/images/about-image.webp";
 import aboutImageTwo from "@/public/images/about-image-2.webp";
@@ -43,6 +45,7 @@ const About = () => {
 
   return (
     <>
+      <JsonLd data={aboutSchema} />
       <Section
         background
         metaTitle={"About us"}

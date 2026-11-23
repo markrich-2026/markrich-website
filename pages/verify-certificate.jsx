@@ -1,4 +1,6 @@
 "use client";
+import JsonLd from "@/components/JsonLd";
+import { verifyCertificateSchema } from "@/lib/schema";
 
 import { useState } from "react";
 
@@ -37,6 +39,7 @@ export default function VerifyCertificate() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-orange-100 via-orange-100 to-orange-200 px-4">
+      <JsonLd data={verifyCertificateSchema} />
       <div className="bg-white shadow-lg rounded-2xl p-6 sm:p-8 w-full max-w-xl border-t-4 border-[#F58A07]">
         {/* Header */}
         <h2 className="text-center text-[#F58A07] font-bold text-lg sm:text-xl mb-4">

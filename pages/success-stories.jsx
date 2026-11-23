@@ -1,3 +1,5 @@
+import JsonLd from "@/components/JsonLd";
+import { successStoriesSchema } from "@/lib/schema";
 import React from "react";
 import { useState } from "react";
 import Section from "@/components/Section";
@@ -37,6 +39,7 @@ const GalleryPage = () => {
 
   return (
     <>
+      <JsonLd data={successStoriesSchema} />
       {/* Page Header / Hero */}
       <Section
         background

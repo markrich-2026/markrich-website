@@ -1,3 +1,5 @@
+import JsonLd from "@/components/JsonLd";
+import { contactSchema } from "@/lib/schema";
 import SectionHero from "@/components/Section";
 import React, { useState, useEffect } from "react";
 import locationIcon from "@/public/icons/location-icon.svg";
@@ -148,6 +150,7 @@ const ContactUs = () => {
   }
   return (
     <>
+      <JsonLd data={contactSchema} />
       <section className="min-h-[70vh] flex items-center justify-center px-12 py-20 lg:px-2">
         <div className="container mx-auto max-w-[1200px] flex justify-between gap-20 px-2 items-center lg:flex-col">
           <div className="flex flex-col gap-8 max-w-[670px] w-full lg:max-w-none">

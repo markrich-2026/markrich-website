@@ -1,3 +1,5 @@
+import JsonLd from "@/components/JsonLd";
+import { trainingSolutionsSchema } from "@/lib/schema";
 import React from "react";
 import { CTA } from "@/components/CTA";
 import SectionHero from "@/components/Section";
@@ -90,6 +92,7 @@ const TrainingSolutions = () => {
 
   return (
     <>
+      <JsonLd data={trainingSolutionsSchema} />
       <SectionHero
         background
         subText="Discover a diverse range of training solutions designed to enhance your knowledge and skills in the realms of finance, banking, analytics, and leadership development. Our comprehensive programs cater to individuals and organizations seeking to gain a competitive edge in today's dynamic business landscape."

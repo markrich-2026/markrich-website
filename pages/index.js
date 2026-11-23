@@ -1,3 +1,5 @@
+import JsonLd from "@/components/JsonLd";
+import { homeSchema } from "@/lib/schema";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 import heroImg from "@/public/images/hero-image-small.webp";
@@ -208,6 +210,7 @@ const tabData = [
 export default function Home() {
   return (
     <>
+      <JsonLd data={homeSchema} />
       {/* hero section */}
       <NextSeo
         title="Empower Your Team with Markrich Solutions - Enhance Financial Acumen, Data-Driven Decision-Making, and Positive Work Culture"
