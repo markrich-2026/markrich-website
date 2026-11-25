@@ -13,7 +13,15 @@ const Footer = () => {
           <div className="flex w-full flex-col gap-4 max-w-[320px] md:max-w-none">
             <Link href={"/"}>
               <div className="flex max-w-[100px]">
-                <img className="object-contain w-full" src={logo.src} alt="" />
+                <img
+                  className="object-contain w-full h-auto"
+                  src={logo.src}
+                  width={100}
+                  height={Math.round((100 * logo.height) / logo.width)}
+                  loading="lazy"
+                  decoding="async"
+                  alt="Markrich Solutions home"
+                />
               </div>
             </Link>
 
@@ -26,9 +34,9 @@ const Footer = () => {
           <div className="flex flex-col gap-4 w-full max-w-[200px] md:max-w-none">
             <h6 className="text-base font-medium ">Company</h6>
             <ul className="flex flex-col gap-2 text-sm text-slate-500">
-              <Link href={"/about-us"}>
-                <li>About us</li>
-              </Link>
+              <li>
+                <Link href={"/about-us"} className="hover:text-[#F58A07] transition">About us</Link>
+              </li>
               {/* 
               <li>Terms and conditions</li>
               <li>Privacy policy</li> */}
@@ -37,33 +45,37 @@ const Footer = () => {
           <div className="flex flex-col gap-4 w-full max-w-[200px] md:max-w-none">
             <h6 className="text-base font-medium">Services</h6>
             <ul className="flex flex-col gap-2 text-sm text-slate-500">
-              <Link href={"/training-solutions"}>
-                <li>Training solutions</li>
-              </Link>
-              <Link href={"/delivery"}>
-                <li>Offline trainings</li>
-              </Link>
-              <Link href={"/content"}>
-                <li>Content Services</li>
-              </Link>
-              <Link href={"/ai-training-company-india"}>
-                <li>AI Training Company in India</li>
-              </Link>
-              <Link href={"/data-analytics-training"}>
-                <li>Data Analytics Training</li>
-              </Link>
-              <Link href={"/corporate-ai-training-india"}>
-                <li>Corporate AI Training India</li>
-              </Link>
-              <Link href={"/ai-training-in-finance"}>
-                <li>AI Training in Finance</li>
-              </Link>
+              <li>
+                <Link href={"/training-solutions"} className="hover:text-[#F58A07] transition">Training solutions</Link>
+              </li>
+              <li>
+                <Link href={"/delivery"} className="hover:text-[#F58A07] transition">Offline trainings</Link>
+              </li>
+              <li>
+                <Link href={"/content"} className="hover:text-[#F58A07] transition">Content Services</Link>
+              </li>
+              <li>
+                <Link href={"/ai-training-company-india"} className="hover:text-[#F58A07] transition">AI Training Company in India</Link>
+              </li>
+              <li>
+                <Link href={"/data-analytics-training"} className="hover:text-[#F58A07] transition">Data Analytics Training</Link>
+              </li>
+              <li>
+                <Link href={"/corporate-ai-training-india"} className="hover:text-[#F58A07] transition">Corporate AI Training India</Link>
+              </li>
+              <li>
+                <Link href={"/ai-training-in-finance"} className="hover:text-[#F58A07] transition">AI Training in Finance</Link>
+              </li>
+              <li>
+                <Link href={"/ai-training-in-hr"} className="hover:text-[#F58A07] transition">AI Training in HR</Link>
+              </li>
             </ul>
           </div>
           <div className="flex flex-col gap-3 w-full max-w-[250px] md:max-w-none">
             <h6 className="text-base font-medium">Contact us</h6>
             <ul className="flex gap-2">
-              <a
+              <li>
+<a
                 href="https://www.linkedin.com/company/markrich-solutions-llp"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -72,10 +84,15 @@ const Footer = () => {
                 <img
                   src={linkedinIcon.src}
                   className="w-full object-fit max-w-[40px]"
+                  width={40}
+                  height={40}
+                  loading="lazy"
                   alt=""
                 />
               </a>
-              <a
+              </li>
+              <li>
+<a
                 href="https://www.instagram.com/markrich.in/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -84,10 +101,15 @@ const Footer = () => {
                 <img
                   src={instagramIcon.src}
                   className="w-full object-fit max-w-[40px]"
+                  width={40}
+                  height={40}
+                  loading="lazy"
                   alt=""
                 />
               </a>
-              <a
+              </li>
+              <li>
+<a
                 href="https://www.facebook.com/people/Markrich-Solutions-LLP/61557010641903/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -96,9 +118,13 @@ const Footer = () => {
                 <img
                   src={fbIcon.src}
                   className="w-full object-fit max-w-[40px]"
+                  width={40}
+                  height={40}
+                  loading="lazy"
                   alt=""
                 />
               </a>
+              </li>
             </ul>
           </div>
         </div>

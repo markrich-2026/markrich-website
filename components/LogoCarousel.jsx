@@ -1,22 +1,23 @@
 import Marquee from "react-fast-marquee";
 
+// [file, width at 50px height, client name]
 const logos = [
-  "/logos/alt.png",
-  "/logos/be.png",
-  "/logos/contentstack.png",
-  "/logos/cres.png",
-  "/logos/grameen.png",
-  "/logos/hgs.png",
-  "/logos/hoh.jpg",
-  "/logos/janus.jpg",
-  "/logos/mcm.png",
-  "/logos/mer.png",
-  "/logos/network18.png",
-  "/logos/psa.png",
-  "/logos/shinhanbank.png",
-  "/logos/syspree.png",
-  "/logos/ultratech.png",
-  "/logos/wyn.png",
+  ["/logos/alt.png", 244, "Alt"],
+  ["/logos/be.png", 83, "BE"],
+  ["/logos/contentstack.png", 227, "Contentstack"],
+  ["/logos/cres.png", 220, "Cres"],
+  ["/logos/grameen.png", 136, "Grameen"],
+  ["/logos/hgs.png", 156, "HGS"],
+  ["/logos/hoh.jpg", 109, "HOH"],
+  ["/logos/janus.jpg", 50, "Janus"],
+  ["/logos/mcm.png", 123, "MCM"],
+  ["/logos/mer.png", 146, "MER"],
+  ["/logos/network18.png", 168, "Network18"],
+  ["/logos/psa.png", 103, "PSA"],
+  ["/logos/shinhanbank.png", 337, "Shinhan Bank"],
+  ["/logos/syspree.png", 122, "Syspree"],
+  ["/logos/ultratech.png", 90, "UltraTech"],
+  ["/logos/wyn.png", 443, "WYN"],
 ];
 
 const LogoCarousel = () => {
@@ -41,7 +42,7 @@ const LogoCarousel = () => {
       </div>
 
       <Marquee speed={80} gradient={true} gradientColor={[255, 255, 255]}>
-        {logos.map((logo, index) => (
+        {logos.map(([logo, width, name], index) => (
           <div
             key={index}
             style={{
@@ -52,10 +53,14 @@ const LogoCarousel = () => {
           >
             <img
               src={logo}
-              alt="Industry Logo"
+              alt={`${name} logo`}
+              width={width}
+              height={50}
+              loading="lazy"
+              decoding="async"
               style={{
                 height: "50px",
-                width: "auto",
+                width: `${width}px`,
                 objectFit: "contain",
                 transition: "all 0.3s ease",
               }}

@@ -16,6 +16,40 @@ import { TabsComponent } from "@/components/Tabs";
 import Link from "next/link";
 import LogoCarousel from "@/components/LogoCarousel";
 import GoogleReviews from "@/components/GoogleReviews";
+import { useEffect, useState } from "react";
+
+const HERO_VIDEO =
+  "https://player.vimeo.com/video/1197327689?autoplay=1&loop=1&muted=1&dnt=1";
+
+// Mounts the Vimeo player only after the page has loaded, so the heavy third-party
+// player does not delay the first render. The aspect-video box reserves the space.
+const HeroVideo = () => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const start = () => setShow(true);
+    if (document.readyState === "complete") {
+      const id = setTimeout(start, 1500);
+      return () => clearTimeout(id);
+    }
+    const onLoad = () => setTimeout(start, 1500);
+    window.addEventListener("load", onLoad);
+    return () => window.removeEventListener("load", onLoad);
+  }, []);
+  return (
+    <div className="w-full aspect-video rounded-xl bg-slate-100">
+      {show && (
+        <iframe
+          src={HERO_VIDEO}
+          title="Markrich Solutions corporate training video"
+          className="w-full h-full rounded-xl"
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+        />
+      )}
+    </div>
+  );
+};
 
 const trainingAreas = [
   {
@@ -240,7 +274,7 @@ export default function Home() {
         }}
       />
       <main
-        className={`flex min-h-[90vh] px-12 py-6 lg:px-2 items-center justify-center bg-[url('/images/section-background-2.svg')]`}
+        className={`flex min-h-[90vh] px-12 py-6 lg:px-2 items-center justify-center`}
       >
         <div className="container mx-auto max-w-[1200px] flex justify-between gap-12 px-2 items-center lg:flex-col-reverse md:flex-col  lg:items-center lg:justify-center">
           <div className="flex flex-col gap-8 max-w-[600px] lg:max-w-none">
@@ -262,15 +296,17 @@ export default function Home() {
             </p>
             <hr />
 
-            <button className="text-[#ED3630] font-semibold max-w-fit">
-              <Link href={"/about-us"}>
-                <div className="flex items-center gap-1">
-                  Learn More{" "}
+            <Link
+              href={"/about-us"}
+              className="text-[#ED3630] font-semibold max-w-fit flex items-center gap-1"
+            >
+                  Learn More About Us{" "}
                   <svg
                     width="15"
                     height="15"
                     viewBox="0 0 15 15"
                     fill="none"
+                    aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -280,19 +316,9 @@ export default function Home() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                </div>
-              </Link>
-            </button>
+            </Link>
           </div>
-          <div className="w-full aspect-video">
-            <iframe
-              src="https://player.vimeo.com/video/1197327689?autoplay=1&loop=1"
-              className="w-full h-full"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
+          <HeroVideo />
         </div>
       </main>
 
@@ -376,7 +402,7 @@ export default function Home() {
       </section>
 
       {/* features section why choose us */}
-      <section className="flex min-h-screen bg-[url('/images/features-bg.svg')] bg-cover bg-no-repeat px-12 py-6 lg:px-2">
+      <section className="flex min-h-screen px-12 py-6 lg:px-2">
         <div className="container mx-auto max-w-[1200px] flex flex-col justify-center gap-[5rem] px-2 ">
           <div className="flex flex-col gap-8 max-w-[650px]">
             {/* hero content */}

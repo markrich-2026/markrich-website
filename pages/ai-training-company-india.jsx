@@ -29,13 +29,13 @@ const trainingAreas = [
       ["Additional specialist areas", "Accounting and taxation, IFRS, Ind AS, AML/KYC, investment banking, derivatives and bond mathematics."],
     ],
     outro:
-      "As AI adoption continues to grow in the finance sector, AI training in Finance programmes is helping professionals understand its applications in financial analysis, reporting and decision-making. The right programme depends on participants’ existing knowledge, job responsibilities and learning objectives.",
+      "The appropriate programme depends on the participants’ existing knowledge, responsibilities and learning objectives.",
   },
   {
-    title: "AI Training Programmes Led by the Best AI Trainer in India",
+    title: "AI Training",
     intro:
-      "AI training helps professionals understand artificial intelligence and explore how AI-enabled tools and workflows may support relevant workplace activities. Partnering with a leading AI training company in India ensures corporate teams focus on practical applications, appropriate use and assessing AI-generated outputs rather than simply learning terminology.",
-    listLabel: "Markrich’s portfolio includes:",
+      "AI training helps professionals understand artificial intelligence and explore how AI-enabled tools and workflows may support relevant workplace activities. For corporate teams, the focus should be on practical applications, appropriate use and the ability to assess AI-generated outputs rather than simply learning terminology.",
+    listLabel: "Markrich’s AI training portfolio includes:",
     items: [
       ["Generative AI Basics", "Develop a foundational understanding of generative AI and its potential workplace applications."],
       ["Generative AI for Business Productivity", "Explore ways generative AI may assist with suitable everyday business tasks."],
@@ -47,7 +47,7 @@ const trainingAreas = [
       ["Machine Learning", "Explore the fundamentals and business relevance of machine learning."],
     ],
     outro:
-      "The most suitable AI programme depends on the audience, their existing familiarity with AI, the business tasks they want to explore and the organisation’s information-security requirements. Guidance from the best AI trainer in India can help tailor these sessions to your team’s exact technical needs.",
+      "The most suitable AI programme depends on the audience, their existing familiarity with AI, the business tasks they want to explore and the organisation’s information-security requirements.",
   },
   {
     title: "Analytics Training",
@@ -57,7 +57,7 @@ const trainingAreas = [
     items: [
       ["Basic and Advanced MS Excel", "Develop spreadsheet skills for organising, analysing and presenting information."],
       ["Business Analytics", "Understand how business questions can be translated into structured analysis."],
-      ["Data Analytics for Data-Driven Decision-Making", "Explore how data analytics training can inform business discussions and decisions."],
+      ["Data Analytics for Data-Driven Decision-Making", "Explore how data can inform business discussions and decisions."],
       ["Data Visualisation", "Present information in formats that make patterns and findings easier to interpret."],
       ["Power BI", "Explore business intelligence and dashboard-related capabilities."],
       ["Python and PySpark", "Consider programming-based approaches to data analysis and processing, subject to programme scope."],
@@ -97,7 +97,7 @@ const aiApplicationAreas = [
 ];
 
 const responsibleUse = [
-  ["Data confidentiality", "Avoid inputting sensitive or confidential information into tools not approved for that purpose."],
+  ["Data confidentiality", "Avoiding the input of sensitive or confidential information into tools that have not been approved for that purpose."],
   ["Output verification", "Checking factual claims, calculations, sources and assumptions."],
   ["Human oversight", "Keeping appropriate people responsible for decisions that affect employees, customers, finances or business operations."],
   ["Bias awareness", "Recognising that AI-assisted recommendations may reflect errors or biases and require careful evaluation."],
@@ -107,11 +107,11 @@ const responsibleUse = [
 const processSteps = [
   {
     title: "Understand the learning requirement",
-    text: "The process begins with discussions about the intended audience, existing skill levels, workplace challenges and expected learning objectives. This helps clarify whether Finance, AI, Analytics or Business Excellence training best addresses the requirement.",
+    text: "The process begins with discussions about the intended audience, existing skill levels, workplace challenges and expected learning objectives. This helps clarify whether the requirement is best addressed through Finance, AI, Analytics or Business Excellence training.",
   },
   {
     title: "Contextualise the learning content",
-    text: "We can adapt training content and examples to organisational requirements. Depending on the programme, the learning approach may incorporate case studies, role-plays, quizzes or practical exercises to connect concepts with workplace situations.",
+    text: "Training content and examples can be adapted to organisational requirements. Depending on the programme, the learning approach may incorporate case studies, roleplays, quizzes or practical exercises to connect concepts with workplace situations.",
   },
   {
     title: "Deliver the programme",
@@ -123,35 +123,58 @@ const processSteps = [
   },
 ];
 
+const choosingSteps = [
+  {
+    title: "Identify Your Organisation's Skill Gaps",
+    text: "Start by evaluating the skills your employees currently possess and the capabilities they need to develop. Consider feedback from managers, performance observations, changing job responsibilities and business requirements. This helps identify whether the priority lies in financial knowledge, AI adoption, data analytics, leadership or communication.",
+  },
+  {
+    title: "Define Clear Learning Objectives",
+    text: "Establish what participants should understand or be able to do after completing the programme. Objectives could include interpreting financial statements, using Power BI to analyse business data, understanding Generative AI applications or developing project management capabilities. Clear objectives help determine the appropriate training subject and depth.",
+  },
+  {
+    title: "Select the Relevant Training Area",
+    text: "Match identified skill gaps with the appropriate learning programme. Finance training may be relevant for improving financial understanding, while Analytics training can support data interpretation and reporting skills. AI training may help teams understand emerging tools and applications, while Business Excellence programmes address leadership, communication and management capabilities.",
+  },
+  {
+    title: "Consider Employee Roles and Existing Knowledge",
+    text: "Training should be relevant to participants' responsibilities and experience levels. A foundational Excel programme may suit employees with limited spreadsheet experience, whereas advanced analytics training may be more relevant to professionals already working with datasets and analytical tools. Consider the audience before deciding on the programme level.",
+  },
+  {
+    title: "Determine the Training Format and Scope",
+    text: "Decide whether in-person training or live virtual instructor-led training is more suitable for the participants. Establish the programme duration, group size, topics, exercises and expected level of interaction. The scope should reflect the learning objectives and the time available.",
+  },
+  {
+    title: "Evaluate Learning and Gather Feedback",
+    text: "Consider how learning will be assessed and how participants will provide feedback. Depending on the programme, this may include practical exercises, quizzes, assessments or discussions. Post-training feedback can help identify areas requiring further learning and inform future training initiatives.",
+  },
+];
+
 const snapshot = [
   {
     area: "Finance",
     examples: "Finance for Non-Finance, Corporate Finance, Financial Modelling",
     audience: "Finance teams and non-finance professionals",
-    duration: "1–2 days",
   },
   {
     area: "AI",
     examples: "Generative AI Basics, Business Productivity, AI for HR and Finance, Agentic AI, Machine Learning",
     audience: "Business teams, functional professionals and decision-makers",
-    duration: "Customised to requirements",
   },
   {
     area: "Analytics",
     examples: "Excel, Business Analytics, Power BI, Data Visualisation, Python",
     audience: "Analysts, finance and HR professionals, business teams",
-    duration: "Customised to requirements",
   },
   {
     area: "Business Excellence",
     examples: "Leadership, Project Management, Communication, Risk Management",
     audience: "Managers, team leaders and professionals",
-    duration: "Customised to requirements",
   },
 ];
 
 const programmeDetails = [
-  ["Delivery modes", "Markrich's delivery information describes in-person and live virtual instructor-led training."],
+  ["Delivery modes", "In-person and live virtual instructor-led training are described in Markrich’s delivery information."],
   ["Tools and technology", "The tools covered depend on the selected programme. Confirm the exact tool list before committing to a curriculum."],
   ["Prerequisites", "To be determined according to the programme and participants’ existing knowledge."],
   ["Certification", "Confirm whether certification is included for the specific programme; do not assume it is available across the portfolio."],
@@ -197,7 +220,7 @@ const faqs = [
   {
     question: "Does Markrich provide AI training for corporate teams?",
     answer:
-      "Yes. Recognized alongside the best AI trainer in India, Markrich’s published training portfolio includes Generative AI Basics, Generative AI for Business Productivity, Generative AI for Sales and Marketing, Generative AI for HR and Finance, Agentic AI and Machine Learning. Discuss your team’s requirements to confirm the appropriate programme scope and curriculum.",
+      "Yes. Markrich’s published training portfolio includes Generative AI Basics, Generative AI for Business Productivity, Generative AI for Sales and Marketing, Generative AI for HR and Finance, Agentic AI and Machine Learning. Discuss your team’s requirements to confirm the appropriate programme scope and curriculum.",
   },
   {
     question: "Can the training programme be customised for our organisation?",
@@ -217,7 +240,7 @@ const faqs = [
   {
     question: "How can we enquire about corporate training for our team?",
     answer:
-      "You can contact Markrich Solutions through the website to discuss your organisation’s training requirements. To help us understand your needs and discuss next steps, please share the subject area, target audience, approximate number of participants, preferred delivery format and intended learning objectives.",
+      "You can contact Markrich Solutions through the website to discuss your organisation’s training requirements. It is useful to share the subject area, target audience, approximate number of participants, preferred delivery format and intended learning objectives so the team can understand the requirement and discuss the next steps.",
   },
 ];
 
@@ -270,9 +293,8 @@ const AiTrainingCompanyInIndia = () => {
             Whether you are an HR leader planning workforce development, an
             L&amp;D manager addressing skill gaps, a finance leader
             strengthening business acumen or an analytics leader supporting
-            data-driven decisions, working with the best AI trainer in India
-            at Markrich can help you explore suitable corporate training
-            options.
+            data-driven decisions, Markrich can help you explore suitable
+            corporate training options.
           </p>
           <div>
             <Button text={"Discuss your requirements"} highlight link={"/contact-us"} />
@@ -327,15 +349,15 @@ const AiTrainingCompanyInIndia = () => {
               exploring patterns in data and supporting structured analysis.
               However, identifying an appropriate use case requires more than
               selecting a tool. Employees also need to understand the task,
-              assess output quality and recognise when human review is
-              essential.
+              assess the quality of the output and recognise when human review
+              is essential.
             </p>
             <p className="text-[#18181B] leading-relaxed">
-              As an established AI training company in India, Markrich’s AI
-              training portfolio includes Generative AI, business productivity,
-              function-specific applications, Agentic AI and Machine Learning.
-              An organisational programme should focus on participants’ roles
-              and the business problems they need to understand.
+              Markrich’s AI training portfolio includes Generative AI, business
+              productivity, function-specific applications, Agentic AI and
+              Machine Learning. The focus of an organisational programme should
+              be determined by the participants’ roles and the business
+              problems they need to understand.
             </p>
           </div>
 
@@ -345,9 +367,8 @@ const AiTrainingCompanyInIndia = () => {
                 Connecting AI learning with business needs
               </h3>
               <p className="text-slate-600">
-                A useful corporate programme delivered by the best AI trainer
-                in India starts by identifying where AI knowledge could be
-                relevant to employees’ work.
+                A useful corporate AI training programme starts by identifying
+                where AI knowledge could be relevant to employees’ work.
               </p>
               <p className="font-medium">Examples of areas to explore include:</p>
               <LabelList items={aiApplicationAreas} />
@@ -375,12 +396,58 @@ const AiTrainingCompanyInIndia = () => {
               </p>
               <LabelList items={responsibleUse} />
               <p className="text-slate-600 text-sm">
-                The organisation should agree on the specific governance and
-                compliance content and review it against applicable policies
-                and legal requirements.
+                The specific governance and compliance content should be agreed
+                with the organisation and reviewed against its applicable
+                policies and legal requirements.
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* How to choose */}
+      <section className="px-12 py-20 lg:px-4">
+        <div className="container mx-auto max-w-[1200px] flex flex-col gap-12">
+          <div className="flex flex-col gap-4 max-w-[900px]">
+            <SectionHeading eyebrow="Choosing a programme">
+              How to Choose the Right Corporate Training Programme for{" "}
+              <span className="text-[#F58A07]">Your Organisation</span>
+            </SectionHeading>
+            <p className="text-[#18181B] leading-relaxed">
+              Selecting a corporate training programme requires an
+              understanding of your employees&apos; current capabilities,
+              business priorities and the skills they need to develop. A
+              structured approach can help organisations identify relevant
+              learning areas, define objectives and plan training that aligns
+              with their requirements.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-3 gap-6 lg:grid-cols-2 md:grid-cols-1">
+            {choosingSteps.map((step, index) => (
+              <div
+                key={step.title}
+                className="flex flex-col gap-4 bg-white rounded-2xl p-6 shadow-sm border border-[#E5E7EB]"
+              >
+                <span className="h-10 w-10 rounded-full bg-[#F58A07] text-white font-semibold flex items-center justify-center">
+                  {index + 1}
+                </span>
+                <h3 className="text-lg font-semibold">{step.title}</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  {step.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-[#18181B] max-w-[900px]">
+            A structured approach to selecting corporate training helps
+            organisations connect learning priorities with employee
+            responsibilities and business requirements. Markrich Solutions
+            offers training across Finance, AI, Analytics and Business
+            Excellence, with programme scope and delivery discussed according
+            to organisational needs.
+          </p>
         </div>
       </section>
 
@@ -393,10 +460,9 @@ const AiTrainingCompanyInIndia = () => {
               <span className="text-[#F58A07]">Corporate Training</span>
             </SectionHeading>
             <p className="text-[#18181B] leading-relaxed">
-              Effective corporate AI training in India starts with an
-              understanding of what employees need to learn and how that
-              learning relates to their responsibilities. As a trusted AI
-              training company in India, Markrich’s delivery approach includes
+              Effective corporate training starts with an understanding of what
+              employees need to learn and how that learning relates to their
+              responsibilities. Markrich’s delivery approach includes
               understanding stakeholder needs, creating customised solutions,
               delivering training and gathering post-implementation feedback.
             </p>
@@ -420,9 +486,9 @@ const AiTrainingCompanyInIndia = () => {
           </div>
 
           <p className="text-[#18181B]">
-            Agree the specific learning objectives, exercises, duration,
-            delivery arrangements and evaluation approach before the programme
-            begins.
+            The specific learning objectives, exercises, duration, delivery
+            arrangements and evaluation approach should be agreed before the
+            programme begins.
           </p>
         </div>
       </section>
@@ -437,19 +503,18 @@ const AiTrainingCompanyInIndia = () => {
             </SectionHeading>
             <p className="text-[#18181B]">
               The following table provides an overview of the training
-              portfolio. Confirm programme-specific details during the enquiry
-              and proposal stage.
+              portfolio. Programme-specific details should be confirmed during
+              the enquiry and proposal stage.
             </p>
           </div>
 
           <div className="overflow-x-auto rounded-2xl border border-[#E5E7EB]">
-            <table className="w-full min-w-[720px] text-left text-sm">
+            <table className="w-full min-w-[600px] text-left text-sm">
               <thead className="bg-[#F58A07] text-white">
                 <tr>
                   <th className="p-4 font-semibold">Training area</th>
                   <th className="p-4 font-semibold">Programme examples</th>
                   <th className="p-4 font-semibold">Typical audience</th>
-                  <th className="p-4 font-semibold">Duration and format</th>
                 </tr>
               </thead>
               <tbody>
@@ -463,7 +528,6 @@ const AiTrainingCompanyInIndia = () => {
                     </td>
                     <td className="p-4 text-slate-600">{row.examples}</td>
                     <td className="p-4 text-slate-600">{row.audience}</td>
-                    <td className="p-4 text-slate-600">{row.duration}</td>
                   </tr>
                 ))}
               </tbody>
@@ -490,8 +554,9 @@ const AiTrainingCompanyInIndia = () => {
               </span>
             </SectionHeading>
             <p className="text-[#18181B]">
-              Organisations with different learning priorities and employee
-              groups can explore Markrich&apos;s corporate training portfolio.
+              Markrich’s corporate training portfolio can be explored by
+              organisations with different learning priorities and employee
+              groups.
             </p>
           </div>
           <div className="grid grid-cols-3 gap-6 lg:grid-cols-2 md:grid-cols-1">
@@ -518,10 +583,8 @@ const AiTrainingCompanyInIndia = () => {
         <div className="container mx-auto max-w-[1200px] flex flex-col gap-10">
           <div className="flex flex-col gap-4 max-w-[900px]">
             <SectionHeading eyebrow="Why choose us">
-              Why Consider Markrich Solutions as your{" "}
-              <span className="text-[#F58A07]">
-                AI training company in India?
-              </span>
+              Why Consider{" "}
+              <span className="text-[#F58A07]">Markrich Solutions?</span>
             </SectionHeading>
             <p className="text-[#18181B] leading-relaxed">
               Choosing a corporate training provider involves more than
@@ -599,15 +662,16 @@ const AiTrainingCompanyInIndia = () => {
           </h2>
           <p className="max-w-[800px] text-[#18181B]">
             Every organisation has different capability requirements. Whether
-            you are strengthening financial understanding, developing analytics
-            skills or investing in leadership and business excellence, the
-            first step is to identify your team’s learning priorities.
+            you are exploring AI training, strengthening financial
+            understanding, developing analytics skills or investing in
+            leadership and business excellence, the first step is to identify
+            your team’s learning priorities.
           </p>
           <p className="max-w-[800px] text-[#18181B]">
             Contact Markrich Solutions to discuss the subject area, target
             audience, intended learning objectives and preferred delivery
-            format. Next, establish a programme scope suited to your
-            requirements.
+            format. The next step is to establish a programme scope suited to
+            your requirements.
           </p>
           <div className="flex gap-4 md:flex-col">
             <Button text={"Contact Markrich Solutions"} highlight link={"/contact-us"} />

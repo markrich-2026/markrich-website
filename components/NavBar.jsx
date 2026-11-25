@@ -45,6 +45,10 @@ const trainingPages = [
     page: "AI Training in Finance",
     url: "/ai-training-in-finance",
   },
+  {
+    page: "AI Training in HR",
+    url: "/ai-training-in-hr",
+  },
 ];
 
 const ChevronDown = () => (
@@ -119,12 +123,19 @@ const NavBar = () => {
               className="text-violet11 hover:bg-violet3 focus:shadow-violet7 block select-none rounded-[4px] px-3 text-[15px] font-medium leading-none no-underline outline-none focus:shadow-[0_0_0_2px]"
               href="/"
             >
-              <img src={logo.src} className="max-w-[100px]" alt="" />
+              <img
+                src={logo.src}
+                width={100}
+                height={Math.round((100 * logo.height) / logo.width)}
+                className="max-w-[100px] h-auto"
+                alt="Markrich Solutions home"
+              />
             </Link>
           </NavigationMenu.Item>
-          <div className="flex items-center gap-1 lg:hidden">
+          <NavigationMenu.Item className="lg:hidden">
+           <ul className="flex items-center gap-1 list-none">
             {navLinks.map((navitem, index) => (
-              <NavigationMenu.Item
+              <li
                 key={index + 1}
                 className={navitem.children ? "relative group" : ""}
               >
@@ -152,19 +163,23 @@ const NavBar = () => {
                     </ul>
                   </div>
                 )}
-              </NavigationMenu.Item>
+              </li>
             ))}
-          </div>
-          <div className="lg:hidden">
+           </ul>
+          </NavigationMenu.Item>
+          <NavigationMenu.Item className="lg:hidden">
             <HeaderContactButtons />
-          </div>
-          <div className="hidden lg:flex items-center gap-3">
+          </NavigationMenu.Item>
+          <NavigationMenu.Item className="hidden lg:flex items-center gap-3">
             <HeaderContactButtons />
             <button
               className="focus:text-[#F58A07] p-2 rounded-full bg-slate-50 text-slate-500 focus:bg-[#f58a072b]"
               onClick={showNav}
+              aria-label={isClicked ? "Close menu" : "Open menu"}
+              aria-expanded={isClicked}
             >
               <svg
+                aria-hidden="true"
                 width="35"
                 height="35"
                 viewBox="0 0 15 15"
@@ -179,7 +194,7 @@ const NavBar = () => {
                 ></path>
               </svg>
             </button>
-          </div>
+          </NavigationMenu.Item>
         </NavigationMenu.List>
       </NavigationMenu.Root>
       <NavigationMenu.Root
@@ -188,9 +203,10 @@ const NavBar = () => {
         } lg:absolute lg:bg-white transition`}
       >
         <NavigationMenu.List className="w-full flex max-w-[1200px] list-none bg-white p-1 py-3 px-5 items-center justify-between h-full lg:items-start">
-          <div className="flex gap-5 lg:flex-col lg:gap-6 lg:mt-6">
+          <NavigationMenu.Item>
+           <ul className="flex gap-5 lg:flex-col lg:gap-6 lg:mt-6 list-none">
             {navLinks.map((navitem, index) => (
-              <NavigationMenu.Item key={index + 1} onClick={showNav}>
+              <li key={index + 1} onClick={showNav}>
                 <Link
                   className="text-violet11 hover:text-[#F58A07] transition duration-500 focus:text-[#F58A07] block select-none rounded-[4px] px-3 text-xl font-medium leading-none no-underline outline-none"
                   href={navitem.url}
@@ -211,9 +227,10 @@ const NavBar = () => {
                     ))}
                   </ul>
                 )}
-              </NavigationMenu.Item>
+              </li>
             ))}
-          </div>
+           </ul>
+          </NavigationMenu.Item>
         </NavigationMenu.List>
       </NavigationMenu.Root>
     </>

@@ -5,7 +5,7 @@ import Link from "next/link";
 export const Card = ({ icon, title, text, align, link }) => {
   return (
     <div className={`flex flex-col gap-4 w-full ${align ? align : ""}`}>
-      <img className="max-w-[36px]" src={icon.src} alt="" />
+      <img className="max-w-[36px]" src={icon.src} alt="" width={36} height={36} loading="lazy" decoding="async" />
       <h6 className="text-xl font-semibold">
         {link ? (
           <Link href={link} className="hover:text-[#F58A07] transition">
@@ -46,7 +46,7 @@ export const Card = ({ icon, title, text, align, link }) => {
 export const FeatureCard = ({ icon, title, text }) => {
   return (
     <div className="flex flex-col gap-4 w-full bg-[#F3FBFF] p-8 rounded-2xl md:py-8 md:px-2">
-      <img className="max-w-[36px]" src={icon.src} alt="" />
+      <img className="max-w-[36px]" src={icon.src} alt="" width={36} height={36} loading="lazy" decoding="async" />
       <h6 className="text-xl font-semibold">{title}</h6>
       <p className="text-slate-500 text-base font-medium">{text}</p>
     </div>
@@ -105,7 +105,7 @@ export const CaseStudyCard = ({ image, title, link }) => {
     <>
       <div className="flex gap-4 flex-col w-full mb-2">
         <div className="flex rounded-lg overflow-hidden">
-          <img className="w-full object-cover" src={image.src} alt="" />
+          <img className="w-full object-cover" src={image.src} alt="" loading="lazy" decoding="async" />
         </div>
         <div className="flex flex-col gap-2">
           <h6 className="text-sm font-medium">{title}</h6>

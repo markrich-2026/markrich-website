@@ -107,7 +107,7 @@ const GalleryPage = () => {
                 alt: "Professionals attending an interactive Finance training session",
               },
               {
-                src: "/training/training1.png",
+                src: "/training/training1.jpg",
                 alt: "Participants attending an online training session on AI for HR Professionals with Markrich Solutions",
               },
               {

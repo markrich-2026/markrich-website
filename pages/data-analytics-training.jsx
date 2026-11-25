@@ -1,7 +1,7 @@
 import JsonLd from "@/components/JsonLd";
 import { dataAnalyticsSchema } from "@/lib/schema";
-import React from "react";
-import { NextSeo } from "next-seo";
+import React, { useState } from "react";
+import { NextSeo, FAQPageJsonLd } from "next-seo";
 import Link from "next/link";
 import SectionHero from "@/components/Section";
 import Button from "@/components/Button";
@@ -88,7 +88,47 @@ const steps = [
   },
 ];
 
+const faqs = [
+  {
+    question: "Why is corporate data analytics training important if our company already uses BI tools?",
+    answer:
+      "Business intelligence tools and automated dashboards only deliver value when employees know how to interpret and analyse the information. Corporate data analytics training bridges this gap by equipping teams to identify meaningful patterns, reduce guesswork, and transform raw datasets into actionable business strategies.",
+  },
+  {
+    question: "Which departments benefit most from workplace data literacy programmes?",
+    answer:
+      "Data literacy benefits virtually every department across an organisation. Marketing teams use it to measure campaign ROI and customer behaviour, while HR professionals analyse attrition patterns and workforce planning. Similarly, finance teams improve budgeting and forecasting, and operations teams monitor productivity to eliminate inefficiencies.",
+  },
+  {
+    question: "What tools and skills are covered in Markrich Solutions' data analytics training?",
+    answer:
+      "Markrich Solutions covers four core areas tailored to different skill levels, including Basic and Advanced Excel for spreadsheet analysis and formulas, and Business Analytics for strategic trend interpretation. The curriculum also includes Data Visualisation using Power BI and Tableau to build interactive dashboards, alongside Python for data manipulation and automation.",
+  },
+  {
+    question: "Do employees need a technical or coding background to join these training programmes?",
+    answer:
+      "No, employees do not need a coding background to participate. Programmes are structured around role-specific needs, starting from foundational tools like Microsoft Excel for everyday reporting and progressing to intermediate dashboarding with Power BI or Tableau, or advanced coding with Python only where required.",
+  },
+  {
+    question: "How does upskilling non-technical teams improve decision-making speed?",
+    answer:
+      "When managers and functional teams can independently explore data and build their own reports, they no longer have to wait on technical or IT teams for routine data pulls. This eliminates reporting bottlenecks and allows teams to spot emerging trends and potential risks much faster.",
+  },
+  {
+    question: "How can an organisation successfully implement data analytics across its workforce?",
+    answer:
+      "A structured rollout begins by defining clear business objectives, collecting relevant internal data, and cleaning that information to remove errors and duplicates. Organisations should then select tools suited to their team's skill level, deliver practical role-based training, visualise insights through clear dashboards, and measure outcomes against business goals.",
+  },
+  {
+    question: "Are the training programmes customised for specific business goals?",
+    answer:
+      "Yes, Markrich Solutions tailors its corporate training programmes to match an organisation's specific objectives, existing tech stack, and current workforce skill gaps. Rather than relying on generic theory, the approach focuses on practical learning, relevant business applications, and measurable workplace impact.",
+  },
+];
+
 const DataAnalyticsTraining = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
   return (
     <>
       <JsonLd data={dataAnalyticsSchema} />
@@ -102,6 +142,12 @@ const DataAnalyticsTraining = () => {
           description: META_DESCRIPTION,
           siteName: "Markrichsolutions",
         }}
+      />
+      <FAQPageJsonLd
+        mainEntity={faqs.map((faq) => ({
+          questionName: faq.question,
+          acceptedAnswerText: faq.answer,
+        }))}
       />
 
       <SectionHero
@@ -260,6 +306,46 @@ const DataAnalyticsTraining = () => {
       </section>
 
       <GoogleReviews />
+
+      {/* FAQs */}
+      <section className="py-20 px-6 bg-[#FAFAFA]">
+        <div className="max-w-[900px] mx-auto">
+          <h2 className="text-4xl md:text-3xl font-semibold text-black mb-10 text-center">
+            Frequently Asked <span className="text-[#F58A07]">Questions</span>
+          </h2>
+          <div className="flex flex-col gap-4">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-[20px] border border-[#E5E7EB] overflow-hidden"
+              >
+                <button
+                  onClick={() =>
+                    setActiveIndex(activeIndex === index ? null : index)
+                  }
+                  className="w-full flex justify-between items-center gap-4 p-6 text-left"
+                >
+                  <h3
+                    className={`text-lg font-medium transition-colors duration-300 ${
+                      activeIndex === index ? "text-[#F58A07]" : "text-[#18181B]"
+                    }`}
+                  >
+                    {faq.question}
+                  </h3>
+                  <span className="text-2xl text-[#F58A07]">
+                    {activeIndex === index ? "−" : "+"}
+                  </span>
+                </button>
+                {activeIndex === index && (
+                  <div className="px-6 pb-6 text-[#52525B] leading-relaxed">
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Closing CTA */}
       <section className="px-12 py-20 lg:px-4">

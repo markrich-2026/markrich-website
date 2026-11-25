@@ -16,7 +16,15 @@
   }
 } */
 
+/* The site is designed for light mode only: stop browsers (e.g. Chrome's auto dark mode)
+   from darkening the page, which made dark text unreadable on a black background. */
+:root {
+  color-scheme: only light;
+}
+
 body {
+  background-color: #fff;
+  color: #18181b;
 }
 
 .tabs__::-webkit-scrollbar-track {
