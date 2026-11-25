@@ -1,3 +1,5 @@
+import JsonLd from "@/components/JsonLd";
+import { aiHrTrainingSchema } from "@/lib/schema";
 import React, { useState } from "react";
 import { NextSeo, FAQPageJsonLd } from "next-seo";
 import Link from "next/link";
@@ -139,6 +141,7 @@ const AITrainingInHR = () => {
 
   return (
     <>
+      <JsonLd data={aiHrTrainingSchema} />
       <NextSeo
         title={META_TITLE}
         description={META_DESCRIPTION}
