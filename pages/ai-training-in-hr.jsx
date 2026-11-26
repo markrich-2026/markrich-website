@@ -89,37 +89,37 @@ const faqs = [
   {
     question: "Do HR professionals need coding skills to learn AI?",
     answer:
-      "No, HR professionals do not need coding or technical skills to use AI. Corporate AI training covers no-code, plain-English tools like ChatGPT, Microsoft Copilot, and built-in HRMS analytics that work through simple text prompts.",
+      "No, HR professionals do not need coding skills to begin learning AI. Accessible tools such as ChatGPT and Microsoft Copilot can help them automate routine tasks, improve recruitment processes and analyse workforce information.",
   },
   {
     question: "Which AI tools are covered in HR AI training?",
     answer:
-      "Training typically covers ChatGPT, Microsoft Copilot and Power BI. These tools help HR teams draft job descriptions, screen resumes, summarise reports, automate employee queries, and build workforce dashboards.",
+      "The training introduces tools such as ChatGPT, Microsoft Copilot and Power BI to help HR professionals create job descriptions, prepare interview questions, analyse workforce data, generate reports and improve HR operations.",
   },
   {
     question: "How does AI improve recruitment and talent acquisition?",
     answer:
-      "AI accelerates hiring by automating resume screening, skill matching, and interview scheduling. This reduces manual administrative work, allowing recruiters to focus on candidate interviews, cultural fit, and final hiring decisions.",
+      "AI-powered recruitment tools can screen resumes, identify relevant skills, shortlist candidates and match applicants with job requirements, helping recruiters manage applications more efficiently.",
   },
   {
     question: "How are employee data privacy and AI bias managed?",
     answer:
-      "Training establishes strict privacy rules and human-review guidelines to protect employee data and prevent bias. HR teams learn to anonymise sensitive records, comply with Indian data privacy laws (such as the DPDP Act), and verify all AI outputs before making people decisions.",
+      "HR professionals should follow data privacy and confidentiality guidelines when using AI tools. They should understand potential AI bias and ensure human review remains part of employment-related decisions.",
   },
   {
     question: "Why do Indian businesses need AI training for HR?",
     answer:
-      "Indian businesses need AI-trained HR teams to handle high-volume hiring, cut administrative overhead, and lead workplace digital transformation. Upskilling HR improves workforce planning, boosts productivity, and ensures responsible AI adoption across the company.",
+      "AI training helps Indian businesses improve recruitment, reduce repetitive administrative activities, strengthen employee learning and development, make informed workforce decisions and prepare employees for an AI-driven workplace.",
   },
   {
     question: "How do companies measure the ROI of HR AI training?",
     answer:
-      "Organisations measure ROI through faster recruitment turnaround times, fewer hours spent on manual tasks, and improved HR service accuracy. Key metrics include reduced time-to-hire, lower administrative workload, and higher adoption of AI workflows.",
+      "Companies can measure the impact of AI implementation by evaluating recruitment turnaround time, administrative efficiency, employee satisfaction and overall HR productivity.",
   },
   {
     question: "How does Markrich Solutions conduct AI training for HR?",
     answer:
-      "Markrich Solutions delivers hands-on, application-oriented corporate training tailored to real HR workflows. Participants practice using AI tools on actual HR tasks—like writing policies, analysing feedback, and creating reports—so they can apply skills immediately at work.",
+      "Markrich Solutions provides practical, application-oriented corporate AI training. The programme helps HR professionals understand AI fundamentals, use AI tools for recruitment and talent management, automate routine HR activities, analyse workforce data, improve employee communication and adopt responsible AI practices.",
   },
 ];
 
