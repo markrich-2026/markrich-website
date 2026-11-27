@@ -69,6 +69,9 @@ const Footer = () => {
               <li>
                 <Link href={"/ai-training-in-hr"} className="hover:text-[#F58A07] transition">AI Training in HR</Link>
               </li>
+              <li>
+                <Link href={"/generative-ai-training-india"} className="hover:text-[#F58A07] transition">Generative AI Training India</Link>
+              </li>
             </ul>
           </div>
           <div className="flex flex-col gap-3 w-full max-w-[250px] md:max-w-none">

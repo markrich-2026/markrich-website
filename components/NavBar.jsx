@@ -49,6 +49,10 @@ const trainingPages = [
     page: "AI Training in HR",
     url: "/ai-training-in-hr",
   },
+  {
+    page: "Generative AI Training India",
+    url: "/generative-ai-training-india",
+  },
 ];
 
 const ChevronDown = () => (
