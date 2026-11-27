@@ -8,7 +8,7 @@ const nextConfig = {
   env: {
     API_PATH: "/api/contact/",
     API_TEST_PATH: "http://localhost/php_form_api/index.php",
-    SITE_URL: "https://markrich.in",
+    SITE_URL: "https://www.markrich.in",
   },
   trailingSlash: true,
   // Let browsers cache images and icons from /public for 30 days (they change rarely)

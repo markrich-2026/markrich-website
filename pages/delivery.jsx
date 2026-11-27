@@ -41,9 +41,9 @@ const Delivery = () => {
       <NextSeo
         title="Markrich Solutions | Delivery"
         description="Discover the streamlined and efficient approach of Markrich Solutions LLP. Our proven process guarantees precision and professionalism in delivering exceptional results for every project we undertake."
-        canonical="https://markrich.in/delivery"
+        canonical="https://www.markrich.in/delivery/"
         openGraph={{
-          url: "https://markrich.in/delivery",
+          url: "https://www.markrich.in/delivery/",
           title:
             "Empower Your Team with Markrich Solutions - Enhance Financial Acumen, Data-Driven Decision-Making, and Positive Work Culture",
           description:

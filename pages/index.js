@@ -249,9 +249,9 @@ export default function Home() {
       <NextSeo
         title="Empower Your Team with Markrich Solutions - Enhance Financial Acumen, Data-Driven Decision-Making, and Positive Work Culture"
         description="Equip your employees with essential skills to thrive in today's competitive environment. Enhance financial acumen, leverage data-driven decision-making, and foster a positive work culture with Markrich Solutions."
-        canonical="https://markrich.in"
+        canonical="https://www.markrich.in/"
         openGraph={{
-          url: "https://markrich.in",
+          url: "https://www.markrich.in/",
           title:
             "Empower Your Team with Markrich Solutions - Enhance Financial Acumen, Data-Driven Decision-Making, and Positive Work Culture",
           description:
